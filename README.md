@@ -25,13 +25,13 @@
     - <b>Encode/Decode</b>
       - %URL
       - 0xHex
-      - 0bBinary `<i>new</i>`
+      - 0bBinary <i>`new`</i>
       - Base64 
     
     - <b>Added new Queries (Custome)</b>
-      - add your Dios (10 slots)  `<i>new</i>`
-      - add XSS Payload (10 slots)  `<i>new</i>`
-      - and for others (10 slots) `<i>new</i>`
+      - add your Dios (10 slots)  <i>`new`</i>
+      - add XSS Payload (10 slots)  <i>`new`</i>
+      - and for others (10 slots) <i>`new`</i>
 
     - <b>Advance Options (Customize HackBar)</b>
       - Remove style
@@ -53,3 +53,7 @@
      
     - <b>Added new Field</b>
       - Cookie set/get cookies method <i>`new`</i>
+      
+    - <b>New features</b>
+      - Notify When have update
+      - anti modifications
