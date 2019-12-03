@@ -1,7 +1,7 @@
 # HackBar Updates New Features
 
 - [HackBar v2.6](https://youtu.be/8mkfybBaS9A)
-  <p>Adding more tools in [HakBar]() is for easylly to Pentesting and save more space.</p>
+  <p>Adding more tools in <a href="">HakBar</a> is for easylly to Pentesting and save more space.</p>
   
     - <b>Tools (4 in 1)</b>
     
@@ -12,14 +12,15 @@
 - [HackBar v2.7](https://youtu.be/rMqOSfYqGgk)
   <p>Customize Hackbar are added to make easylly and good UI/Design of your own.</p>
   
-    - <b>Tools (6 in 1)</b>
+    - <b>Tools (7 in 1)</b>
     
       - LiveHTTPHeader `replay function not working` 
       - Tamper Data
       - JS on/off
       - View Source
       - noRedirect
-      - Customize Hackbar
+      - Customize Hackbar `Addons Options`
+      - HTTP Proxy `not setting proxy`
 
     - <b>Encode/Decode</b>
       - %URL
@@ -41,14 +42,14 @@
 - [HackBar v2.8](https://youtu.be/rMqOSfYqGgk)
   <p>Customize Hackbar are added to make easylly and good UI/Design of your own.</p>
   
-    - <b>Tools (6 in 1)</b>
+    - <b>Tools (7 in 1)</b>
       - LiveHTTPHeader `replay function not working` 
       - Tamper Data
       - View Source
       - JS on/off
       - noRedirect
       - Customize Hackbar
-      - HTTP Proxy
+      - HTTP Proxy `not setting proxy`
      
     - <b>Added new Field</b>
-      - Cookie set/get cookies method `<i>new</i>`
+      - Cookie set/get cookies method <i>`new`</i>
