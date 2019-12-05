@@ -13,6 +13,7 @@
     - <b>Added new Field</b>
       - Cookie set/get cookies method <i>`new`</i>
       
+  
       ```javascript
         setCookiesFromField: function(){
           var uri = this.urlField.value; //URL
