@@ -27,5 +27,5 @@
       ```
       
     - <b>New features</b>
-      - Notify When have update
-      - anti modifications
+      - Notification When have update
+      - Anti modifications
