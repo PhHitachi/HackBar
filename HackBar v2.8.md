@@ -13,17 +13,20 @@
     - <b>Added new Field</b>
       - Cookie set/get cookies method <i>`new`</i>
       ```javascript
-          setCookiesFromField: function(){
-          var uri = this.urlField.value;
-          if ( !document.getElementById('hackBar_cookieCheckBox').checked || !this.CookiesField.value ) return null;
-          var cookieManager = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
-          var Cookies      = this.CookiesField.value;
-          var cookieUri = cookieManager.newURI(uri, null, null); 
-          var Cookie = Components.classes["@mozilla.org/cookieService;1"].getService(Components.interfaces.nsICookieService);
-
+        setCookiesFromField: function(){
+          var uri = this.urlField.value; //URL
+          if ( !document.getElementById('hackBar_cookieCheckBox').checked || !this.CookiesField.value ) 
+                return null;
+          var cookieManager = Components.classes["@mozilla.org/network/io-service;1"].
+                              getService(Components.interfaces.nsIIOService);
+          var Cookies      = this.CookiesField.value; //Inputed Cookies Value
+          var cookieUri = cookieManager.newURI(uri, null, null); //Getting URL for setting cookies
+          var Cookie = Components.classes["@mozilla.org/cookieService;1"].
+                       getService(Components.interfaces.nsICookieService);
+           
           Cookie.setCookieString(cookieUri, null, Cookies, null);
           return cookieManager;
-        },
+        }
       ```
       
     - <b>New features</b>
