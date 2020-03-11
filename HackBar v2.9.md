@@ -21,6 +21,7 @@
       - Importing Preperences (Themes & dios) `JSON/TXT`
       - Reset Into Default
       - BackUP Styles (Themes) `JSON`
+
       
     - <b>Added New Encoder/Decoder</b>
       - Unicode (\u00) <i>`new`</i>
@@ -37,7 +38,7 @@ Compatible Browser
 - Firefox (security issue to any version) 
 
 
-
+For More Theme goto https://github.com/PhHitachi/HackBar/tree/master/Theme
 
 
 
