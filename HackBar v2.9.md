@@ -1,4 +1,4 @@
-- [HackBar v2.9](https://youtu.be/iedurBw44Pw)
+- [HackBar v2.9](https://youtu.be/hMQsY-34HCc)
   <p>Customize Hackbar are added to make easylly and good UI/Design of your own.</p>
   
     - <b>Tools (8 in 1)</b>
@@ -20,12 +20,12 @@
       - Importing Preperences (Themes & dios) `JSON/TXT`
       - Importing Preperences (Themes & dios) `JSON/TXT`
       - Reset Into Default
-      - Importing Preperences (Themes)
+      - BackUP Styles (Themes) `JSON`
       
     - <b>Added New Encoder/Decoder</b>
-      - Unicode (\u00) `new`
-      - \xHex (\x) `new`
-      - &#xHex (&#x) `new`
+      - Unicode (\u00) <i>`new`</i>
+      - \xHex (\x) <i>`new`</i>
+      - &#xHex (&#x) <i>`new`</i>
 
 Compatible OS
 - Linux (fit)
@@ -34,7 +34,7 @@ Compatible OS
 
 Compatible Browser
 - [CyberFox](https://sourceforge.net/projects/cyberfox/) (Compatible)
-- Firefox (security issue)
+- Firefox (security issue to any version) 
 
 
 
