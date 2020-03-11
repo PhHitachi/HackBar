@@ -8,7 +8,8 @@
       - JS on/off
       - noRedirect
       - Customize Hackbar
-      - HTTP Proxy `not setting proxy`
+      - HTTP Proxy `fixed`
+      - Admin Finder `new`
      
     - <b>Added new Field</b>
       - Cookie set/get cookies method <i>`new`</i>
@@ -18,6 +19,15 @@
       - Anti modifications
       
     - <b>Added New Encoder/Decoder</b>
-      - Unicode (\u00)
-      - \xHex (\x)
-      - &#xHex (&#x)
+      - Unicode (\u00) `new`
+      - \xHex (\x) `new`
+      - &#xHex (&#x) `new`
+
+Compatible OS
+- Linux
+- Parrot
+- Windows
+
+Compatible Browser
+- CyberFox (Compatible)
+- Firefox (security issue)
