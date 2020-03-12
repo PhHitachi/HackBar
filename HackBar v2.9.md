@@ -2,7 +2,7 @@
   <p>Customize Hackbar are added to make easylly and good UI/Design of your own.</p>
   
     - <b>Tools (8 in 1)</b>
-      - LiveHTTPHeader `replay function not working` 
+      - LiveHTTPHeader `working on CyberFox Browser` 
       - Tamper Data
       - View Source
       - JS on/off
