@@ -29,9 +29,9 @@
       - &#xHex (&#x) <i>`new`</i>
 
 Compatible OS
-- Linux (fit)
-- Parrot (fit)
-- Windows (fit)
+- Linux (Fit)
+- Parrot (Fit)
+- Windows (Fit)
 
 Compatible Browser
 - [CyberFox](https://sourceforge.net/projects/cyberfox/) (Compatible)
