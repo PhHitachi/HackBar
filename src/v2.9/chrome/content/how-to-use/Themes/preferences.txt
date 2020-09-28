@@ -1,0 +1,127 @@
+CTR_Preferences__DO_NOT_EDIT__'='->booleans__':'->strings__'~'->integers
+hackBarTargetUrlReferrerField.borderLeft:#00ff00
+hackBarTargetUrlPostField.borderLeft:#00ff00
+rstring2.borderRadius:0
+hackBarTargetUrlReferrerField.borderTop:#00ff00
+Name Query.query 10:query 10
+query.query 11:query 11
+hackBarTargetUrlPostField.borderSize:3
+toolbar.font-family:Arial
+Dios.Dios 9:Dios 9
+Arrow.Replace:chrome://hackbar/skin/ArrowRight.png
+Name Query.query 3:query 3
+rstring1.borderRadius:0
+rstring2.font-family:Arial
+hackBarTargetUrlReferrerField.borderSize:3
+toolbar.color:#ff0000
+Name Query.query 5:query 5
+query.query 4:query 4
+rstring2.borderBottom:#00ff00
+Name Dios.Dios 5:Dios 5
+Name Dios.Dios 8:Dios 8
+query.query 1:query 1
+Arrow.HexArrowRight:chrome://hackbar/skin/ArrowRight.png
+hackBarTargetUrl.color:#00ff00
+query.query 12:query 12
+hackBarTargetUrl.borderRight:#00ff00
+query.query 10:query 10
+menuitem.font-family:Arial
+Name Query.query 11:query 11
+shouldTamperImages:false
+hackBarTargetUrlReferrerField.color:#00ff00
+Dios.Dios 3:Dios 3
+menupopup.borderBottom:#00ff00
+Arrow.URLArrowLeft:chrome://hackbar/skin/ArrowLeft.png
+query.query 5:query 5
+menupopup.backgroundColor:#000000
+hackBarTargetUrlReferrerField.fontSize:15
+rstring1.borderRight:#00ff00
+query.query 14:query 14
+rstring2.fontSize:12
+Arrow.BASE64Spacer:chrome://hackbar/skin/quick3.png
+Name Dios.Dios 7:Dios 7
+rstring1.borderLeft:#00ff00
+rstring1.borderSize:1
+rstring2.borderRight:#00ff00
+Dios.Dios 2:Dios 2
+hackBarTargetUrlReferrerField.borderBottom:#00ff00
+Arrow.BINARYArrowLeft:chrome://hackbar/skin/ArrowLeft.png
+query.query 2:query 2
+query.query 6:query 6
+hackBarTargetUrl.borderTop:#00ff00
+shouldAddOverwritesExisting:true
+hackBarTargetUrl.borderRadius:10
+Name Dios.Dios 6:Dios 6
+hackBarTargetUrl.borderBottom:#00ff00
+Arrow.URLArrowRight:chrome://hackbar/skin/ArrowRight.png
+hackBarTargetUrl.backgroundColor:#333
+Dios.Dios 5:Dios 5
+menupopup.borderSize:3
+debug:false
+rstring2.borderLeft:#00ff00
+Name Query.query 8:query 8
+query.query 7:query 7
+query.query 13:query 13
+hackBarTargetUrlReferrerField.font-family:Arial
+Dios.Dios 8:Dios 8
+Dios.Dios 4:DIos 4
+Name Query.query 9:query 9
+rstring2.borderSize:1
+Dios.Dios 10:Dios 10
+hackBarTargetUrl.font-family:Arial
+Arrow.BASE64ArrowRight:chrome://hackbar/skin/quick1.png
+Name Query.query 15:query 15
+hackBarTargetUrlReferrerField.backgroundColor:#000000
+Name Dios.Dios 4:DIos 4
+Name Query.query 12:query 12
+rstring1.borderTop:#00ff00
+hackBarTargetUrlPostField.borderBottom:#00ff00
+hackBarTargetUrl.borderLeft:#00ff00
+hackBarTargetUrlPostField.borderRadius:10
+Dios.Dios 7:Dios 7
+rstring1.font-family:Arial
+hackBarTargetUrl.fontSize:15
+hackBarTargetUrlPostField.color:#00ff00
+Name Query.query 1:query 1
+query.query 8:query 8
+Arrow.BINARYArrowRight:chrome://hackbar/skin/ArrowRight.png
+hackBarTargetUrlPostField.borderRight:#00ff00
+Name Dios.Dios 3:Dios 3
+forceCaching:true
+query.query 15:query 15
+hackBarTargetUrlPostField.borderTop:#00ff00
+Arrow.HexArrowLeft:chrome://hackbar/skin/ArrowLeft.png
+Name Query.query 7:query 7
+menupopup.borderLeft:#00ff00
+rstring2.backgroundColor:#000000
+rstring1.color:#00ff00
+Dios.Dios 6:Dios 6
+Name Dios.Dios 10:Dios 10
+hackBarTargetUrlPostField.backgroundColor:#000000
+Name Query.query 2:query 2
+query.query 9:query 9
+hackBarTargetUrlReferrerField.borderRadius:10
+hackBarTargetUrl.borderSize:3
+Name Dios.Dios 2:Dios 2
+Name Query.query 6:query 6
+hackBarTargetUrlPostField.fontSize:15
+rstring2.borderTop:#00ff00
+rstring1.fontSize:12
+menupopup.opacity:0.9
+hackBarTargetUrlReferrerField.borderRight:#00ff00
+rstring2.color:#00ff00
+query.query 3:query 3
+rstring1.backgroundColor:#000000
+menupopup.borderTop:#00ff00
+Name Query.query 14:query 14
+Name Query.query 13:query 13
+Name Dios.Dios 1:Dios 1
+menuitem.color:#ff0000
+menupopup.borderRight:#00ff00
+Dios.Dios 1:Dios 1
+Name Query.query 4:query 4
+hackBarTargetUrlPostField.font-family:Arial
+Arrow.BASE64ArrowLeft:chrome://hackbar/skin/ArrowLeft.png
+menupopup.borderRadius:10
+Name Dios.Dios 9:Dios 9
+rstring1.borderBottom:#00ff00

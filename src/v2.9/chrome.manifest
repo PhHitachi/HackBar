@@ -1,0 +1,97 @@
+content hackbar chrome/content/
+overlay chrome://browser/content/browser.xul chrome://hackbar/content/hackbar.xul
+locale hackbar en-US chrome/locale/en-US/
+skin hackbar classic/1.0 chrome/skin/win/ os=WINNT
+skin hackbar classic/1.0 chrome/skin/lin/ os=Linux
+skin hackbar classic/1.0 chrome/skin/lin/ os=NetBSD
+skin hackbar classic/1.0 chrome/skin/lin/ os=OpenBSD
+skin hackbar classic/1.0 chrome/skin/lin/ os=SunOS
+
+overlay	chrome://navigator/content/pageInfo.xul	chrome://livehttpheaders/content/PageInfoOverlay.xul
+overlay	chrome://navigator/content/pageinfo/pageInfo.xul	chrome://livehttpheaders/content/PageInfoOverlay.xul
+overlay	chrome://communicator/content/tasksOverlay.xul	chrome://livehttpheaders/content/TasksOverlay.xul
+overlay	chrome://browser/content/pageInfo.xul	chrome://livehttpheaders/content/PageInfoOverlay.xul
+overlay chrome://browser/content/pageinfo/pageInfo.xul chrome://livehttpheaders/content/PageInfoOverlay.xul 
+overlay	chrome://browser/content/browser.xul	chrome://livehttpheaders/content/TasksOverlay.xul
+
+content	livehttpheaders	jar:chrome/livehttpheaders.jar!/content/
+style chrome://global/content/customizeToolbar.xul chrome://livehttpheaders/skin/livehttpheaders.css
+style chrome://browser/content/pageinfo/pageInfo.xul chrome://livehttpheaders/skin/livehttpheaders.css
+
+skin	livehttpheaders	classic/1.0	jar:chrome/livehttpheaders.jar!/skin/
+
+locale	livehttpheaders	en-US	jar:chrome/livehttpheaders.jar!/locale/en-US/livehttpheaders/
+
+locale	livehttpheaders	fr-FR	jar:chrome/livehttpheaders.jar!/locale/fr-FR/livehttpheaders/
+
+locale	livehttpheaders	de-AT	jar:chrome/livehttpheaders.jar!/locale/de-AT/livehttpheaders/
+
+locale	livehttpheaders	es-ES	jar:chrome/livehttpheaders.jar!/locale/es-ES/livehttpheaders/
+
+locale	livehttpheaders	cs-CZ	jar:chrome/livehttpheaders.jar!/locale/cs-CZ/livehttpheaders/
+
+locale	livehttpheaders	nl-NL	jar:chrome/livehttpheaders.jar!/locale/nl-NL/livehttpheaders/
+
+locale	livehttpheaders	ru-RU	jar:chrome/livehttpheaders.jar!/locale/ru-RU/livehttpheaders/
+
+locale	livehttpheaders	da-DK	jar:chrome/livehttpheaders.jar!/locale/da-DK/livehttpheaders/
+
+locale	livehttpheaders	ja	jar:chrome/livehttpheaders.jar!/locale/ja-JP/livehttpheaders/
+
+locale	livehttpheaders	hu-HU	jar:chrome/livehttpheaders.jar!/locale/hu-HU/livehttpheaders/
+
+component {d5598f0d-5eba-43bc-b8e1-342a23bce3ea} components/nsHeaderInfo.js
+contract @livehttpheaders.org/js_headerinfo;1 {d5598f0d-5eba-43bc-b8e1-342a23bce3ea}
+category profile-after-change nsHeaderInfoModule4 @livehttpheaders.org/js_headerinfo;1
+
+content tamperdata jar:chrome/tamperdata.jar!/content/ 
+locale  tamperdata en jar:chrome/tamperdata.jar!/locale/en/
+locale  tamperdata en-US jar:chrome/tamperdata.jar!/locale/en-US/
+locale  tamperdata it-IT jar:chrome/tamperdata.jar!/locale/it-IT/
+locale  tamperdata fr-FR jar:chrome/tamperdata.jar!/locale/fr-FR/
+locale  tamperdata es-ES jar:chrome/tamperdata.jar!/locale/es-ES/
+locale  tamperdata uk-UA jar:chrome/tamperdata.jar!/locale/uk-UA/
+locale  tamperdata de-DE jar:chrome/tamperdata.jar!/locale/de-DE/
+locale  tamperdata ru-RU jar:chrome/tamperdata.jar!/locale/ru-RU/
+locale  tamperdata pt-BR jar:chrome/tamperdata.jar!/locale/pt-BR/
+locale  tamperdata pl-PL jar:chrome/tamperdata.jar!/locale/pl-PL/
+
+overlay chrome://browser/content/browser.xul chrome://tamperdata/content/TasksOverlay.xul   application={ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+overlay chrome://browser/content/browser.xul chrome://tamperdata/content/SidebarOverlay.xul application={ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+
+
+content viewsource jar:chrome/viewsource.jar!/content/
+
+overlay chrome://navigator/content/navigator.xul chrome://viewsource/content/viewsourceOverlay.xul
+overlay chrome://browser/content/browser.xul chrome://viewsource/content/viewsourceOverlay.xul
+
+style chrome://global/content/customizeToolbar.xul chrome://viewsource/skin/viewsource.css
+skin viewsource classic/1.0 jar:chrome/viewsource.jar!/skin/
+
+locale viewsource en jar:chrome/viewsource.jar!/locale/en/
+locale viewsource nl jar:chrome/viewsource.jar!/locale/nl/
+locale viewsource fr jar:chrome/viewsource.jar!/locale/fr/
+locale viewsource de jar:chrome/viewsource.jar!/locale/de/
+
+
+content	noredirect	jar:chrome/noredirect.jar!/content/
+
+overlay	chrome://browser/content/browser.xul	chrome://noredirect/content/noredirect.xul
+overlay	chrome://navigator/content/navigator.xul	chrome://noredirect/content/noredirect.xul
+
+locale	noredirect	en-US	jar:chrome/noredirect.jar!/locale/en-US/
+locale	noredirect	cs   	jar:chrome/noredirect.jar!/locale/cs/
+locale	noredirect	de   	jar:chrome/noredirect.jar!/locale/de/
+locale	noredirect	es-ES	jar:chrome/noredirect.jar!/locale/es-ES/
+locale	noredirect	fr   	jar:chrome/noredirect.jar!/locale/fr/
+locale	noredirect	it   	jar:chrome/noredirect.jar!/locale/it/
+locale	noredirect	ja   	jar:chrome/noredirect.jar!/locale/ja/
+locale	noredirect	pt-BR	jar:chrome/noredirect.jar!/locale/pt-BR/
+locale	noredirect	ru-RU	jar:chrome/noredirect.jar!/locale/ru-RU/
+locale	noredirect	sv-SE	jar:chrome/noredirect.jar!/locale/sv-SE/
+locale	noredirect	zh-CN	jar:chrome/noredirect.jar!/locale/zh-CN/
+
+component	{d11dae57-c11a-4cdd-af75-5000f0f5b3ca}	components/noredirect.js
+contract	@code.kliu.org/noredirect;5	{d11dae57-c11a-4cdd-af75-5000f0f5b3ca}
+
+

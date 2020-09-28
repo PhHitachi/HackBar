@@ -1,0 +1,299 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+/* ::::: root elements ::::: */
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+*|*:root {
+  --in-content-page-color: #737980;
+  --in-content-page-background: linear-gradient(#fff, #ededed 100px);
+  --in-content-text-color: #333;
+  --in-content-selected-text: #fff;
+  --in-content-header-border-color: #c1c1c1;
+  --in-content-box-background: #fff;
+  --in-content-box-background-odd: #f3f6fa;
+  --in-content-box-background-hover: #ebebeb;
+  --in-content-box-background-active: #dadada;
+  --in-content-box-border-color: #c1c1c1;
+  --in-content-item-hover: rgba(0,149,221,0.25);
+  --in-content-item-selected: #0095dd;
+  --in-content-border-highlight: #ff9500;
+  --in-content-border-focus: #0095dd;
+  --in-content-border-color: #c1c1c1;
+  --in-content-category-text: #c1c1c1;
+  --in-content-category-border-focus: 1px dotted #fff;
+  --in-content-category-text-selected: #f2f2f2;
+  --in-content-category-background: #424f5a;
+  --in-content-category-background-hover: #5e6972;
+  --in-content-category-background-active: #343f48;
+  --in-content-tab-color: #424f5a;
+  --in-content-link-color: #0095dd;
+  --in-content-link-color-hover: #178ce5;
+  --in-content-link-color-active: #ff9500;
+  --in-content-link-color-visited: #551a8b;
+  --in-content-primary-button-background: #0095dd;
+  --in-content-primary-button-background-hover: #008acb;
+  --in-content-primary-button-background-active: #006b9d;
+  --in-content-secondary-button-background: #fbfbfb;
+  --in-content-table-border-dark-color: #d1d1d1;
+  --in-content-table-header-background: #0095dd;
+}
+prefwindow {
+  -moz-appearance: window;
+  background-color: -moz-Dialog;
+  color: -moz-DialogText;
+  font: message-box;
+}
+groupbox {
+  -moz-appearance: none;
+  border:1px solid green;
+  margin: 15px 0 0;
+}
+
+/* tabpanels and tabs */
+xul|tabs {
+  background-color: #fff;
+}
+
+xul|tab {
+  -moz-appearance: none;
+  border-right: 1px solid green;
+  margin-top: 0;
+  padding: 4px 30px;
+  min-height: 40px;
+  color: var(--in-content-tab-color);
+  background-color: var(--in-content-page-background);
+  border-width: 0;
+  border-radius: 10px 10px 0px 0 !important;
+  transition: background-color 50ms ease 0s;
+}
+
+xul|tab:hover {
+  background-color: #eee;
+}
+
+xul|tab[selected] {
+  background-color: #dfdfdf;
+  padding-bottom: 0; /* compensate the 4px border */
+  border-bottom: 4px solid limegreen;
+}
+#Setting image{
+  height: 24px;
+  width: 24px;
+  -moz-image-region: rect(0px, 24px, 24px, 0px);
+}
+.caption_topic{
+  margin-left: 200px; 
+  font-weight:bold;
+  font-style: italic;
+}
+.text-link {
+  color: -moz-nativehyperlinktext;
+  cursor: pointer;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.text-link:-moz-focusring {
+  outline: 1px dotted;
+}
+
+.vertical{
+  margin-left:10px;
+}
+
+#ClassicTRoptionsPane[defaultfxtheme="true"] textbox{
+  min-height:22px !important;
+}
+/*Sidebar*/
+#ClassicTRoptionsPane[defaultfxtheme="true"] .ctraddontabs{
+  -moz-appearance: listbox;
+  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
+  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
+  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
+  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
+  background: -moz-Field;
+  color: -moz-FieldText;
+}
+
+#ClassicTRoptionsPane[defaultfxtheme="true"] .ctraddontabpanel{
+  -moz-appearance: none;
+  background: -moz-dialog;
+  color: -moz-FieldText;
+  border: 0px solid;
+}
+
+radio.ctraddontab {
+  -moz-appearance: none;
+  margin: 0;
+  padding: 3px 0;
+  border: solid 1px transparent;
+  padding: 10px 0 10px 0;
+}
+
+radio.ctraddontab[selected] {
+  background: #dfdfdf;
+  color: black;
+  border-left:3px solid green;
+  padding: 10px 0 10px 0;
+}
+radio.ctraddontab .radio-label-box{
+   border: none; 
+}
+radio.ctraddontab:not([selected]):hover {
+  background: -moz-CellHighlight;
+  color: -moz-CellHighlightText;
+}
+/*Hide Radio Selection*/
+radio.ctraddontab .radio-spacer-box,
+radio.ctraddontab .radio-check,
+radio.ctraddontab .radio-check-box1 {
+  visibility: collapse;
+}
+/*set width for vertical tab selection*/
+.ctraddontabs {
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-width: 200px;
+  width: 200px;
+  max-width: 200px;
+}
+
+.ctraddontabpanel {
+  height:550px;
+  max-height:550px;
+  min-width:500px;
+  width:530px;
+  max-width:800px;
+  overflow-x:auto;
+  overflow-y:auto;
+}
+
+@media screen and (max-device-height: 600px) {
+  .ctraddontabpanel {
+    height:480px;
+    max-height:480px;
+  }
+}
+
+@media screen and (max-device-height: 800px) {
+  @media (min-resolution: 1.1dppx) {
+  .ctraddontabpanel {
+    height:480px !important;
+    max-height:480px !important;
+  }
+  }
+}
+
+.ctraddontabpanel {
+  visibility: collapse;
+}
+
+.ctraddontabpanel[selected="true"] {
+  visibility: visible;
+}
+
+#ctraddon_pw_splitter {
+  visibility: collapse;
+}
+
+#ctraddon_pw_radiorestart{
+  font-weight:bold;
+  color:red;
+  border:1px solid red;
+  text-align:center;
+  background: yellow;
+}
+
+
+@media not all and (-moz-windows-classic) {
+  #ctraddon_pw_tbsep_winc,
+  #ctraddon_pw_hidetbwote_winc {
+  visibility: collapse !important;
+  }
+}
+
+#ArrowRight_1{
+  list-style-image:url('chrome://hackbar/skin/ArrowRight.png');
+  -moz-image-region: rect(0px, 24px, 22px, 0px);
+}
+#ArrowRight_2{
+  list-style-image:url('chrome://hackbar/skin/ArrowRight2.png');
+  -moz-image-region: rect(0px, 24px, 22px, 0px);
+}
+#ArrowRight_3{
+  list-style-image:url('chrome://hackbar/skin/ArrowRight3.png');
+  -moz-image-region: rect(0px, 24px, 22px, 0px);
+}
+#ArrowRight_4{
+  list-style-image:url('chrome://hackbar/skin/ArrowRight4.png');
+  -moz-image-region: rect(0px, 24px, 22px, 0px);
+}
+#ArrowRight_5{
+  list-style-image:url('chrome://hackbar/skin/ArrowRight5.png');
+  -moz-image-region: rect(0px, 24px, 22px, 0px);
+}
+#ArrowLeft_1{
+  list-style-image:url('chrome://hackbar/skin/ArrowLeft.png');
+  -moz-image-region: rect(0px, 24px, 22px, 0px);
+}
+#ArrowLeft_2{
+  list-style-image:url('chrome://hackbar/skin/ArrowLeft2.png');
+  -moz-image-region: rect(0px, 24px, 22px, 0px);
+}
+#ArrowLeft_3{
+  list-style-image:url('chrome://hackbar/skin/ArrowLeft3.png');
+  -moz-image-region: rect(0px, 24px, 22px, 0px);
+}
+#ArrowLeft_4{
+  list-style-image:url('chrome://hackbar/skin/ArrowLeft4.png');
+  -moz-image-region: rect(0px, 24px, 22px, 0px);
+}
+#ArrowLeft_5{
+  list-style-image:url('chrome://hackbar/skin/ArrowLeft5.png');
+  -moz-image-region: rect(0px, 24px, 22px, 0px);
+}
+
+.choose_custom_icon radio .radio-check{
+  display: none;
+}
+
+.choose_custom_icon radio:not([selected="true"]) .radio-label-center-box,
+.choose_custom_icon radio:not([selected="true"]) .radio-label-box{
+  border: 1px solid transparent;
+}
+
+.choose_custom_icon radio[selected="true"] .radio-label-center-box,
+.choose_custom_icon radio:not([selected="true"]):hover .radio-label-center-box,
+.choose_custom_icon radio[selected="true"] .radio-label-box,
+.choose_custom_icon radio:not([selected="true"]):hover .radio-label-box {
+  border: 1px solid Highlight !important;
+}
+
+/* empty favicon options */
+#ClassicTRoptionsPane[defaultfxtheme="true"] .choose_custom_icon{
+  background: #dfdfdf;
+  height: 30px;
+  width: 480px;
+}
+
+.detail-row{
+  -moz-box-align: center;
+  min-height: 35px;
+  line-height: 20px;
+  text-shadow: 0 1px 1px #fefffe;
+  width: 100%;
+}
+
+.detail-name{
+  font-size: 15px;
+  padding-right: 100px;
+  font-style: italic;
+}
+.detail-content{
+  font-size: 15px;
+  padding-right: 130px;
+}
+.update-settings{
+  font-size: 15px;
+}

@@ -1,0 +1,345 @@
+<!ENTITY hackbar.hackbar "HackBar">
+<!ENTITY hackbar.toolsMenuShowHide "Show/hide hackbar">
+<!ENTITY hackbar.minusTooltip "Substract 1 from current selection">
+<!ENTITY hackbar.minusLabel "">
+<!ENTITY hackbar.plusTooltip "Add 1 to current selection">
+<!ENTITY hackbar.plusToolLabel "">
+<!ENTITY hackbar.SQLMenuLabel "SQL BASICS">
+<!ENTITY hackbar.SQLMenuTooltip "SQL related shortcuts">
+<!ENTITY hackbar.mysql "MySQL">
+<!ENTITY hackbar.mysqlMenuTooltip "MySQL injection tools">
+<!ENTITY hackbar.mssql "MSSQL">
+<!ENTITY hackbar.mssqlMenuTooltip "MSSQL injection tools">
+<!ENTITY hackbar.oracle "Oracle">
+<!ENTITY hackbar.oracleMenuTooltip "Oracle injection tools">
+<!ENTITY hackbar.CommentsLabel "Replace whitespace">
+<!ENTITY hackbar.unionSelectLabel1 "INT,INT">
+<!ENTITY hackbar.unionSelectLabel2 "NULL,NULL">
+<!ENTITY hackbar.unionSelectLabel3 "(INT),(INT)">
+<!ENTITY hackbar.OrderByLabel "ORDER BY">
+<!ENTITY hackbar.spacesToCommentsLabel "/**/">
+<!ENTITY hackbar.spacesToCommentsTooltip "Convert spaces to /**/">
+<!ENTITY hackbar.spacesToCommentsLabel2 "+">
+<!ENTITY hackbar.spacesToCommentsTooltip2 "Convert spaces to +">
+<!ENTITY hackbar.spacesToCommentsLabel3 "/*&amp;a=*/">
+<!ENTITY hackbar.basicInfoLabel "Basic info column">
+<!ENTITY hackbar.basicInfoTooltip "Show basic database information, use this on a union select column with output">
+<!ENTITY hackbar.convertUtf8Label "Convert using UTF-8">
+<!ENTITY hackbar.convertUtf8Tooltip "Build a convert using utf8 statement around the selected text">
+<!ENTITY hackbar.convertLatinLabel "Convert using Latin1">
+<!ENTITY hackbar.convertLatinTooltip "Build a convert using latin1 statement around the selected text">
+<!ENTITY hackbar.SFCLabel "String.fromCharCode()">
+<!ENTITY hackbar.SFCTooltip "Selection to String.fromCharCode conversion">
+<!ENTITY hackbar.htmlCharLabel "HTML Characters">
+<!ENTITY hackbar.htmlCharTooltip "Selection to HTML characters">
+<!ENTITY hackbar.alertXSSLabel "alert(XSS) statement">
+<!ENTITY hackbar.alertXSTooltip "Simple alert statement">
+<!ENTITY hackbar.sha2Label "SHA-256">
+<!ENTITY hackbar.sha2Tooltip "Convert current selection to its SHA-256 hash">
+<!ENTITY hackbar.xssMenuLabel "XSS">
+<!ENTITY hackbar.xssMenuTooltip "XSS tools">
+<!ENTITY hackbar.encMenuLabel "ENCRYPTION">
+<!ENTITY hackbar.encMenuTooltip "Encryption tools">
+<!ENTITY hackbar.encdecMenuLabel "ENCODING">
+<!ENTITY hackbar.encdecMenuTooltip "Decoding and encoding">
+<!ENTITY hackbar.miscMenuLabel "OTHER">
+<!ENTITY hackbar.miscMenuTooltip "Miscellaneous tools">
+
+
+<!ENTITY hackbar.addslashesLabel "Addslashes">
+<!ENTITY hackbar.addslashesTooltip "Addslashes">
+
+<!ENTITY hackbar.stripslashesLabel "Stripslashes">
+<!ENTITY hackbar.stripslashesTooltip "Stripslashes">
+
+<!ENTITY hackbar.stripspacesLabel "Strip spaces">
+<!ENTITY hackbar.stripspacesTooltip "Remove all spaces from selected string">
+
+<!ENTITY hackbar.binaryencodeLabel "Binary Encode">
+<!ENTITY hackbar.binaryencodeTooltip "Binary Encode">
+
+<!ENTITY hackbar.binarydecodeLabel "Binary Decode">
+<!ENTITY hackbar.binarydecodeTooltip "Binary Decode">
+
+<!ENTITY hackbar.phpbackdoorLabel "PHP Backdoor">
+<!ENTITY hackbar.phpbackdoorTooltip "PHP Backdoor">
+<!ENTITY hackbar.phprevshellLabel "PHP Reverse Shell (Bash)">
+<!ENTITY hackbar.phprevshellTooltip "PHP Reverse Shell (Bash)">
+<!ENTITY hackbar.phprfiLabel "PHP RFI">
+<!ENTITY hackbar.phprfiTooltip "PHP RFI">
+<!ENTITY hackbar.nodejsrevshellLabel "Node.js Reverse Shell">
+<!ENTITY hackbar.nodejsrevshellTooltip "Node.js Reverse Shell">
+
+
+<!ENTITY hackbar.usefullStringsMenuLabel "Usefull strings">
+<!ENTITY hackbar.usefullStringsMenuTooltip "Usefull strings">
+<!ENTITY hackbar.pi "PI">
+<!ENTITY hackbar.piBig "Bigger PI">
+<!ENTITY hackbar.phi "PHI">
+<!ENTITY hackbar.loremIpsum "Lorem Ipsum">
+<!ENTITY hackbar.fibonacci "Fibonacci">
+<!ENTITY hackbar.lowercaseLabel "lowercase">
+<!ENTITY hackbar.lowercaseTooltip "lowercase current selecction">
+<!ENTITY hackbar.uppercaseLabel "UPPERCASE">
+<!ENTITY hackbar.uppercaseTooltip "UPPERCASE current selecction">
+<!ENTITY hackbar.randomcaseLabel "RaNdOmCaSe">
+<!ENTITY hackbar.randomcaseTooltip "RaNdOmCaSe current selecction">
+<!ENTITY hackbar.stripcustomLabel "Strip Custom">
+<!ENTITY hackbar.stripcustomTooltip "Strip Custom current selecction">
+
+<!ENTITY hackbar.reverseLabel "Reverse">
+<!ENTITY hackbar.reverseTooltip "Reverse current selecction">
+<!ENTITY hackbar.bufferOverflowTooltip "Generate a large 'A's string to try to generate errors">
+<!ENTITY hackbar.bufferOverflowLabel "Buffer overflow">
+<!ENTITY hackbar.Overflow128 "128">
+<!ENTITY hackbar.Overflow512 "512">
+<!ENTITY hackbar.Overflow1024 "1024">
+<!ENTITY hackbar.Overflow2048 "2048">
+<!ENTITY hackbar.OverflowCustom "Custom">
+<!ENTITY hackbar.md5MenuTooltip "MD5 Related functions">
+<!ENTITY hackbar.md5MenuLabel "MD5 Menu">
+<!ENTITY hackbar.md5Tooltip "Convert current selection to its MD5 hash">
+<!ENTITY hackbar.md5Label "MD5 Hash">
+<!ENTITY hackbar.md5SendToTooltip "Send MD5 to an online database">
+<!ENTITY hackbar.md5SendToLabel "Send to...">
+<!ENTITY hackbar.md5SendToRednoizeLabel "md5.rednoize.com">
+<!ENTITY hackbar.md5SendToRednoizeTooltip "Send to http://md5.rednoize.com/">
+<!ENTITY hackbar.sha1Label "SHA-1 Hash">
+<!ENTITY hackbar.sha1Tooltip "Convert current selection to its SHA-1 hash">
+<!ENTITY hackbar.sha1MenuLabel "SHA-1 Menu">
+<!ENTITY hackbar.sha1SendToTooltip "Send SHA-1 to an online database">
+<!ENTITY hackbar.sha1MenuTooltip "SHA-1 Related functions">
+<!ENTITY hackbar.sha1SendToLabel "Send to...">
+<!ENTITY hackbar.sha1SendToRednoizeLabel "md5.rednoize.com">
+<!ENTITY hackbar.sha1SendToRednoizeTooltip "Send to http://md5.rednoize.com/">
+<!ENTITY hackbar.MysqlCharTooltip "Convert current selection to MySQL CHAR() characters">
+<!ENTITY hackbar.MysqlCharLabel "MySQL CHAR()">
+<!ENTITY hackbar.MssqlCharTooltip "Convert current selection to MsSQL CHAR() characters">
+<!ENTITY hackbar.MssqlCharLabel "MsSQL CHAR()">
+<!ENTITY hackbar.OracleCharTooltip "Convert current selection to Oracle CHR() characters">
+<!ENTITY hackbar.OracleCharLabel "Oracle CHR()">
+<!ENTITY hackbar.rot13Tooltip "ROT13.. encryption">
+<!ENTITY hackbar.rot13Label "ROT13">
+<!ENTITY hackbar.UUETooltip "Base64 Encode selection">
+<!ENTITY hackbar.UUELabel "Base64 Encode">
+<!ENTITY hackbar.UUDTooltip "Base64 Decode selection">
+<!ENTITY hackbar.UUDLabel "Base64 Decode">
+
+
+
+<!ENTITY hackbar.UUETooltip "binaryencode">
+<!ENTITY hackbar.UUELabel "Binery Encode">
+<!ENTITY hackbar.UUDTooltip "binarydecode">
+<!ENTITY hackbar.UUDLabel "Binery Decode">
+
+
+
+<!ENTITY hackbar.URLETooltip "URL encode selected characters">
+<!ENTITY hackbar.URLELabel "URLencode">
+<!ENTITY hackbar.URLDTooltip "URL decode selected characters">
+<!ENTITY hackbar.URLDLabel "URLdecode">
+<!ENTITY hackbar.encodingHexEncTooltip "HEX Encoding">
+<!ENTITY hackbar.encodingHexEncLabel "HEX Encoding">
+<!ENTITY hackbar.encodingHexDecTooltip "HEX Decoding">
+<!ENTITY hackbar.encodingHexDecLabel "HEX Decoding">
+<!ENTITY hackbar.hexEncodingNoSep "String to 00ff00ff">
+<!ENTITY hackbar.hexEncodingSpace "String to 00 ff 00 ff">
+<!ENTITY hackbar.hexEncodingSemicol "String to 00:ff:00:ff">
+<!ENTITY hackbar.IntToHex "INT to HEX">
+<!ENTITY hackbar.HexToInt "HEX to INT">
+<!ENTITY hackbar.HexToChar "HEX to Characters">
+<!ENTITY hackbar.copyUrlTooltip "Copy current URL">
+<!ENTITY hackbar.loadURLLabel "Load URL">
+<!ENTITY hackbar.splitTooltip "Split current URL">
+<!ENTITY hackbar.splitLabel "Split URL">
+<!ENTITY hackbar.executeLabel "Execute ">
+<!ENTITY hackbar.executeTooltip "Execute current URL">
+<!ENTITY hackbar.removeRow "Remove row from the textfield">
+<!ENTITY hackbar.addRow "Add row to the textfield">
+<!ENTITY hackbar.WAFMenuTooltip "WAF BYPASS">
+<!ENTITY hackbar.WAFMenuLabel "WAF BYPASS">
+
+<!ENTITY  javaScriptEnable.label       "Enable JavaScript">
+<!ENTITY  javaScriptEnable.accesskey   "j">
+<!ENTITY  javaScriptToggle.label       "Switching JavaScript">
+<!ENTITY  javaScript.enabled           "JavaScript Enabled">
+<!ENTITY  javaScript.disabled          "JavaScript Deactivated">
+<!ENTITY  menu.label                   "JS Switch">
+<!ENTITY  jsSwitch.caption             "JS Switch Options">
+<!ENTITY  showInMenu.label             "Display Options in the Tools menu">
+<!ENTITY  showInStatusbar.label        "Display option in the Status column">
+
+
+
+
+<!ENTITY livehttpheaders.browser.sidebarkey "L">
+<!ENTITY livehttpheaders.menu.file "File">
+<!ENTITY livehttpheaders.menu.close "Close">
+<!ENTITY livehttpheaders.menu.saveselection "Save Selection...">
+<!ENTITY livehttpheaders.menu.saveall "Save All...">
+<!ENTITY livehttpheaders.menu.edit "Edit">
+<!ENTITY livehttpheaders.menu.copy "Copy">
+<!ENTITY livehttpheaders.menu.selectall "Select All">
+<!ENTITY livehttpheaders.menu.view "View">
+<!ENTITY livehttpheaders.menu.post "Post Data">
+<!ENTITY livehttpheaders.tabs.headers "Headers">
+<!ENTITY livehttpheaders.tabs.config "Config">
+<!ENTITY livehttpheaders.tabs.about "About">
+<!ENTITY livehttpheaders.config.usetab "Open LiveHTTPHeaders in a new tab">
+<!ENTITY livehttpheaders.config.usetab.tips "Should LiveHTTPHeaders display itself in a new tab or in a window.">
+<!ENTITY livehttpheaders.config.usestyle "Use style sheet">
+<!ENTITY livehttpheaders.config.usestyle.tips "Note: there is currently a bug that may cause this option to take 100 percent cpu.">
+<!ENTITY livehttpheaders.config.post "POST:">
+<!ENTITY livehttpheaders.config.usefilter "Filter URLs with regexp">
+<!ENTITY livehttpheaders.config.usefilter.tips "This filter applies to URL and not to each headers.">
+<!ENTITY livehttpheaders.config.useexclude "Exclude URLs with regexp">
+<!ENTITY livehttpheaders.config.useexclude.tips "This exclude applies to URL and not to each headers.">
+<!ENTITY livehttpheaders.config.addsidebar "Add LiveHTTPHeaders to sidebar">
+<!ENTITY livehttpheaders.config.addsidebar.tips "This button adds LiveHTTPHeaders to your sidebar.  To see your sideBar, press F9.">
+<!ENTITY livehttpheaders.config.addsidebar.added " successfully added to your sidebar.">
+<!ENTITY livehttpheaders.config.addsidebar.present " already exists in your sidebar.">
+<!ENTITY livehttpheaders.about.version "Version information">
+<!ENTITY livehttpheaders.about.versiontext "LiveHTTPHeaders version">
+<!ENTITY livehttpheaders.about.currentversion "0.17">
+<!ENTITY livehttpheaders.about.checkforupdate "Check for update">
+<!ENTITY livehttpheaders.about.homepage "Home page">
+<!ENTITY livehttpheaders.about.homepageurl "http://livehttpheaders.mozdev.org">
+<!ENTITY livehttpheaders.about.author "Author">
+<!ENTITY livehttpheaders.about.thanks "Thanks to">
+<!ENTITY livehttpheaders.about.suggestions "All people that made some suggestion">
+<!ENTITY livehttpheaders.live.title "Live HTTP headers">
+<!ENTITY livehttpheaders.live.headers "HTTP Headers">
+<!ENTITY livehttpheaders.live.clear "Clear">
+<!ENTITY livehttpheaders.live.close "Close">
+<!ENTITY livehttpheaders.live.capture "Capture">
+<!ENTITY livehttpheaders.live.copy "Copy">
+<!ENTITY livehttpheaders.live.selectblock "Select Block">
+<!ENTITY livehttpheaders.live.selectall "Select All">
+<!ENTITY livehttpheaders.live.saveall "Save All...">
+<!ENTITY livehttpheaders.live.replay "Replay...">
+<!ENTITY livehttpheaders.live.replay.tips "Select an URL to be able to replay it...">
+<!ENTITY livehttpheaders.live.post.tips "Configure POST content display">
+<!ENTITY livehttpheaders.live.post.none "none">
+<!ENTITY livehttpheaders.live.post.none.tips "Don&apos;t show any POST content">
+<!ENTITY livehttpheaders.live.post.fast "fast">
+<!ENTITY livehttpheaders.live.post.fast.tips "Get POST content with fast code.  Don&apos;t work with file upload.  See bug #188328.">
+<!ENTITY livehttpheaders.live.post.slow "accurate">
+<!ENTITY livehttpheaders.live.post.slow.tips "Slow but works with file upload.">
+<!ENTITY livehttpheaders.live.post.max1k "max 1k">
+<!ENTITY livehttpheaders.live.post.max1k.tips "Slow but will only get the first 1k of POST content">
+<!ENTITY livehttpheaders.replay.title "Live HTTP Replay">
+<!ENTITY livehttpheaders.replay.url "URL">
+<!ENTITY livehttpheaders.replay.headers "HTTP Headers">
+<!ENTITY livehttpheaders.replay.post "Send POST Content ?">
+<!ENTITY livehttpheaders.replay.replay "Replay">
+
+
+
+
+
+<!ENTITY tamperdata.tamperdata.title "- Ongoing requests">
+<!ENTITY tamperdata.toolbar.startTamper "Start Tamper">
+<!ENTITY tamperdata.toolbar.stopTamper "Stop Tamper">
+<!ENTITY tamperdata.command.showAll "Show All">
+<!ENTITY tamperdata.command.clear "Clear">
+<!ENTITY tamperdata.command.options "Options">
+<!ENTITY tamperdata.command.help "Help">
+<!ENTITY tamperdata.command.copy "Copy">
+<!ENTITY tamperdata.command.copy.all "Copy All">
+<!ENTITY tamperdata.command.export.xml "Export XML - Selection">
+<!ENTITY tamperdata.command.export.all.xml "Export XML - All">
+<!ENTITY tamperdata.command.show.graph "Show Graph">
+<!ENTITY tamperdata.command.details "Details">
+<!ENTITY tamperdata.command.reopen "Open in browser">
+<!ENTITY tamperdata.command.replay "Replay in browser">
+<!ENTITY tamperdata.command.viewSource "View Source">
+<!ENTITY tamperdata.command.graph.selected "Graph selected">
+<!ENTITY tamperdata.command.graph.all "Graph All">
+<!ENTITY tamperdata.label.filter "Filter">
+<!ENTITY tamperdata.tree.time "Time">
+<!ENTITY tamperdata.tree.duration "Duration">
+<!ENTITY tamperdata.tree.total.duration "Total Duration">
+<!ENTITY tamperdata.tree.size "Size">
+<!ENTITY tamperdata.tree.method "Method">
+<!ENTITY tamperdata.tree.status "Status">
+<!ENTITY tamperdata.tree.content.type "Content Type">
+<!ENTITY tamperdata.tree.url "URL">
+<!ENTITY tamperdata.tree.load.flags "Load Flags">
+<!ENTITY tamperdata.request.header.name "Request Header Name">
+<!ENTITY tamperdata.request.header.value "Request Header Value">
+<!ENTITY tamperdata.response.header.name "Response Header Name">
+<!ENTITY tamperdata.response.header.value "Response Header Value">
+<!ENTITY tamperdata.tamperPopup.title "Tamper Popup">
+<!ENTITY tamperdata.tamperPopup.request.header.name "Request Header Name">
+<!ENTITY tamperdata.tamperPopup.request.header.value "Request Header Value">
+<!ENTITY tamperdata.tamperPopup.post.parameter.name "Post Parameter Name">
+<!ENTITY tamperdata.tamperPopup.post.parameter.value "Post Parameter Value">
+<!ENTITY tamperdata.taskmenu.item "Tamper Data">
+<!ENTITY tamperdata.sidebar.title "Tamper Data">
+<!ENTITY tamperdata.tamperURI.title "- Modify URI">
+<!ENTITY tamperdata.tamperURI.base.uri "Base URI">
+<!ENTITY tamperdata.tamperURI.protocol "Protocol">
+<!ENTITY tamperdata.tamperURI.credentials "Credentials">
+<!ENTITY tamperdata.tamperURI.host "Host">
+<!ENTITY tamperdata.tamperURI.port "Port">
+<!ENTITY tamperdata.tamperURI.path "Path">
+<!ENTITY tamperdata.tamperURI.reference "Reference">
+<!ENTITY tamperdata.tamperURI.get.parameters "Get Parameters">
+<!ENTITY tamperdata.tamperURI.get.parameter.name "GET parameter name">
+<!ENTITY tamperdata.tamperURI.get.parameter.value "GET parameter value">
+<!ENTITY tamperdata.tamperOptions.title "- Options">
+<!ENTITY tamperdata.tamperOptions.tamper.images "Tamper with Images etc.">
+<!ENTITY tamperdata.tamperOptions.add.replaces "Add replaces existing">
+<!ENTITY tamperdata.tamperOptions.force.caching "Force caching on all requests (so view-source works)">
+<!ENTITY tamperdata.tamperOptions.context.menu.entries "Context Menu Entries">
+<!ENTITY tamperdata.tamperOptions.tamper.context.menu.entries "Tamper Context Menu Entries">
+<!ENTITY tamperdata.tamperOptions.new.menu.entry "New">
+<!ENTITY tamperdata.tamperOptions.delete.menu.entry "Delete">
+<!ENTITY tamperdata.tamperOptions.label "Label">
+<!ENTITY tamperdata.tamperOptions.update "Update">
+<!ENTITY tamperdata.tamperOptions.import "Import">
+<!ENTITY tamperdata.tamperOptions.export "Export">
+<!ENTITY tamperdata.tamperOptions.close "Close">
+<!ENTITY tamperdata.details.dlg.title "Tamper Details">
+<!ENTITY tamperdata.details.dlg.encoded "Encoded">
+<!ENTITY tamperdata.details.dlg.decoded "Decoded">
+<!ENTITY tamperdata.details.dlg.name.col "Name">
+<!ENTITY tamperdata.details.dlg.value.col "Value">
+<!ENTITY tamperdata.view.source.title "- View Source">
+<!ENTITY tamperdata.view.source.raw.data "Raw Data">
+<!ENTITY tamperdata.view.source.uncompressed.data "Uncompressed Data">
+
+
+<!ENTITY vs.description "Shows all source files of a webpage.">
+<!ENTITY vs.author "Author">
+<!ENTITY vs.openintabfocus "Open in new tab">
+<!ENTITY vs.openintabblur "Open in new tab (background)">
+<!ENTITY vs.openinwindow "Open in new window">
+<!ENTITY vs.copyurl "Copy URL to clipboard">
+<!ENTITY vs.selecturl "-- Select URL --">
+<!ENTITY vs.close "Close Sidebar">
+<!ENTITY vs.refresh "Refresh">
+<!ENTITY vs.selectall "Select All">
+<!ENTITY vs.copy "Copy to clipboard">
+<!ENTITY vs.name "Name">
+<!ENTITY vs.value "Value">
+<!ENTITY vs.license "License">
+<!ENTITY vs.open "Open">
+<!ENTITY vs.about "About: View Source">
+<!ENTITY vs.defaultaction "Default action...">
+<!ENTITY vs.images "Images">
+<!ENTITY vs.links "Links">
+<!ENTITY vs.responseheaders "Response headers">
+<!ENTITY vs.vs "View Source">
+<!ENTITY vs.linksource "Source">
+<!ENTITY vs.sidebar "View Source Sidebar">
+<!ENTITY vs.sidebar.accesskey "c">
+<!ENTITY vs.metadata "Meta Data">
+<!ENTITY vs.colors "Colors">
+<!ENTITY vs.color "Color">
+<!ENTITY vs.colorcsstype "CSS Property">
+<!ENTITY vs.resizertooltip "Open/close the View Source sidebar">
+<!ENTITY vs.translators "Translators">
+<!ENTITY vs.lang.fr "French">
+<!ENTITY vs.lang.de "German">
+<!ENTITY vs.email "E-mail">

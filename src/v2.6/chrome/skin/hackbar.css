@@ -1,0 +1,152 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+menu#firstMenuItem {margin-left: 88px; 
+}
+
+/* Fixed bug https://bugzilla.mozilla.org/show_bug.cgi?id=1037303 */
+toolbar#hackBarToolbar {
+ max-height: 1000px !important;
+ }
+ toolbarbutton#about{
+  background-color:grey;
+  border:1px solid #000;
+ -moz-appearance:none;
+  color:red;
+ }
+  toolbarbutton#about:hover{
+  	background-color:#000;
+  	border:1px solid #000;
+ 	-moz-appearance:none;
+  	animation: textup 0.3s infinite;
+    color: red;
+    font-family: Agency FB;
+ }
+ toolbarbutton#modified{
+  	font-family: Agency FB;
+ }
+  toolbarbutton#modified:hover{
+  	background-color:#000;
+  	border:1px solid #000;
+ 	-moz-appearance:none;
+  	animation: textup 0.3s infinite;
+    color: red;
+    font-family: Agency FB;
+ }
+ toolbarbutton#facebook{
+ 	list-style-image: url("chrome://hackbar/skin/facebook.png"); 
+ }
+ toolbarbutton#github{
+ 	list-style-image: url("chrome://hackbar/skin/github.png"); 
+ }
+ toolbarbutton#youtube{
+ 	list-style-image: url("chrome://hackbar/skin/youtube.png"); 
+ }
+ #logo{
+ 	background-image: url(img/icon.png);
+ 	background-repeat: no-repeat;
+ }
+ #logo1{
+ 	background-image: url(img/icon1.png);
+ 	background-repeat: no-repeat;
+ 	width: 100%;
+ 	height: 100%;
+ }
+ .httpheader{
+ 	background-image: url(img/Logo.png);
+ 	background-repeat: no-repeat;
+ }
+  #hackBarTargetUrl{
+  background-color:black;
+  -moz-appearance:none;
+  color:lime;
+  border-radius:10px;
+  border:3px solid green; 
+ }
+ #hackBarTargetUrlReferrerField{
+	background-color:black;
+  -moz-appearance:none;
+  color:lime;
+  border-radius:10px;
+  border:3px solid green; 
+ }
+ #hackBarTargetUrlPostField{
+	background-color:black;
+  -moz-appearance:none;
+  color:lime;
+  border-radius:10px;
+  border:3px solid green; 
+ }
+toolbarbutton.modefied{
+	background: #000;
+	border:1px solid green;
+      animation: textup 0.3s infinite;
+      color: red;
+      font-family: Agency FB;
+      }
+    @keyframes textup{ 
+      0%{ 
+        color:green; 
+        } 
+      25%{ 
+        color:yellow; 
+        } 
+      50%{ 
+        color:red; 
+        } 
+      75%{ 
+        color:pink; 
+        } 
+      100%{ 
+        color:grey; 
+        }
+    } 
+toolbarbutton#hackBarWebButton { 
+  list-style-image: url("chrome://hackbar/skin/web.png");
+  background-color:;
+  -moz-appearance:none;
+  color:;
+  border-radius:10px;
+  }
+toolbarbutton#hackBarCopyButton {   
+  list-style-image: url("chrome://hackbar/skin/nored.png");
+  background-color:;
+  -moz-appearance:none;
+  color:;
+  border-radius:10px; 
+  }
+toolbarbutton#hackBarSplitButton { 
+  list-style-image: url("chrome://hackbar/skin/split.gif");
+  background-color:;
+  -moz-appearance:none;
+  color:;
+  border-radius:10px;
+  }
+/* Button */
+toolbarbutton#hackBarToolbarButton { list-style-image: url("chrome://hackbar/skin/toolbar_button.png");}
+toolbarbutton.custombutton {-moz-image-region: rect( 0px 24px 24px  0px);}
+toolbarbutton.custombutton:hover {-moz-image-region: rect(24px 24px 48px  0px);}
+[iconsize="small"] toolbarbutton.custombutton {-moz-image-region: rect( 0px 40px 16px 24px);}
+[iconsize="small"] toolbarbutton.custombutton:hover {-moz-image-region: rect(24px 40px 40px 24px);}
+
+/* t.PRO */
+#enc{padding-left:5px;}
+toolbarbutton.hackBarQuickEncodeButton { list-style-image: url("chrome://hackbar/skin/quick1.png"); }
+toolbarbutton.hackBarQuickEncodeButton2 { list-style-image: url("chrome://hackbar/skin/quick2.png"); }
+toolbarbutton.hackBarQuickEncodeButton3 { list-style-image: url("chrome://hackbar/skin/quick3.png"); }
+toolbarbutton.facebook { list-style-image: url("chrome://hackbar/skin/facebook.png"); }
+toolbarbutton.github { list-style-image: url("chrome://hackbar/skin/github.png"); }
+toolbarbutton.youtube { list-style-image: url("chrome://hackbar/skin/youtube.png"); }
+toolbarbutton.about { list-style-image: url("chrome://hackbar/skin/about.png"); }
+toolbarbutton.livehttpheader { list-style-image: url("chrome://hackbar/skin/favicon.ico"); }
+toolbarbutton.tamperdata { list-style-image: url("chrome://hackbar/skin/tamper.ico"); }
+.quick{margin-top:5px;}
+.adjust{font-size:12px;}
+.replace{font-size:10px;margin-left:4px;}
+#separator{height:3px;border-top:1px dashed grey;margin-top:5px;margin-bottom:9px;margin-left:3px;}
+#separator2{height:3px;border-left:1px dashed grey;margin-bottom:2px;margin-left:3px;margin-right:3px;}
+#separator3{height:3px;border-left:1px dashed grey;margin-bottom:2px;margin-left:3px;}
+.replace2{margin:0px;margin-left:4px;padding:0px;height:8px;font-size:10px;padding-left:2px;}
+#replace_holder{margin-left:3px;}
+#rlabel{margin-top:7px;}
+#adjustpanel{margin-right:3px;margin-top:2px;
+}

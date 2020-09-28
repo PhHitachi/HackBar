@@ -1,0 +1,2030 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://hackbar/skin/css/overlay_prefs.css" type="text/css"?>
+
+<!DOCTYPE overlay [
+  <!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+	%browserDTD;
+  <!ENTITY % window SYSTEM "chrome://classic_theme_restorer/locale/options.dtd">
+	%window;
+]>
+
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	id="CustomizeHackbar"
+	title="Customize Hackbar v2.8"
+    type="prefwindow"
+	onload="customize.hackbar.initprefwindow()"
+	onunload="customize.hackbar.unloadprefwindow()"
+	buttons="accept"
+	defaultButton="0"
+	autosize="true"
+	resizable="yes"
+	ondialogaccept="return true"
+	persist="screenX screenY sizemode"
+>
+<script type="application/x-javascript" src="blacklist.js"/>
+<script type="application/x-javascript" src="customize.js"/>
+<script type="application/x-javascript" src="update.js"/>
+<script type="application/x-javascript" src="chrome://mozapps/content/extensions/extensions.js"/>
+
+<prefpane id="ClassicTRoptionsPane" flex="1">
+    <preferences>
+    	<preference id="hackbar_dios_1"      name="extensions.hackbar.Dios.Dios 1" type="string"/>
+		<preference id="hackbar_dios_2"      name="extensions.hackbar.Dios.Dios 2" type="string"/>
+		<preference id="hackbar_dios_3"      name="extensions.hackbar.Dios.Dios 3" type="string"/>
+		<preference id="hackbar_dios_4"      name="extensions.hackbar.Dios.Dios 4" type="string"/>
+		<preference id="hackbar_dios_5"      name="extensions.hackbar.Dios.Dios 5" type="string"/>
+		<preference id="hackbar_dios_6"      name="extensions.hackbar.Dios.Dios 6" type="string"/>
+		<preference id="hackbar_dios_7"      name="extensions.hackbar.Dios.Dios 7" type="string"/>
+		<preference id="hackbar_dios_8"      name="extensions.hackbar.Dios.Dios 8" type="string"/>
+		<preference id="hackbar_dios_9"      name="extensions.hackbar.Dios.Dios 9" type="string"/>
+		<preference id="hackbar_dios_10"     name="extensions.hackbar.Dios.Dios 10" type="string"/>
+
+		<preference id="hackbar_query_1"      name="extensions.hackbar.query.query 1" type="string"/>
+		<preference id="hackbar_query_2"      name="extensions.hackbar.query.query 2" type="string"/>
+		<preference id="hackbar_query_3"      name="extensions.hackbar.query.query 3" type="string"/>
+		<preference id="hackbar_query_4"      name="extensions.hackbar.query.query 4" type="string"/>
+		<preference id="hackbar_query_5"      name="extensions.hackbar.query.query 5" type="string"/>
+		<preference id="hackbar_query_6"      name="extensions.hackbar.query.query 6" type="string"/>
+		<preference id="hackbar_query_7"      name="extensions.hackbar.query.query 7" type="string"/>
+		<preference id="hackbar_query_8"      name="extensions.hackbar.query.query 8" type="string"/>
+		<preference id="hackbar_query_9"      name="extensions.hackbar.query.query 9" type="string"/>
+		<preference id="hackbar_query_10"     name="extensions.hackbar.query.query 10" type="string"/>
+
+    	<preference id="hackbar_dios_name_1"      name="extensions.hackbar.Name Dios.Dios 1" type="string"/>
+		<preference id="hackbar_dios_name_2"      name="extensions.hackbar.Name Dios.Dios 2" type="string"/>
+		<preference id="hackbar_dios_name_3"      name="extensions.hackbar.Name Dios.Dios 3" type="string"/>
+		<preference id="hackbar_dios_name_4"      name="extensions.hackbar.Name Dios.Dios 4" type="string"/>
+		<preference id="hackbar_dios_name_5"      name="extensions.hackbar.Name Dios.Dios 5" type="string"/>
+		<preference id="hackbar_dios_name_6"      name="extensions.hackbar.Name Dios.Dios 6" type="string"/>
+		<preference id="hackbar_dios_name_7"      name="extensions.hackbar.Name Dios.Dios 7" type="string"/>
+		<preference id="hackbar_dios_name_8"      name="extensions.hackbar.Name Dios.Dios 8" type="string"/>
+		<preference id="hackbar_dios_name_9"      name="extensions.hackbar.Name Dios.Dios 9" type="string"/>
+		<preference id="hackbar_dios_name_10"     name="extensions.hackbar.Name Dios.Dios 10" type="string"/>
+
+    	<preference id="hackbar_query_name_1"      name="extensions.hackbar.Name Query.query 1" type="string"/>
+		<preference id="hackbar_query_name_2"      name="extensions.hackbar.Name Query.query 2" type="string"/>
+		<preference id="hackbar_query_name_3"      name="extensions.hackbar.Name Query.query 3" type="string"/>
+		<preference id="hackbar_query_name_4"      name="extensions.hackbar.Name Query.query 4" type="string"/>
+		<preference id="hackbar_query_name_5"      name="extensions.hackbar.Name Query.query 5" type="string"/>
+		<preference id="hackbar_query_name_6"      name="extensions.hackbar.Name Query.query 6" type="string"/>
+		<preference id="hackbar_query_name_7"      name="extensions.hackbar.Name Query.query 7" type="string"/>
+		<preference id="hackbar_query_name_8"      name="extensions.hackbar.Name Query.query 8" type="string"/>
+		<preference id="hackbar_query_name_9"      name="extensions.hackbar.Name Query.query 9" type="string"/>
+		<preference id="hackbar_query_name_10"     name="extensions.hackbar.Name Query.query 10" type="string"/>
+
+		<preference id="hackbar_XSS_1"      name="extensions.hackbar.XSS.XSS 1" type="string"/>
+		<preference id="hackbar_XSS_2"      name="extensions.hackbar.XSS.XSS 2" type="string"/>
+		<preference id="hackbar_XSS_3"      name="extensions.hackbar.XSS.XSS 3" type="string"/>
+		<preference id="hackbar_XSS_4"      name="extensions.hackbar.XSS.XSS 4" type="string"/>
+		<preference id="hackbar_XSS_5"      name="extensions.hackbar.XSS.XSS 5" type="string"/>
+		<preference id="hackbar_XSS_6"      name="extensions.hackbar.XSS.XSS 6" type="string"/>
+		<preference id="hackbar_XSS_7"      name="extensions.hackbar.XSS.XSS 7" type="string"/>
+		<preference id="hackbar_XSS_8"      name="extensions.hackbar.XSS.XSS 8" type="string"/>
+		<preference id="hackbar_XSS_9"      name="extensions.hackbar.XSS.XSS 9" type="string"/>
+		<preference id="hackbar_XSS_10"     name="extensions.hackbar.XSS.XSS 10" type="string"/>
+		<!--  Hackbar Main Field-->
+		
+		<preference id="hackbar_HUcolor"   name="extensions.hackbar.hackBarTargetUrl.color" type="string" class="style"/>
+		<preference id="hackbar_HUbg"      name="extensions.hackbar.hackBarTargetUrl.backgroundColor" type="string" class="style"/>
+		<preference id="hackbar_HUbT"      name="extensions.hackbar.hackBarTargetUrl.borderTop" type="string" class="style"/>
+		<preference id="hackbar_HUbL"      name="extensions.hackbar.hackBarTargetUrl.borderLeft" type="string" class="style"/>
+		<preference id="hackbar_HUbB"      name="extensions.hackbar.hackBarTargetUrl.borderBottom" type="string" class="style"/>
+		<preference id="hackbar_HUbR"      name="extensions.hackbar.hackBarTargetUrl.borderRight" type="string" class="style"/>
+		<preference id="hackbar_HUbS"      name="extensions.hackbar.hackBarTargetUrl.borderSize" type="string" class="style"/>
+		<preference id="hackbar_HUbRs"     name="extensions.hackbar.hackBarTargetUrl.borderRadius" type="string" class="style"/>
+		<preference id="hackbar_HUfS"      name="extensions.hackbar.hackBarTargetUrl.fontSize" type="string" class="style"/>
+		<preference id="hackbar_HUfF"      name="extensions.hackbar.hackBarTargetUrl.font-family" type="string" class="style"/>
+		<preference id="hackbar_HUfW"      name="extensions.hackbar.hackBarTargetUrl.bold" type="bool" class="style"/>
+		<preference id="hackbar_HUfSl"     name="extensions.hackbar.hackBarTargetUrl.italic" type="bool" class="style"/>
+		<preference id=""     			   name="extensions.hackbar.hackBarTargetUrl.font-weight" type="string" class="style"/>
+		<preference id=""    			   name="extensions.hackbar.hackBarTargetUrl.font-style" type="string" class="style"/>
+		<!-- POST_DATA Field -->
+		<preference id="hackbar_PFcolor"   name="extensions.hackbar.hackBarTargetUrlPostField.color" type="string" class="style"/>
+		<preference id="hackbar_PFbg"      name="extensions.hackbar.hackBarTargetUrlPostField.backgroundColor" type="string" class="style"/>
+		<preference id="hackbar_PFbT"      name="extensions.hackbar.hackBarTargetUrlPostField.borderTop" type="string" class="style"/>
+		<preference id="hackbar_PFbL"      name="extensions.hackbar.hackBarTargetUrlPostField.borderLeft" type="string" class="style"/>
+		<preference id="hackbar_PFbB"      name="extensions.hackbar.hackBarTargetUrlPostField.borderBottom" type="string" class="style"/>
+		<preference id="hackbar_PFbR"      name="extensions.hackbar.hackBarTargetUrlPostField.borderRight" type="string" class="style"/>
+		<preference id="hackbar_PFbS"      name="extensions.hackbar.hackBarTargetUrlPostField.borderSize" type="string" class="style"/>
+		<preference id="hackbar_PFbRs"     name="extensions.hackbar.hackBarTargetUrlPostField.borderRadius" type="string" class="style"/>
+		<preference id="hackbar_PFfS"      name="extensions.hackbar.hackBarTargetUrlPostField.fontSize" type="string" class="style"/>
+		<preference id="hackbar_PFfF"      name="extensions.hackbar.hackBarTargetUrlPostField.font-family" type="string" class="style"/>
+		<preference id="hackbar_PFfW"      name="extensions.hackbar.hackBarTargetUrlPostField.bold" type="bool" class="style"/>
+		<preference id="hackbar_PFfSl"     name="extensions.hackbar.hackBarTargetUrlPostField.italic" type="bool" class="style"/>
+		<preference id=""     			   name="extensions.hackbar.hackBarTargetUrlPostField.font-weight" type="string" class="style"/>
+		<preference id=""                  name="extensions.hackbar.hackBarTargetUrlPostField.font-style" type="string" class="style"/>
+
+		<!-- Refferrer Field -->
+		<preference id="hackbar_RFcolor"   name="extensions.hackbar.hackBarTargetUrlReferrerField.color" type="string" class="style"/>
+		<preference id="hackbar_RFbg"      name="extensions.hackbar.hackBarTargetUrlReferrerField.backgroundColor" class="style" type="string"/>
+		<preference id="hackbar_RFbT"      name="extensions.hackbar.hackBarTargetUrlReferrerField.borderTop" class="style" type="string"/>
+		<preference id="hackbar_RFbL"      name="extensions.hackbar.hackBarTargetUrlReferrerField.borderLeft" class="style" type="string"/>
+		<preference id="hackbar_RFbB"      name="extensions.hackbar.hackBarTargetUrlReferrerField.borderBottom" class="style" type="string"/>
+		<preference id="hackbar_RFbR"      name="extensions.hackbar.hackBarTargetUrlReferrerField.borderRight" class="style" type="string"/>
+		<preference id="hackbar_RFbS"      name="extensions.hackbar.hackBarTargetUrlReferrerField.borderSize" class="style" type="string"/>
+		<preference id="hackbar_RFbRs"     name="extensions.hackbar.hackBarTargetUrlReferrerField.borderRadius" class="style" type="string"/>
+		<preference id="hackbar_RFfS"      name="extensions.hackbar.hackBarTargetUrlReferrerField.fontSize" class="style" type="string"/>
+		<preference id="hackbar_RFfF"      name="extensions.hackbar.hackBarTargetUrlReferrerField.font-family" class="style" type="string"/>
+		<preference id="hackbar_RFfW"      name="extensions.hackbar.hackBarTargetUrlReferrerField.bold" type="bool" class="style"/>
+		<preference id="hackbar_RFfSl"     name="extensions.hackbar.hackBarTargetUrlReferrerField.italic" type="bool" class="style"/>
+		<preference id=""					name="extensions.hackbar.hackBarTargetUrlReferrerField.font-weight" type="string" class="style"/>
+		<preference id=""     				name="extensions.hackbar.hackBarTargetUrlReferrerField.font-style" type="string" class="style"/>
+		<!-- Cookie Field -->
+		<preference id="hackbar_CFcolor"   name="extensions.hackbar.hackBarTargetUrlCookieField.color" class="style" type="string"/>
+		<preference id="hackbar_CFbg"      name="extensions.hackbar.hackBarTargetUrlCookieField.backgroundColor" class="style" type="string"/>
+		<preference id="hackbar_CFbT"      name="extensions.hackbar.hackBarTargetUrlCookieField.borderTop" class="style" type="string"/>
+		<preference id="hackbar_CFbL"      name="extensions.hackbar.hackBarTargetUrlCookieField.borderLeft" class="style" type="string"/>
+		<preference id="hackbar_CFbB"      name="extensions.hackbar.hackBarTargetUrlCookieField.borderBottom" class="style" type="string"/>
+		<preference id="hackbar_CFbR"      name="extensions.hackbar.hackBarTargetUrlCookieField.borderRight" class="style" type="string"/>
+		<preference id="hackbar_CFbS"      name="extensions.hackbar.hackBarTargetUrlCookieField.borderSize" class="style" type="string"/>
+		<preference id="hackbar_CFbRs"     name="extensions.hackbar.hackBarTargetUrlCookieField.borderRadius" class="style" type="string"/>
+		<preference id="hackbar_CFfS"      name="extensions.hackbar.hackBarTargetUrlCookieField.fontSize" class="style" type="string"/>
+		<preference id="hackbar_CFfF"      name="extensions.hackbar.hackBarTargetUrlCookieField.font-family" class="style" type="string"/>
+		<preference id="hackbar_CFfW"      name="extensions.hackbar.hackBarTargetUrlCookieField.bold" type="bool" class="style"/>
+		<preference id="hackbar_CFfSl"     name="extensions.hackbar.hackBarTargetUrlCookieField.italic" type="bool" class="style"/>
+		<preference id=""     			   name="extensions.hackbar.hackBarTargetUrlCookieField.font-weight" type="string" class="style"/>
+		<preference id=""     			   name="extensions.hackbar.hackBarTargetUrlCookieField.font-style" type="string" class="style"/>
+
+    	<preference id="hackbar_MPPbg"      name="extensions.hackbar.menupopup.backgroundColor" class="style" type="string"/>
+		<preference id="hackbar_MPPbT"      name="extensions.hackbar.menupopup.borderTop" type="string" class="style"/>
+		<preference id="hackbar_MPPbL"      name="extensions.hackbar.menupopup.borderLeft" type="string" class="style"/>
+		<preference id="hackbar_MPPbB"      name="extensions.hackbar.menupopup.borderBottom" type="string" class="style"/>
+		<preference id="hackbar_MPPbR"      name="extensions.hackbar.menupopup.borderRight" type="string" class="style"/>
+		<preference id="hackbar_MPPbS"      name="extensions.hackbar.menupopup.borderSize" type="string" class="style"/>
+		<preference id="hackbar_MPPbRs"     name="extensions.hackbar.menupopup.borderRadius" type="string" class="style"/>
+		<preference id="hackbar_MPPO"       name="extensions.hackbar.menupopup.opacity" type="string" class="style"/>
+
+		<preference id="hackbar_MPPcolor"   name="extensions.hackbar.menuitem.color" type="string" class="style"/>
+		<preference id="hackbar_MPPfF"      name="extensions.hackbar.menuitem.font-family" type="string" class="style"/>
+		<preference id="hackbar_MPPfS"      name="extensions.hackbar.menuitem.fontSize" type="string" class="style"/>
+		<preference id="hackbar_MPPfW"    	name="extensions.hackbar.menuitem.bold" type="bool"/>
+		<preference id="hackbar_MPPfSl"     name="extensions.hackbar.menuitem.italic" type="bool"/>
+		<preference id=""     				name="extensions.hackbar.menuitem.font-weight" type="string" class="style"/>
+		<preference id=""     				name="extensions.hackbar.menuitem.font-style" type="string" class="style"/>
+		
+		<preference id="hackbar_TBBtncolor"   name="extensions.hackbar.toolbarbutton.color" type="string" class="style"/>
+		<preference id="hackbar_TBBtnfS"      name="extensions.hackbar.toolbarbutton.fontSize" type="string" class="style"/>
+		<preference id="hackbar_TBBtnfF"      name="extensions.hackbar.toolbarbutton.font-family" type="string" class="style"/>
+		<preference id="hackbar_TBBfW"    	  name="extensions.hackbar.toolbarbutton.bold" type="bool" class="style"/>
+		<preference id="hackbar_TBBfSl"       name="extensions.hackbar.toolbarbutton.italic" type="bool" class="style"/>
+		<preference id=""     				  name="extensions.hackbar.toolbarbutton.font-weight" type="string" class="style"/>
+		<preference id=""                     name="extensions.hackbar.toolbarbutton.font-style" type="string" class="style"/>
+
+		<preference id="hackbar_TBbg"      name="extensions.hackbar.toolbar.backgroundColor" type="string" class="style"/>
+		<preference id="hackbar_TBbT"      name="extensions.hackbar.toolbar.borderTop" type="string" class="style"/>
+		<preference id="hackbar_TBbL"      name="extensions.hackbar.toolbar.borderLeft" type="string" class="style"/>
+		<preference id="hackbar_TBbB"      name="extensions.hackbar.toolbar.borderBottom" type="string" class="style"/>
+		<preference id="hackbar_TBbR"      name="extensions.hackbar.toolbar.borderRight" type="string" class="style"/>
+		<preference id="hackbar_TBbS"      name="extensions.hackbar.toolbar.borderSize" type="string" class="style"/>
+		<preference id="hackbar_TBbRs"     name="extensions.hackbar.toolbar.borderRadius" type="string" class="style"/>
+
+		<preference id="hackbar_rs1color"   name="extensions.hackbar.rstring1.color" type="string" class="style"/>
+		<preference id="hackbar_rs1bg"      name="extensions.hackbar.rstring1.backgroundColor" type="string" class="style"/>
+		<preference id="hackbar_rs1bT"      name="extensions.hackbar.rstring1.borderTop" type="string" class="style"/>
+		<preference id="hackbar_rs1bL"      name="extensions.hackbar.rstring1.borderLeft" type="string" class="style"/>
+		<preference id="hackbar_rs1bB"      name="extensions.hackbar.rstring1.borderBottom" type="string" class="style"/>
+		<preference id="hackbar_rs1bR"      name="extensions.hackbar.rstring1.borderRight" type="string" class="style"/>
+		<preference id="hackbar_rs1bS"      name="extensions.hackbar.rstring1.borderSize" type="string" class="style"/>
+		<preference id="hackbar_rs1bRs"     name="extensions.hackbar.rstring1.borderRadius" type="string" class="style"/>
+		<preference id="hackbar_rs1fS"      name="extensions.hackbar.rstring1.fontSize" type="string" class="style"/>
+		<preference id="hackbar_rs1fF"      name="extensions.hackbar.rstring1.font-family" type="string" class="style"/>
+		<preference id="hackbar_rs1fW"    	name="extensions.hackbar.rstring1.bold" type="bool" class="style"/>
+		<preference id="hackbar_rs1fSl"     name="extensions.hackbar.rstring1.italic" type="bool" class="style"/>
+		<preference id=""     			    name="extensions.hackbar.rstring1.font-weight" type="string" class="style"/>
+		<preference id=""     			    name="extensions.hackbar.rstring1.font-style" type="string" class="style"/>
+
+		<preference id="hackbar_rs2color"   name="extensions.hackbar.rstring2.color" type="string" class="style"/>
+		<preference id="hackbar_rs2bg"      name="extensions.hackbar.rstring2.backgroundColor" type="string" class="style"/>
+		<preference id="hackbar_rs2bT"      name="extensions.hackbar.rstring2.borderTop" type="string" class="style"/>
+		<preference id="hackbar_rs2bL"      name="extensions.hackbar.rstring2.borderLeft" type="string" class="style"/>
+		<preference id="hackbar_rs2bB"      name="extensions.hackbar.rstring2.borderBottom" type="string" class="style"/>
+		<preference id="hackbar_rs2bR"      name="extensions.hackbar.rstring2.borderRight" type="string" class="style"/>
+		<preference id="hackbar_rs2bS"      name="extensions.hackbar.rstring2.borderSize" type="string" class="style"/>
+		<preference id="hackbar_rs2bRs"     name="extensions.hackbar.rstring2.borderRadius" type="string" class="style"/>
+		<preference id="hackbar_rs2fS"      name="extensions.hackbar.rstring2.fontSize" type="string" class="style"/>
+		<preference id="hackbar_rs2fF"      name="extensions.hackbar.rstring2.font-family" type="string" class="style"/>
+		<preference id="hackbar_rs2fW"    	name="extensions.hackbar.rstring2.bold" type="bool" class="style"/>
+		<preference id="hackbar_rs2fSl"     name="extensions.hackbar.rstring2.italic" type="bool" class="style"/>
+		<preference id=""                   name="extensions.hackbar.rstring2.font-weight" type="string" class="style"/>
+		<preference id=""                   name="extensions.hackbar.rstring2.font-style" type="string" class="style"/>
+		
+		<preference id="hackbar_LUcolor"   name="extensions.hackbar.loadURL.color" type="string" class="style"/>
+		<preference id="hackbar_LUbg"      name="extensions.hackbar.loadURL.backgroundColor" type="string" class="style"/>
+		<preference id="hackbar_LUbT"      name="extensions.hackbar.loadURL.borderTop" type="string" class="style"/>
+		<preference id="hackbar_LUbL"      name="extensions.hackbar.loadURL.borderLeft" type="string" class="style"/>
+		<preference id="hackbar_LUbB"      name="extensions.hackbar.loadURL.borderBottom" type="string" class="style"/>
+		<preference id="hackbar_LUbR"      name="extensions.hackbar.loadURL.borderRight" type="string" class="style"/>
+		<preference id="hackbar_LUbS"      name="extensions.hackbar.loadURL.borderSize" type="string" class="style"/>
+		<preference id="hackbar_LUbRs"     name="extensions.hackbar.loadURL.borderRadius" type="string" class="style"/>
+		<preference id="hackbar_LUfS"      name="extensions.hackbar.loadURL.fontSize" type="string" class="style"/>
+		<preference id="hackbar_LUfF"      name="extensions.hackbar.loadURL.font-family" type="string" class="style"/>
+		<preference id="hackbar_LUfW"      name="extensions.hackbar.loadURL.bold" type="bool" class="style"/>
+		<preference id="hackbar_LUfSl"     name="extensions.hackbar.loadURL.italic" type="bool" class="style"/>
+		<preference id=""                  name="extensions.hackbar.loadURL.font-weight" type="string" class="style"/>
+		<preference id=""                  name="extensions.hackbar.loadURL.font-style" type="string" class="style"/>
+		<preference id="hackbar_LU_icon"   name="extensions.hackbar.loadURL.LoadIcon" type="string" class="style"/>
+		
+		<preference id="hackbar_SUcolor"   name="extensions.hackbar.SplitURL.color" type="string" class="style"/>
+		<preference id="hackbar_SUbg"      name="extensions.hackbar.SplitURL.backgroundColor" type="string" class="style"/>
+		<preference id="hackbar_SUbT"      name="extensions.hackbar.SplitURL.borderTop" type="string" class="style"/>
+		<preference id="hackbar_SUbL"      name="extensions.hackbar.SplitURL.borderLeft" type="string" class="style"/>
+		<preference id="hackbar_SUbB"      name="extensions.hackbar.SplitURL.borderBottom" type="string" class="style"/>
+		<preference id="hackbar_SUbR"      name="extensions.hackbar.SplitURL.borderRight" type="string"  class="style"/>
+		<preference id="hackbar_SUbS"      name="extensions.hackbar.SplitURL.borderSize" type="string" class="style"/>
+		<preference id="hackbar_SUbRs"     name="extensions.hackbar.SplitURL.borderRadius" type="string"  class="style"/>
+		<preference id="hackbar_SUfS"      name="extensions.hackbar.SplitURL.fontSize" type="string" class="style"/>
+		<preference id="hackbar_SUfF"      name="extensions.hackbar.SplitURL.font-family" type="string" class="style"/>
+		<preference id="hackbar_SUfW"      name="extensions.hackbar.SplitURL.bold" type="bool" class="style"/>
+		<preference id="hackbar_SUfSl"     name="extensions.hackbar.SplitURL.italic" type="bool" class="style"/>
+		<preference id=""     				name="extensions.hackbar.SplitURL.font-weight" type="string" class="style"/>
+		<preference id=""     				name="extensions.hackbar.SplitURL.font-style" type="string" class="style"/>
+		<preference id="hackbar_SU_icon"   name="extensions.hackbar.SplitURL.SplitIcon" type="string" class="style"/>
+		
+		<preference id="hackbar_EUcolor"   name="extensions.hackbar.ExcuteURL.color" type="string"  class="style"/>
+		<preference id="hackbar_EUbg"      name="extensions.hackbar.ExcuteURL.backgroundColor" type="string" class="style"/>
+		<preference id="hackbar_EUbT"      name="extensions.hackbar.ExcuteURL.borderTop" type="string" class="style"/>
+		<preference id="hackbar_EUbL"      name="extensions.hackbar.ExcuteURL.borderLeft" type="string" class="style"/>
+		<preference id="hackbar_EUbB"      name="extensions.hackbar.ExcuteURL.borderBottom" type="string" class="style"/>
+		<preference id="hackbar_EUbR"      name="extensions.hackbar.ExcuteURL.borderRight" type="string" class="style"/>
+		<preference id="hackbar_EUbS"      name="extensions.hackbar.ExcuteURL.borderSize" type="string" class="style"/>
+		<preference id="hackbar_EUbRs"     name="extensions.hackbar.ExcuteURL.borderRadius" type="string" class="style"/>
+		<preference id="hackbar_EUfS"      name="extensions.hackbar.ExcuteURL.fontSize" type="string" class="style"/>
+		<preference id="hackbar_EUfF"      name="extensions.hackbar.ExcuteURL.font-family" type="string"  class="style"/>
+		<preference id="hackbar_EUfW"      name="extensions.hackbar.ExcuteURL.bold" type="bool" class="style"/>
+		<preference id="hackbar_EUfSl"     name="extensions.hackbar.ExcuteURL.italic" type="bool" class="style"/>
+		<preference id=""				   name="extensions.hackbar.ExcuteURL.font-weight" type="string" class="style"/>
+		<preference id=""     			   name="extensions.hackbar.ExcuteURL.font-style" type="string" class="style"/>
+		<preference id="hackbar_EU_icon"   name="extensions.hackbar.ExcuteURL.ExcuteIcon" type="string" class="style"/>
+		
+		<preference id="hackbar_Slncolor"   name="extensions.hackbar.Selection.color" type="string" class="style"/>
+		<preference id="hackbar_Slnbg"      name="extensions.hackbar.Selection.backgroundColor" type="string" class="style"/>
+		<preference id="hackbar_SlnbT"      name="extensions.hackbar.Selection.borderTop" type="string" class="style"/>
+		<preference id="hackbar_SlnbL"      name="extensions.hackbar.Selection.borderLeft" type="string" class="style"/>
+		<preference id="hackbar_SlnbB"      name="extensions.hackbar.Selection.borderBottom" type="string" class="style"/>
+		<preference id="hackbar_SlnbR"      name="extensions.hackbar.Selection.borderRight" type="string"  class="style"/>
+		<preference id="hackbar_SlnbS"      name="extensions.hackbar.Selection.borderSize" type="string" class="style"/>
+		<preference id="hackbar_SlnbRs"     name="extensions.hackbar.Selection.borderRadius" type="string" class="style"/>
+		<preference id="hackbar_SlnfS"      name="extensions.hackbar.Selection.fontSize" type="string"  class="style"/>
+		<preference id="hackbar_SlnfF"      name="extensions.hackbar.Selection.font-family" type="string"  class="style"/>
+		<preference id="hackbar_SlnfW"      name="extensions.hackbar.Selection.bold" type="bool" class="style"/>
+		<preference id="hackbar_SlnfSl"     name="extensions.hackbar.Selection.italic" type="bool" class="style"/>
+		<preference id=""     				name="extensions.hackbar.Selection.font-weight" type="string" class="style"/>
+		<preference id=""     				name="extensions.hackbar.Selection.font-style" type="string" class="style"/>
+
+		<preference id="hackbar_Sln_mIcon"     name="extensions.hackbar.Selection.MinusIcon" type="string" class="style"/>
+		<preference id="hackbar_Sln_pIcon"     name="extensions.hackbar.Selection.PlusIcon" type="string" class="style"/>
+			
+		<preference id="hackbar_cstm_img_HexAL"			name="extensions.hackbar.Arrow.HexArrowLeft"	 type="string" class="style"/>
+		<preference id="hackbar_cstm_img_HexAR"			name="extensions.hackbar.Arrow.HexArrowRight"	 type="string" class="style"/>	
+		<preference id="hackbar_cstm_img_URLAL"			name="extensions.hackbar.Arrow.URLArrowLeft"	 type="string" class="style"/>
+		<preference id="hackbar_cstm_img_URLAR"			name="extensions.hackbar.Arrow.URLArrowRight"	 type="string" class="style"/>	
+		<preference id="hackbar_cstm_img_BASE64AL"		name="extensions.hackbar.Arrow.BASE64ArrowLeft"	 type="string" class="style"/>
+		<preference id="hackbar_cstm_img_BASE64AR"		name="extensions.hackbar.Arrow.BASE64ArrowRight" type="string" class="style"/>
+		<preference id="hackbar_cstm_img_BINARYAL"		name="extensions.hackbar.Arrow.BINARYArrowLeft"	 type="string" class="style"/>
+		<preference id="hackbar_cstm_img_BINARYAR"		name="extensions.hackbar.Arrow.BINARYArrowRight" type="string" class="style"/>
+		<preference id="hackbar_cstm_img_replace"		name="extensions.hackbar.Arrow.Replace"			 type="string" class="style"/>
+		<preference id="hackbar_cstm_img_BASE64Spacer"	name="extensions.hackbar.Arrow.BASE64Spacer"	 type="string" class="style"/>
+
+		<preference id="SQL_BASIC"		name="extensions.hackbar.visibility.SQL BASIC"			type="bool"/>
+		<preference id="UNION_BASED"	name="extensions.hackbar.visibility.UNION BASED"		type="bool"/>	
+		<preference id="OUT_FILE"		name="extensions.hackbar.visibility.OUT FILE"			type="bool"/>	
+		<preference id="WAF_BASED"		name="extensions.hackbar.visibility.WAF BASED"			type="bool"/>	
+		<preference id="CUSTOM"			name="extensions.hackbar.visibility.CUSTOM"				type="bool"/>	
+		<preference id="ERROR_DOUBLE"	name="extensions.hackbar.visibility.ERROR/DOUBLE QUERY"	type="bool"/>	
+		<preference id="TOOLS"			name="extensions.hackbar.visibility.TOOLS"				type="bool"/>	
+		<preference id="WAF_BYPASS"		name="extensions.hackbar.visibility.WAF BYPASS"			type="bool"/>
+		<preference id="LDAP_FUZZ"		name="extensions.hackbar.visibility.LDAP FUZZ"			type="bool"/>	
+		<preference id="ENCODING"		name="extensions.hackbar.visibility.ENCODING"			type="bool"/>	
+		<preference id="0xHTML"			name="extensions.hackbar.visibility.0xHTML"				type="bool"/>	
+		<preference id="ENCRYPTION"		name="extensions.hackbar.visibility.ENCRYPTION"			type="bool"/>	
+		<preference id="OTHERS"			name="extensions.hackbar.visibility.OTHERS"				type="bool"/>	
+		<preference id="XSS"			name="extensions.hackbar.visibility.XSS"				type="bool"/>	
+		<preference id="LFI"			name="extensions.hackbar.visibility.LFI"				type="bool"/>	
+		<preference id="LINKS"			name="extensions.hackbar.visibility.LINKS"				type="bool"/>	
+		<preference id="ReplaceField"	name="extensions.hackbar.visibility.ReplaceField"		type="bool"/>	
+		<preference id="NoStyle" 		name="addons.style.enabled"								type="bool"/>
+
+		<preference id="Show-Update" 			name="extensions.hackbar.Show Update"			type="bool"/>	
+		<preference id="starts" 				name="extensions.hackbar.starts"				type="bool"/>	
+		<preference id="Enable-notifications" 	name="extensions.hackbar.Enable notifications"	type="bool"/>	
+		<preference id="Always-notify" 			name="extensions.hackbar.Always notify"			type="bool"/>	
+		<preference id="Release-notes" 			name="extensions.hackbar.Release notes"			type="bool"/>
+
+		<preference id="download-available" 	name="app.download.available"					type="string"/>
+		<preference id="available-date" 		name="app.update.available.date"				type="string"/>
+		<preference id="name-version" 			name="app.update.name.version"					type="string"/>
+		<preference id="Status" 				name="app.update.status"						type="string"/>
+	</preferences>
+
+
+<hbox flex="1" orient="horizontal" id="ctrPrefBox">
+  
+  <radiogroup id="CtrRadioGroup" class="ctraddontabs" orient="vertical" flex="1"
+	value="Custom-Queries" oncommand="customize.hackbar.onCtrPanelSelect();">
+
+	  <radio value="Custom-Queries" 			label="Custom Queries"			class="ctraddontab"/>
+	  <radio value="Hackbar-Field" 				label="Hackbar Field"			class="ctraddontab"/>
+	  <radio value="Menu-Popup"					label="Menu Popup"				class="ctraddontab"/>
+	  <radio value="Post-Data"					label="Post Data" 				class="ctraddontab"/>
+	  <radio value="Referrer-field" 			label="Referrer"				class="ctraddontab"/>
+	  <radio value="Cookie-field" 				label="Cookie"					class="ctraddontab"/>
+	  <radio value="Custom-Arrow-Icon"			label="Custom Arrow Icon"		class="ctraddontab"/>
+	  <radio value="Replace-Field"				label="Replace Field"			class="ctraddontab"/>
+	  <radio value="Toolbar-button"				label="Toolbar button"			class="ctraddontab"/>
+	  <radio value="Main-button"				label="Main button"				class="ctraddontab"/>
+	  <radio value="Advanced-options"			label="Advanced"				class="ctraddontab"/>
+	  <radio value="View-Update"				label="View Update"				class="ctraddontab"/>
+	  <label value=""/>
+  </radiogroup>
+  <splitter id="ctraddon_pw_splitter"/>
+
+  <deck id="ctrPrefBoxContainer">
+
+	<box class="ctraddontabpanel" orient="vertical" id="Custom-Queries">
+
+	  <tabbox flex="1" >
+		<tabs id="custom_queries_tabs">
+			<tab label="Dios" />
+			<tab label="XSS" />
+			<tab label="Others"/>
+		</tabs>
+
+		<tabpanels id="ctraddon_pw_tabs_maintabpanels" flex="1">
+		  <tabpanel orient="vertical">
+			  <groupbox>
+				<caption class="caption_topic" label="Dios"/>
+					<hbox>
+						<label value="Dios 1"/>
+					</hbox>
+					<hbox>
+						<textbox preference="hackbar_dios_name_1" size="25"/>
+						<textbox preference="hackbar_dios_1" size="60"/>
+					</hbox>	
+						<hbox><label value="Dios 2"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_dios_name_2" size="25"/>
+						<textbox preference="hackbar_dios_2" size="60"/>
+					</hbox>	
+						<hbox><label value="Dios 3"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_dios_name_3" size="25"/>
+						<textbox preference="hackbar_dios_3" size="60"/>
+					</hbox>	
+						<hbox><label value="Dios 4"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_dios_name_4" size="25"/>
+						<textbox preference="hackbar_dios_4" size="60"/>
+					</hbox>	
+						<hbox><label value="Dios 5"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_dios_name_5" size="25"/>
+						<textbox preference="hackbar_dios_5" size="60"/>
+					</hbox>	
+						<hbox><label value="Dios 6"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_dios_name_6" size="25"/>
+						<textbox preference="hackbar_dios_6" size="60"/>
+					</hbox>	
+						<hbox><label value="Dios 7"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_dios_name_7" size="25"/>
+						<textbox preference="hackbar_dios_7" size="60"/>
+					</hbox>	
+						<hbox><label value="Dios 8"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_dios_name_8" size="25"/>
+						<textbox preference="hackbar_dios_8" size="60"/>
+					</hbox>	
+						<hbox><label value="Dios 9"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_dios_name_9" size="25"/>
+						<textbox preference="hackbar_dios_9" size="60"/>
+					</hbox>	
+						<hbox><label value="Dios 10"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_dios_name_10" size="25"/>
+						<textbox preference="hackbar_dios_10" size="60"/>
+					</hbox>	
+			  </groupbox>
+		  </tabpanel>
+		  
+		  <tabpanel orient="vertical">
+			  
+			  <groupbox>
+			  	<caption class="caption_topic" label="XSS" />
+						<hbox><label value="XSS 1"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_XSS_1" size="90"/>
+					</hbox>	
+						<hbox><label value="XSS 2"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_XSS_2" size="90"/>
+					</hbox>	
+						<hbox><label value="XSS 3"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_XSS_3" size="90"/>
+					</hbox>	
+						<hbox><label value="XSS 4"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_XSS_4" size="90"/>
+					</hbox>	
+						<hbox><label value="XSS 5"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_XSS_5" size="90"/>
+					</hbox>	
+						<hbox><label value="XSS 6"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_XSS_6" size="90"/>
+					</hbox>	
+						<hbox><label value="XSS 7"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_XSS_7" size="90"/>
+					</hbox>	
+						<hbox><label value="XSS 8"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_XSS_8" size="90"/>
+					</hbox>	
+						<hbox><label value="XSS 9"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_XSS_9" size="90"/>
+					</hbox>	
+						<hbox><label value="XSS 10"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_XSS_10" size="90"/>
+					</hbox>	
+			  </groupbox>
+
+		  </tabpanel>
+		  
+		  <tabpanel orient="vertical">
+			  <groupbox>
+			  		<caption class="caption_topic" label="Queries" />
+						<hbox><label value="Query 1"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_query_name_1" size="25"/>
+						<textbox preference="hackbar_query_1" size="60"/>
+					</hbox>	
+						<hbox><label value="Query 2"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_query_name_2" size="25"/>
+						<textbox preference="hackbar_query_2" size="60"/>
+					</hbox>	
+						<hbox><label value="Query 3"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_query_name_3" size="25"/>
+						<textbox preference="hackbar_query_3" size="60"/>
+					</hbox>	
+						<hbox><label value="Query 4"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_query_name_4" size="25"/>
+						<textbox preference="hackbar_query_4" size="60"/>
+					</hbox>	
+						<hbox><label value="Query 5"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_query_name_5" size="25"/>
+						<textbox preference="hackbar_query_5" size="60"/>
+					</hbox>	
+						<hbox><label value="Query 6"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_query_name_6" size="25"/>
+						<textbox preference="hackbar_query_6" size="60"/>
+					</hbox>	
+						<hbox><label value="Query 7"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_query_name_7" size="25"/>
+						<textbox preference="hackbar_query_7" size="60"/>
+					</hbox>	
+						<hbox><label value="Query 8"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_query_name_8" size="25"/>
+						<textbox preference="hackbar_query_8" size="60"/>
+					</hbox>	
+						<hbox><label value="Query 9"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_query_name_9" size="25"/>
+						<textbox preference="hackbar_query_9" size="60"/>
+					</hbox>	
+						<hbox><label value="Query 10"/></hbox>
+					<hbox>
+						<textbox preference="hackbar_query_name_10" size="25"/>
+						<textbox preference="hackbar_query_10" size="60"/>
+					</hbox>	
+			  </groupbox>
+		  </tabpanel>
+		</tabpanels>
+	  </tabbox>
+	</box>
+	<box class="ctraddontabpanel" orient="vertical" id="Hackbar-Field">
+		<vbox class="vertical">
+		<groupbox>
+			<caption class="caption_topic" label="Hackbar Main field" />
+	  		<description></description>
+			  <description class="ctraddon_tabcolorlabel">Color names, hexcodes, rgb(a) and hsl(a) values are supported.</description>
+			  <description class="text-link"  onclick="if(event.button == 0) { window.close(); customize.hackbar.openLink('https://developer.mozilla.org/docs/Web/CSS/color_value/'); };">blue - #0000ff - rgba(0,0,255,0.8) - hsla(240,100%,50%,0.8)</description>
+			  <description class="ctraddon_tabcolorlabel">Inputs won't be validated!</description>
+			  <label value=""/>
+			<hbox id="Hackbar_Main_field">
+			  	<grid>
+					<rows>
+						<row>
+							<label value="Text-Color"/>
+							<textbox preference="hackbar_HUcolor" class="tabactcolorbox" id="hackbar_HUcolor"/>
+							<colorpicker preference="hackbar_HUcolor" type="button" class="tabactcolorbox" id="hackbar_HUcolor"/>
+						</row>
+						<row>
+							<label value="Background"/>
+							<textbox preference="hackbar_HUbg" class="tabactcolorbox" id="hackbar_HUbg"/>
+							<colorpicker preference="hackbar_HUbg" type="button" class="tabactcolorbox" id="hackbar_HUbg"/>
+						</row>
+						<row>
+							<label value="Border-Top"/>
+							<textbox preference="hackbar_HUbT" class="tabactcolorbox" id="hackbar_HUbT"/>
+							<colorpicker preference="hackbar_HUbT" type="button" class="tabactcolorbox" id="hackbar_HUbT"/>
+						</row>
+						<row>
+							<label value="Border-Left"/>
+							<textbox preference="hackbar_HUbL" class="tabactcolorbox" id="hackbar_HUbL"/>
+							<colorpicker preference="hackbar_HUbL" type="button" class="tabactcolorbox" id="hackbar_HUbL"/>
+						</row>
+						<row>
+							<label value="Border-Bottom"/>
+							<textbox preference="hackbar_HUbB" class="tabactcolorbox" id="hackbar_HUbB"/>
+							<colorpicker preference="hackbar_HUbB" type="button" class="tabactcolorbox" id="hackbar_HUbB"/>
+						</row>
+						<row>
+							<label value="Border-Right"/>
+							<textbox preference="hackbar_HUbR" class="tabactcolorbox" id="hackbar_HUbR"/>
+							<colorpicker preference="hackbar_HUbR" type="button" class="tabactcolorbox" id="hackbar_HUbR"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>		
+			<hbox>	
+				<grid>
+					<rows>
+						<row>	
+							<label value="Border-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_HUbS" type="number" min="0" max="10" id="hackbar_HUbS"/>
+							<label value="px (3px default)"/>
+						</row>
+						<row>	
+							<label value="Border-Radius" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_HUbRs" type="number" min="0" max="10" id="hackbar_HUbRs"/>
+							<label value="px (10px default)"/>
+						</row>
+						<row>	
+							<label value="Font-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_HUfS" type="number" min="12" max="72" id="hackbar_HUfS"/>
+							<label value="px (15px default)"/>
+						</row>
+					</rows>
+				</grid>
+			</hbox>
+			<hbox>
+				<grid>
+					<rows>
+						<row>
+							<label value="Font-Family" style="margin-right:20px"/>
+							<textbox preference="hackbar_HUfF" class="tabactcolorbox" id="hackbar_HUfF"/>
+						</row>
+						<row>
+							<checkbox id="bold" label="Bold" preference="hackbar_HUfW" style="font-weight:bold;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('hackBarTargetUrl.font-weight','bold');}else{customize.hackbar.prefs.setCharPref('hackBarTargetUrl.font-weight','none');}"/>
+							<checkbox id="italic" label="Italic" preference="hackbar_HUfSl" style="font-style:italic;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('hackBarTargetUrl.font-style','italic');}else{customize.hackbar.prefs.setCharPref('hackBarTargetUrl.font-style','none');}"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>
+	  	</groupbox>
+	  	<groupbox>
+			<hbox>
+				<image src="chrome://hackbar/content/img/hackbarfield.png"/>
+				<label value=""/>
+			</hbox>
+		</groupbox>	
+	</vbox>
+	</box>
+	<box class="ctraddontabpanel" orient="vertical" id="Menu-Popup">
+		<vbox class="vertical">
+			<groupbox>
+			<caption class="caption_topic" label="Hackbar Menupopup"  />
+	  		<description></description>
+			  <description class="ctraddon_tabcolorlabel">Color names, hexcodes, rgb(a) and hsl(a) values are supported.</description>
+			  <description class="text-link"  onclick="if(event.button == 0) { window.close(); customize.hackbar.openLink('https://developer.mozilla.org/docs/Web/CSS/color_value/'); };">blue - #0000ff - rgba(0,0,255,0.8) - hsla(240,100%,50%,0.8)</description>
+			  <description class="ctraddon_tabcolorlabel">Inputs won't be validated!</description>
+			  <label value=""/>
+			<hbox id="Hackbar_Menupopup">
+			  	<grid>
+					<rows>
+						<row>
+							<label value="Text-Color"/>
+							<textbox preference="hackbar_MPPcolor" class="tabactcolorbox" id="hackbar_MPPcolor"/>
+							<colorpicker preference="hackbar_MPPcolor" type="button" class="tabactcolorbox" id="hackbar_MPPcolor"/>
+						</row>
+						<row>
+							<label value="Background"/>
+							<textbox preference="hackbar_MPPbg" class="tabactcolorbox" id="hackbar_MPPbg"/>
+							<colorpicker preference="hackbar_MPPbg" type="button" class="tabactcolorbox" id="hackbar_MPPbg"/>
+						</row>
+						<row>
+							<label value="Border-Top"/>
+							<textbox preference="hackbar_MPPbT" class="tabactcolorbox" id="hackbar_MPPbT"/>
+							<colorpicker preference="hackbar_MPPbT" type="button" class="tabactcolorbox" id="hackbar_MPPbT"/>
+						</row>
+						<row>
+							<label value="Border-Left"/>
+							<textbox preference="hackbar_MPPbL" class="tabactcolorbox" id="hackbar_MPPbL"/>
+							<colorpicker preference="hackbar_MPPbL" type="button" class="tabactcolorbox" id="hackbar_MPPbL"/>
+						</row>
+						<row>
+							<label value="Border-Bottom"/>
+							<textbox preference="hackbar_MPPbB" class="tabactcolorbox" id="hackbar_MPPbB"/>
+							<colorpicker preference="hackbar_MPPbB" type="button" class="tabactcolorbox" id="hackbar_MPPbB"/>
+						</row>
+						<row>
+							<label value="Border-Right"/>
+							<textbox preference="hackbar_MPPbR" class="tabactcolorbox" id="hackbar_MPPbR"/>
+							<colorpicker preference="hackbar_MPPbR" type="button" class="tabactcolorbox" id="hackbar_MPPbR"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>		
+			<hbox>	
+				<grid>
+					<rows>
+						<row>	
+							<label value="Border-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_MPPbS" type="number" min="0" max="10"/>
+							<label value="px (3px default)"/>
+						</row>
+						<row>	
+							<label value="Border-Radius" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_MPPbRs" type="number" min="0" max="10"/>
+							<label value="px (10px default)"/>
+						</row>
+						<row>	
+							<label value="Font-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_MPPfS" type="number" min="12" max="72"/>
+							<label value="px (15px default)"/>
+						</row>
+						<row>	
+							<label value="Opacity" style="margin-right:10px"/>
+							<textbox size="2" preference="hackbar_MPPO"/>
+							<label value="(0.9 default)"/>
+						</row>
+					</rows>
+				</grid>
+			</hbox>
+			<hbox>
+				<grid>
+					<rows>
+						<row>
+							<label value="Font-Family" style="margin-right:20px"/>
+							<textbox preference="hackbar_MPPfF" class="tabactcolorbox" />
+						</row>
+						<row>
+							<checkbox id="bold" label="Bold" preference="hackbar_MPPfW" style="font-weight:bold;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('menuitem.font-weight','bold');}else{customize.hackbar.prefs.setCharPref('menuitem.font-weight','none');}"/>
+							<checkbox id="italic" label="Italic" preference="hackbar_MPPfSl" style="font-style:italic;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('menuitem.font-style','italic');}else{customize.hackbar.prefs.setCharPref('menuitem.font-style','none');}"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>	
+	  	</groupbox>
+	  	<groupbox>
+			<hbox>
+				<image src="chrome://hackbar/content/img/menupopup.png"/>
+				<label value=""/>
+			</hbox>
+		</groupbox>
+		</vbox>
+	</box>
+
+<!--- CyberCTR customization settings -->	
+	<box class="ctraddontabpanel" orient="vertical" id="Post-Data">
+	<vbox class="vertical">
+	  <groupbox>
+		<caption class="caption_topic" label="Post Data Field"  />		
+			<hbox>	
+			  	<grid>
+					<rows>
+						<row>
+							<label value="Text-Color"/>
+							<textbox preference="hackbar_PFcolor" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_PFcolor" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Background"/>
+							<textbox preference="hackbar_PFbg" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_PFbg" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Top"/>
+							<textbox preference="hackbar_PFbT" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_PFbT" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Left"/>
+							<textbox preference="hackbar_PFbL" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_PFbL" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Bottom"/>
+							<textbox preference="hackbar_PFbB" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_PFbB" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Right"/>
+							<textbox preference="hackbar_PFbR" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_PFbR" type="button" class="tabactcolorbox" id=""/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>		
+			<hbox>	
+				<grid>
+					<rows>
+						<row>	
+							<label value="Border-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_PFbS" type="number" min="0" max="10"/>
+							<label value="px (3px default)"/>
+						</row>
+						<row>	
+							<label value="Border-Radius" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_PFbRs" type="number" min="0" max="10"/>
+							<label value="px (10px default)"/>
+						</row>
+						<row>	
+							<label value="Font-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_PFfS" type="number" min="12" max="72"/>
+							<label value="px (15px default)"/>
+						</row>
+					</rows>
+				</grid>
+			</hbox>
+			<hbox>
+				<grid>
+					<rows>
+						<row>
+							<label value="Font-Family" style="margin-right:20px"/>
+							<textbox preference="hackbar_PFfF" class="tabactcolorbox" />
+						</row>
+						<row>
+							<checkbox id="bold" label="Bold" preference="hackbar_PFfW" style="font-weight:bold;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('hackBarTargetUrlPostField.font-weight','bold');}else{customize.hackbar.prefs.setCharPref('hackBarTargetUrlPostField.font-weight','none');}"/>
+							<checkbox id="italic" label="Italic" preference="hackbar_PFfSl" style="font-style:italic;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('hackBarTargetUrlPostField.font-style','italic');}else{customize.hackbar.prefs.setCharPref('hackBarTargetUrlPostField.font-style','none');}"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>	
+		</groupbox>
+		<groupbox>
+			<hbox>
+				<image src="chrome://hackbar/content/img/postfield.png"/>
+			</hbox>
+		</groupbox>
+	</vbox>
+	</box>
+<!--- CyberCTR customization settings -->
+	<box class="ctraddontabpanel" orient="vertical" id="Referrer-field">
+		<vbox class="vertical">
+		<groupbox>
+			<caption class="caption_topic" label="Refferer field" id="Refferer_field"/>
+			<hbox>	
+			  	<grid>
+					<rows>
+						<row>
+							<label value="Text-Color"/>
+							<textbox preference="hackbar_RFcolor" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_RFcolor" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Background"/>
+							<textbox preference="hackbar_RFbg" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_RFbg" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Top"/>
+							<textbox preference="hackbar_RFbT" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_RFbT" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Left"/>
+							<textbox preference="hackbar_RFbL" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_RFbL" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Bottom"/>
+							<textbox preference="hackbar_RFbB" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_RFbB" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Right"/>
+							<textbox preference="hackbar_RFbR" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_RFbR" type="button" class="tabactcolorbox" id=""/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>		
+			<hbox>	
+				<grid>
+					<rows>
+						<row>	
+							<label value="Border-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_RFbS" type="number" min="0" max="10"/>
+							<label value="px (3px default)"/>
+						</row>
+						<row>	
+							<label value="Border-Radius" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_RFbRs" type="number" min="0" max="10"/>
+							<label value="px (10px default)"/>
+						</row>
+						<row>	
+							<label value="Font-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_RFfS" type="number" min="12" max="72"/>
+							<label value="px (15px default)"/>
+						</row>
+					</rows>
+				</grid>
+			</hbox>
+			<hbox>
+				<grid>
+					<rows>
+						<row>
+							<label value="Font-Family" style="margin-right:20px"/>
+							<textbox preference="hackbar_RFfF" class="tabactcolorbox" />
+						</row>
+						<row>
+							<checkbox id="bold" label="Bold" preference="hackbar_RFfW" style="font-weight:bold;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('hackBarTargetUrlReferrerField.font-weight','bold');}else{customize.hackbar.prefs.setCharPref('hackBarTargetUrlReferrerField.font-weight','none');}"/>
+							<checkbox id="italic" label="Italic" preference="hackbar_RFfSl" style="font-style:italic;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('hackBarTargetUrlReferrerField.font-style','italic');}else{customize.hackbar.prefs.setCharPref('hackBarTargetUrlReferrerField.font-style','none');}"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>	
+	  	</groupbox>
+	  	<groupbox>
+			<hbox>
+				<image src="chrome://hackbar/content/img/referrerfield.png"/>
+			</hbox>
+		</groupbox>
+		</vbox>
+	</box>
+	<box class="ctraddontabpanel" orient="vertical" id="Cookie-field">
+		<vbox class="vertical">
+		<groupbox>
+			<caption class="caption_topic" label="Cookie field"  />
+			<hbox>	
+			  	<grid>
+					<rows>
+						<row>
+							<label value="Text-Color"/>
+							<textbox preference="hackbar_CFcolor" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_CFcolor" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Background"/>
+							<textbox preference="hackbar_CFbg" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_CFbg" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Top"/>
+							<textbox preference="hackbar_CFbT" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_CFbT" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Left"/>
+							<textbox preference="hackbar_CFbL" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_CFbL" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Bottom"/>
+							<textbox preference="hackbar_CFbB" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_CFbB" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Right"/>
+							<textbox preference="hackbar_CFbR" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_CFbR" type="button" class="tabactcolorbox" id=""/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>		
+			<hbox>	
+				<grid>
+					<rows>
+						<row>	
+							<label value="Border-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_CFbS" type="number" min="0" max="10"/>
+							<label value="px (3px default)"/>
+						</row>
+						<row>	
+							<label value="Border-Radius" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_CFbRs" type="number" min="0" max="10"/>
+							<label value="px (10px default)"/>
+						</row>
+						<row>	
+							<label value="Font-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_CFfS" type="number" min="12" max="72"/>
+							<label value="px (15px default)"/>
+						</row>
+					</rows>
+				</grid>
+			</hbox>
+			<hbox>
+				<grid>
+					<rows>
+						<row>
+							<label value="Font-Family" style="margin-right:20px"/>
+							<textbox preference="hackbar_CFfF" class="tabactcolorbox" />
+						</row>
+						<row>
+							<checkbox id="bold" label="Bold" preference="hackbar_CFfW" style="font-weight:bold;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('hackBarTargetUrlCookieField.font-weight','bold');}else{customize.hackbar.prefs.setCharPref('hackBarTargetUrlCookieField.font-weight','none');}"/>
+							<checkbox id="italic" label="Italic" preference="hackbar_CFfSl" style="font-style:italic;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('hackBarTargetUrlCookieField.font-style','italic');}else{customize.hackbar.prefs.setCharPref('hackBarTargetUrlCookieField.font-style','none');}"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>	
+	  	</groupbox>
+	  	<groupbox>
+			<hbox>
+				<image src="chrome://hackbar/content/img/CookieField.png"/>
+			</hbox>
+		</groupbox>
+		</vbox>
+	</box>
+	
+	<box class="ctraddontabpanel" orient="vertical" id="Custom-Arrow-Icon">
+
+	  <tabbox flex="1">
+		<tabs id="ctraddon_pw_locationbar_tabs">
+			<tab label="Page 1"/>
+			<tab label="Page 2"/>
+		</tabs>
+
+		<tabpanels id="ctraddon_pw_locationbar_tabpanels" flex="1">
+
+		  <tabpanel orient="vertical">
+		  	<description></description>
+			  <description class="ctraddon_tabcolorlabel">Note: Image Size 24 x 22 default size in this hackbar.</description>
+			  <description class="text-link"  onclick="if(event.button == 0) { window.close(); customize.hackbar.openLink('http://www.resize-photos.com/'); };">Resize your image</description>
+			  <description class="ctraddon_tabcolorlabel">Inputs won't be validated!</description>
+			  <label value=""/>
+		<groupbox>
+			<caption class="caption_topic" label="Hex Arrow Left" />
+		<hbox>
+			<label value="Enter url or file path" id="ctraddon_ctabouthome_custbgl"/>
+		</hbox>
+		<hbox>
+			<textbox id="HexArrowLeft" preference="hackbar_cstm_img_HexAL" size="auto" flex="1" placeholder="Enter image url|path"/>
+			<button class="custom_bg_browse" label="Browse" oncommand="customize.hackbar.selectImage('HexArrowLeft', 'Arrow');"/>
+		</hbox>
+		</groupbox>
+		<groupbox>
+			<caption class="caption_topic" label="Hex Arrow Right" />
+		<hbox>
+			<label value="Enter url or file path" id="ctraddon_ctabouthome_custbgl"/>
+		</hbox>
+		<hbox>
+			<textbox id="HexArrowRight" preference="hackbar_cstm_img_HexAR" size="auto" flex="1" placeholder="Enter image url|path"/>
+			<button class="custom_bg_browse" label="Browse" oncommand="customize.hackbar.selectImage('HexArrowRight', 'Arrow');"/>
+		</hbox>
+		</groupbox>
+		<groupbox>
+			<caption class="caption_topic" label="URL Arrow Right" />
+		<hbox>
+			<label value="Enter url or file path" id="ctraddon_ctabouthome_custbgl"/>
+		</hbox>
+		<hbox>
+			<textbox id="URLArrowLeft" preference="hackbar_cstm_img_URLAL" size="auto" flex="1" placeholder="Enter image url|path"/>
+			<button class="custom_bg_browse" label="Browse" oncommand="customize.hackbar.selectImage('URLArrowLeft', 'Arrow');"/>
+		</hbox>
+		</groupbox>
+		<groupbox>
+			<caption class="caption_topic" label="URL Arrow Right" />
+		<hbox>
+			<label value="Enter url or file path" id="ctraddon_ctabouthome_custbgl"/>
+		</hbox>
+		<hbox>
+		  	<textbox id="URLArrowRight" preference="hackbar_cstm_img_URLAR" size="auto" flex="1" placeholder="Enter image url|path"/>
+			<button class="custom_bg_browse" label="Browse" oncommand="customize.hackbar.selectImage('URLArrowRight', 'Arrow');"/>
+		</hbox>
+		</groupbox>
+		<groupbox>
+			<caption class="caption_topic" label="BASE64 Arrow Right" />
+		<hbox>
+			<label value="Enter url or file path" id="ctraddon_ctabouthome_custbgl"/>
+		</hbox>
+		<hbox>
+			<textbox id="BASE64ArrowLeft" preference="hackbar_cstm_img_BASE64AL" size="auto" flex="1" placeholder="Enter image url|path"/>
+			<button class="custom_bg_browse" label="Browse" oncommand="customize.hackbar.selectImage('BASE64ArrowLeft', 'Arrow');"/>
+		</hbox>
+		</groupbox>
+		<groupbox>
+			<caption class="caption_topic" label="BASE64 Arrow Right" />
+		<hbox>
+			<label value="Enter url or file path" id="ctraddon_ctabouthome_custbgl"/>
+		</hbox>
+		<hbox>
+		  	<textbox id="BASE64ArrowRight" preference="hackbar_cstm_img_BASE64AR" size="auto" flex="1" placeholder="Enter image url|path"/>
+			<button class="custom_bg_browse" label="Browse" oncommand="customize.hackbar.selectImage('BASE64ArrowRight', 'Arrow');"/>
+		</hbox>
+		</groupbox>
+		<groupbox>
+			<caption class="caption_topic" label="BINARY Arrow Right" />
+		<hbox>
+			<label value="Enter url or file path" id="ctraddon_ctabouthome_custbgl"/>
+		</hbox>
+		<hbox>
+		  	<textbox id="BINARYArrowLeft" preference="hackbar_cstm_img_BINARYAL" size="auto" flex="1" placeholder="Enter image url|path"/>
+			<button class="custom_bg_browse" label="Browse" oncommand="customize.hackbar.selectImage('BINARYArrowLeft', 'Arrow');"/>
+		</hbox>
+		</groupbox>
+		<groupbox>
+			<caption class="caption_topic" label="BINARY Arrow Right" />
+		<hbox>
+			<label value="Enter url or file path" id="ctraddon_ctabouthome_custbgl"/>
+		</hbox>
+		<hbox>
+		  	<textbox id="BINARYArrowRight"  preference="hackbar_cstm_img_BINARYAR" size="auto" flex="1" placeholder="Enter image url|path"/>
+			<button class="custom_bg_browse" label="Browse" oncommand="customize.hackbar.selectImage('BINARYArrowRight', 'Arrow');"/>
+		</hbox>
+		</groupbox>
+		<groupbox>
+			<caption class="caption_topic" label="Replace Arrow" />
+		<hbox>
+			<label value="Enter url or file path" id="ctraddon_ctabouthome_custbgl"/>
+		</hbox>
+		<hbox>
+		  	<textbox id="Replace" preference="hackbar_cstm_img_replace" size="auto" flex="1" placeholder="Enter image url|path"/>
+			<button class="custom_bg_browse" label="Browse" oncommand="customize.hackbar.selectImage('Replace', 'Arrow');"/>
+		</hbox>
+		</groupbox>
+		<groupbox>
+			<caption class="caption_topic" label="BASE64Spacer Arrow" />
+		<hbox>
+			<label value="Enter url or file path" id="ctraddon_ctabouthome_custbgl"/>
+		</hbox>
+		<hbox>
+		  	<textbox id="BASE64Spacer" preference="hackbar_cstm_img_BASE64Spacer" size="auto" flex="1" placeholder="Enter image url|path"/>
+			<button class="custom_bg_browse" label="Browse" oncommand="customize.hackbar.selectImage('BASE64Spacer', 'Arrow');"/>
+		</hbox>
+		</groupbox>
+			<groupbox>
+				 <hbox>
+					<image src="chrome://hackbar/content/img/arrow.png"/>
+					<label value=""/>
+
+				  </hbox>
+			</groupbox>
+		  </tabpanel>
+		  <tabpanel orient="vertical">
+			<groupbox>
+				<caption class="caption_topic" label="Hex Arrow Left" />
+				<hbox align="center">
+					<radiogroup preference="hackbar_cstm_img_HexAL" class="choose_custom_icon" orient="horizontal" value="">
+						<radio value="chrome://hackbar/skin/ArrowLeft.png"	id="ArrowLeft_1" />
+						<radio value="chrome://hackbar/skin/ArrowLeft2.png"	id="ArrowLeft_2" />
+						<radio value="chrome://hackbar/skin/ArrowLeft3.png"	id="ArrowLeft_3" />
+						<radio value="chrome://hackbar/skin/ArrowLeft4.png"	id="ArrowLeft_4" />
+						<radio value="chrome://hackbar/skin/ArrowLeft5.png"	id="ArrowLeft_5" />
+					</radiogroup>
+				</hbox>
+			</groupbox>
+			<groupbox>
+				<caption class="caption_topic" label="Hex Arrow Right" />
+					<hbox align="center">
+					  <radiogroup preference="hackbar_cstm_img_HexAR" class="choose_custom_icon" orient="horizontal" value="">
+						<radio value="chrome://hackbar/skin/ArrowRight.png"		id="ArrowRight_1" />
+						<radio value="chrome://hackbar/skin/ArrowRight2.png"	id="ArrowRight_2" />
+						<radio value="chrome://hackbar/skin/ArrowRight3.png"	id="ArrowRight_3" />
+						<radio value="chrome://hackbar/skin/ArrowRight4.png"	id="ArrowRight_4" />
+						<radio value="chrome://hackbar/skin/ArrowRight5.png"	id="ArrowRight_5" />
+					</radiogroup>
+					</hbox>
+			</groupbox>
+			<groupbox>
+				<caption class="caption_topic" label="URL Arrow Left" />
+					<hbox align="center">
+					  <radiogroup preference="hackbar_cstm_img_URLAL" class="choose_custom_icon" orient="horizontal" value="">
+						<radio value="chrome://hackbar/skin/ArrowLeft.png"	id="ArrowLeft_1" />
+						<radio value="chrome://hackbar/skin/ArrowLeft2.png"	id="ArrowLeft_2" />
+						<radio value="chrome://hackbar/skin/ArrowLeft3.png"	id="ArrowLeft_3" />
+						<radio value="chrome://hackbar/skin/ArrowLeft4.png"	id="ArrowLeft_4" />
+						<radio value="chrome://hackbar/skin/ArrowLeft5.png"	id="ArrowLeft_5" />
+					</radiogroup>
+				</hbox>
+			</groupbox>
+			<groupbox>
+				<caption class="caption_topic" label="URL Arrow Right" />
+				<hbox align="center">
+					<radiogroup preference="hackbar_cstm_img_URLAR" class="choose_custom_icon" orient="horizontal" value="">
+						<radio value="chrome://hackbar/skin/ArrowRight.png"		id="ArrowRight_1" />
+						<radio value="chrome://hackbar/skin/ArrowRight2.png"	id="ArrowRight_2" />
+						<radio value="chrome://hackbar/skin/ArrowRight3.png"	id="ArrowRight_3" />
+						<radio value="chrome://hackbar/skin/ArrowRight4.png"	id="ArrowRight_4" />
+						<radio value="chrome://hackbar/skin/ArrowRight5.png"	id="ArrowRight_5" />
+					</radiogroup>
+				</hbox>
+			</groupbox>
+			<groupbox>
+				<caption class="caption_topic" label="BASE64 Arrow Left" />
+					<hbox align="center">
+					  <radiogroup preference="hackbar_cstm_img_BASE64AL" class="choose_custom_icon" orient="horizontal" value="">
+						<radio value="chrome://hackbar/skin/ArrowLeft.png"	id="ArrowLeft_1" />
+						<radio value="chrome://hackbar/skin/ArrowLeft2.png"	id="ArrowLeft_2" />
+						<radio value="chrome://hackbar/skin/ArrowLeft3.png"	id="ArrowLeft_3" />
+						<radio value="chrome://hackbar/skin/ArrowLeft4.png"	id="ArrowLeft_4" />
+						<radio value="chrome://hackbar/skin/ArrowLeft5.png"	id="ArrowLeft_5" />
+					</radiogroup>
+				</hbox>
+			</groupbox>
+			<groupbox>
+				<caption class="caption_topic" label="BASE64 Arrow Right" />
+				<hbox align="center">
+					  <radiogroup preference="hackbar_cstm_img_BASE64AR" class="choose_custom_icon" orient="horizontal" value="">
+						<radio value="chrome://hackbar/skin/ArrowRight.png"		id="ArrowRight_1" />
+						<radio value="chrome://hackbar/skin/ArrowRight2.png"	id="ArrowRight_2" />
+						<radio value="chrome://hackbar/skin/ArrowRight3.png"	id="ArrowRight_3" />
+						<radio value="chrome://hackbar/skin/ArrowRight4.png"	id="ArrowRight_4" />
+						<radio value="chrome://hackbar/skin/ArrowRight5.png"	id="ArrowRight_5" />
+					</radiogroup>
+				</hbox>
+			</groupbox>
+			<groupbox>
+				<caption class="caption_topic" label="BINARY Arrow Left" />
+				<hbox align="center">
+					<radiogroup preference="hackbar_cstm_img_BINARYAL" class="choose_custom_icon" orient="horizontal" value="">
+						<radio value="chrome://hackbar/skin/ArrowLeft.png"	id="ArrowLeft_1" />
+						<radio value="chrome://hackbar/skin/ArrowLeft2.png"	id="ArrowLeft_2" />
+						<radio value="chrome://hackbar/skin/ArrowLeft3.png"	id="ArrowLeft_3" />
+						<radio value="chrome://hackbar/skin/ArrowLeft4.png"	id="ArrowLeft_4" />
+						<radio value="chrome://hackbar/skin/ArrowLeft5.png"	id="ArrowLeft_5" />
+					</radiogroup>
+				</hbox>
+			</groupbox>
+			<groupbox>
+				<caption class="caption_topic" label="BINARY Arrow Right" />
+					<hbox align="center">
+					  <radiogroup preference="hackbar_cstm_img_BINARYAR" class="choose_custom_icon" orient="horizontal" value="">
+						<radio value="chrome://hackbar/skin/ArrowRight.png"		id="ArrowRight_1" />
+						<radio value="chrome://hackbar/skin/ArrowRight2.png"	id="ArrowRight_2" />
+						<radio value="chrome://hackbar/skin/ArrowRight3.png"	id="ArrowRight_3" />
+						<radio value="chrome://hackbar/skin/ArrowRight4.png"	id="ArrowRight_4" />
+						<radio value="chrome://hackbar/skin/ArrowRight5.png"	id="ArrowRight_5" />
+					</radiogroup>
+				</hbox>
+			</groupbox>
+			<groupbox>
+				<caption class="caption_topic" label="Replace Arrow" />
+					<hbox align="center">
+					  <radiogroup preference="hackbar_cstm_img_replace" class="choose_custom_icon" orient="horizontal" value="">
+						<radio value="chrome://hackbar/skin/ArrowRight.png"		id="ArrowRight_1" />
+						<radio value="chrome://hackbar/skin/ArrowRight2.png"	id="ArrowRight_2" />
+						<radio value="chrome://hackbar/skin/ArrowRight3.png"	id="ArrowRight_3" />
+						<radio value="chrome://hackbar/skin/ArrowRight4.png"	id="ArrowRight_4" />
+						<radio value="chrome://hackbar/skin/ArrowRight5.png"	id="ArrowRight_5" />
+					</radiogroup>
+				</hbox>
+			</groupbox>
+			<groupbox>
+				<caption class="caption_topic" label="BASE64Spacer Arrow" />
+					<hbox align="center">
+					  <radiogroup preference="hackbar_cstm_img_BASE64Spacer" class="choose_custom_icon" orient="horizontal" value="">
+						<radio value="chrome://hackbar/skin/ArrowRight.png"		id="ArrowRight_1" />
+						<radio value="chrome://hackbar/skin/ArrowRight2.png"	id="ArrowRight_2" />
+						<radio value="chrome://hackbar/skin/ArrowRight3.png"	id="ArrowRight_3" />
+						<radio value="chrome://hackbar/skin/ArrowRight4.png"	id="ArrowRight_4" />
+						<radio value="chrome://hackbar/skin/ArrowRight5.png"	id="ArrowRight_5" />
+					</radiogroup>
+				</hbox>
+			</groupbox>
+		  </tabpanel>
+		</tabpanels>
+	  </tabbox>
+
+	</box>
+	
+	<box class="ctraddontabpanel" orient="vertical" id="Replace-Field">
+	  	<tabbox flex="1">
+		<tabs id="Replace_field">
+			<tab label="Page 1"/>
+			<tab label="Page 2"/>
+		</tabs>
+
+		<tabpanels id="ctraddon_pw_searchbar_tabpanels" flex="1">
+
+		  <tabpanel orient="vertical">
+			<groupbox>
+				<caption class="caption_topic" label="Insert to Replace " />
+				<hbox>
+			  	<grid>
+					<rows>
+						<row>
+							<label value="Text-Color"/>
+							<textbox preference="hackbar_rs1color" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_rs1color" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Background"/>
+							<textbox preference="hackbar_rs1bg" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_rs1bg" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Top"/>
+							<textbox preference="hackbar_rs1bT" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_rs1bT" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Left"/>
+							<textbox preference="hackbar_rs1bL" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_rs1bL" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Bottom"/>
+							<textbox preference="hackbar_rs1bB" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_rs1bB" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Right"/>
+							<textbox preference="hackbar_rs1bR" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_rs1bR" type="button" class="tabactcolorbox" id=""/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>		
+			<hbox>	
+				<grid>
+					<rows>
+						<row>	
+							<label value="Border-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_rs1bS" type="number" min="0" max="10"/>
+							<label value="px (3px default)"/>
+						</row>
+						<row>	
+							<label value="Border-Radius" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_rs1bRs" type="number" min="0" max="10"/>
+							<label value="px (10px default)"/>
+						</row>
+						<row>	
+							<label value="Font-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_rs1fS" type="number" min="12" max="72"/>
+							<label value="px (15px default)"/>
+						</row>
+					</rows>
+				</grid>
+			</hbox>
+			<hbox>
+				<grid>
+					<rows>
+						<row>
+							<label value="Font-Family" style="margin-right:20px"/>
+							<textbox preference="hackbar_rs1fF" class="tabactcolorbox" />
+						</row>
+						<row>
+							<checkbox id="bold" label="Bold" preference="hackbar_rs1fW" style="font-weight:bold;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('rstring1.font-weight','bold');}else{customize.hackbar.prefs.setCharPref('rstring1.font-weight','none');}"/>
+							<checkbox id="italic" label="Italic" preference="hackbar_rs1fSl" style="font-style:italic;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('rstring1.font-style','italic');}else{customize.hackbar.prefs.setCharPref('rstring1.font-style','none');}"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>	
+			</groupbox>
+			
+			<groupbox>
+			  <hbox>
+				<image src="chrome://hackbar/content/img/rs1.png"/>
+				<label value=""/>
+			  </hbox>
+			</groupbox>
+		  </tabpanel>
+		  
+		  <tabpanel orient="vertical">
+			<groupbox>
+				<caption class="caption_topic" label="Text to Replace" />
+					<hbox>
+			  	<grid>
+					<rows>
+						<row>
+							<label value="Text-Color"/>
+							<textbox preference="hackbar_rs2color" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_rs2color" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Background"/>
+							<textbox preference="hackbar_rs2bg" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_rs2bg" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Top"/>
+							<textbox preference="hackbar_rs2bT" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_rs2bT" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Left"/>
+							<textbox preference="hackbar_rs2bL" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_rs2bL" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Bottom"/>
+							<textbox preference="hackbar_rs2bB" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_rs2bB" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Right"/>
+							<textbox preference="hackbar_rs2bR" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_rs2bR" type="button" class="tabactcolorbox" id=""/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>		
+			<hbox>	
+				<grid>
+					<rows>
+						<row>	
+							<label value="Border-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_rs2bS" type="number" min="0" max="10"/>
+							<label value="px (3px default)"/>
+						</row>
+						<row>	
+							<label value="Border-Radius" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_rs2bRs" type="number" min="0" max="10"/>
+							<label value="px (10px default)"/>
+						</row>
+						<row>	
+							<label value="Font-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_rs2fS" type="number" min="12" max="72"/>
+							<label value="px (15px default)"/>
+						</row>
+					</rows>
+				</grid>
+			</hbox>
+			<hbox>
+				<grid>
+					<rows>
+						<row>
+							<label value="Font-Family" style="margin-right:20px"/>
+							<textbox preference="hackbar_rs2fF" class="tabactcolorbox" />
+						</row>
+						<row>
+							<checkbox id="bold" label="Bold" preference="hackbar_rs2fW" style="font-weight:bold;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('rstring2.font-weight','bold');}else{customize.hackbar.prefs.setCharPref('rstring2.font-weight','none');}"/>
+							<checkbox id="italic" label="Italic" preference="hackbar_rs2fSl" style="font-style:italic;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('rstring2.font-style','italic');}else{customize.hackbar.prefs.setCharPref('rstring2.font-style','none');}"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>	
+			</groupbox>
+		  	<groupbox>
+				 <hbox>
+					<image src="chrome://hackbar/content/img/rs2.png"/>
+					<label value=""/>
+				  </hbox>
+			</groupbox>
+		  </tabpanel>
+		</tabpanels>
+	  </tabbox>
+	</box>
+
+	<box class="ctraddontabpanel" orient="vertical" id="Toolbar-button">
+		<vbox class="vertical">
+			<groupbox>
+				<caption class="caption_topic" label="Toolbar Button" id="Toolbar_Button"/>
+				<hbox>
+			  	<grid>
+					<rows>
+						<row>
+							<label value="Text-Color" style="margin-right:30px"/>
+							<textbox preference="hackbar_TBBtncolor" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_TBBtncolor" type="button" class="tabactcolorbox" id=""/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>		
+			<hbox>	
+				<grid>
+					<rows>
+						<row>	
+							<label value="Font-Size" style="margin-right:35px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_TBBtnfS" type="number" min="12" max="72"/>
+							<label value="px (15px default)"/>
+						</row>
+					</rows>
+				</grid>
+			</hbox>
+			<hbox>
+				<grid>
+					<rows>
+						<row>
+							<label value="Font-Family" style="margin-right:20px"/>
+							<textbox preference="hackbar_TBBtnfF" class="tabactcolorbox" />
+						</row>
+						<row>
+							<checkbox id="bold" label="Bold" preference="hackbar_TBBfW" style="font-weight:bold;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('toolbarbutton.font-weight','bold');}else{customize.hackbar.prefs.setCharPref('toolbarbutton.font-weight','none');}"/>
+							<checkbox id="italic" label="Italic" preference="hackbar_TBBfSl" style="font-style:italic;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('toolbarbutton.font-style','italic');}else{customize.hackbar.prefs.setCharPref('toolbarbutton.font-style','none');}"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>
+			<hbox>
+				<image src="chrome://hackbar/content/img/toolbar.png"/>
+				<label value=""/>
+			</hbox>	
+		</groupbox>
+		<groupbox>
+			<caption class="caption_topic" label="Hackbar Layout" />
+			<hbox>
+				<grid>
+					<rows>
+						<row>
+							<label value="Background"/>
+							<textbox preference="hackbar_TBbg" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_TBbg" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Top"/>
+							<textbox preference="hackbar_TBbT" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_TBbT" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Left"/>
+							<textbox preference="hackbar_TBbL" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_TBbL" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Bottom"/>
+							<textbox preference="hackbar_TBbB" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_TBbB" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Right"/>
+							<textbox preference="hackbar_TBbR" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_TBbR" type="button" class="tabactcolorbox" id=""/>
+						</row>
+					</rows>
+				</grid>
+			</hbox>
+			<hbox>
+				<grid>
+					<rows>
+						<row>	
+							<label value="Border-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_TBbS" type="number" min="0" max="10"/>
+							<label value="px (3px default)"/>
+						</row>
+						<row>	
+							<label value="Border-Radius" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_TBbRs" type="number" min="0" max="10"/>
+							<label value="px (10px default)"/>
+						</row>
+					</rows>
+				</grid>
+			</hbox>
+			<hbox>
+				<image src="chrome://hackbar/content/img/hackbarLayout.png"/>
+				<label value=""/>
+			</hbox>
+		</groupbox>
+		</vbox>
+	</box>
+
+	<box class="ctraddontabpanel" orient="vertical" id="Main-button">
+		<tabbox flex="1">
+		<tabs id="ctraddon_pw_searchbar_tabs">
+			<tab label="Load URL"/>
+			<tab label="Split URL"/>
+			<tab label="Execute URL"/>
+			<tab label="(- , +) Selection"/>
+			<!--tab label="(- , +) Icon"/-->
+		</tabs>
+
+		<tabpanels id="ctraddon_pw_searchbar_tabpanels" flex="1">
+
+		  <tabpanel orient="vertical">
+			<groupbox>
+				<caption class="caption_topic" label="Load URL" />
+				<hbox>
+			  	<grid>
+					<rows>
+						<row>
+							<label value="Text-Color"/>
+							<textbox preference="hackbar_LUcolor" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_LUcolor" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Background"/>
+							<textbox preference="hackbar_LUbg" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_LUbg" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Top"/>
+							<textbox preference="hackbar_LUbT" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_LUbT" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Left"/>
+							<textbox preference="hackbar_LUbL" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_LUbL" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Bottom"/>
+							<textbox preference="hackbar_LUbB" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_LUbB" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Right"/>
+							<textbox preference="hackbar_LUbR" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_LUbR" type="button" class="tabactcolorbox" id=""/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>		
+			<hbox>	
+				<grid>
+					<rows>
+						<row>	
+							<label value="Border-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_LUbS" type="number" min="0" max="10"/>
+							<label value="px (3px default)"/>
+						</row>
+						<row>	
+							<label value="Border-Radius" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_LUbRs" type="number" min="0" max="10"/>
+							<label value="px (10px default)"/>
+						</row>
+						<row>	
+							<label value="Font-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_LUfS" type="number" min="12" max="72"/>
+							<label value="px (15px default)"/>
+						</row>
+					</rows>
+				</grid>
+			</hbox>
+			<hbox>
+				<grid>
+					<rows>
+						<row>
+							<label value="Font-Family" style="margin-right:20px"/>
+							<textbox preference="hackbar_LUfF" class="tabactcolorbox" />
+						</row>
+						<row>
+							<checkbox id="bold" label="Bold" preference="hackbar_LUfW" style="font-weight:bold;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('loadURL.font-weight','bold');}else{customize.hackbar.prefs.setCharPref('loadURL.font-weight','none');}"/>
+							<checkbox id="italic" label="Italic" preference="hackbar_LUfSl" style="font-style:italic;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('loadURL.font-style','italic');}else{customize.hackbar.prefs.setCharPref('loadURL.font-style','none');}"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>	
+			</groupbox>
+			<groupbox>
+				<caption class="caption_topic" label="Load URL icon" />
+			<hbox>
+			<label value="Enter url or file path" id="ctraddon_ctabouthome_custbgl"/>
+			</hbox>
+			<hbox>
+			<textbox id="LoadIcon" preference="hackbar_LU_icon" size="auto" flex="1" placeholder="Enter image url|path"/>
+			<button class="custom_bg_browse" label="Browse" oncommand="customize.hackbar.selectImage('LoadIcon', 'loadURL');"/>
+			</hbox>
+			</groupbox>
+			<groupbox>
+			  <hbox>
+				<image src="chrome://hackbar/content/img/mainBtn.png"/>
+				<label value=""/>
+			  </hbox>
+			</groupbox>
+		  </tabpanel>
+		  
+		  <tabpanel orient="vertical">
+			<groupbox>
+				<caption class="caption_topic" label="Split URL" />
+					<hbox>
+			  	<grid>
+					<rows>
+						<row>
+							<label value="Text-Color"/>
+							<textbox preference="hackbar_SUcolor" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_SUcolor" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Background"/>
+							<textbox preference="hackbar_SUbg" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_SUbg" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Top"/>
+							<textbox preference="hackbar_SUbT" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_SUbT" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Left"/>
+							<textbox preference="hackbar_SUbL" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_SUbL" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Bottom"/>
+							<textbox preference="hackbar_SUbB" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_SUbB" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Right"/>
+							<textbox preference="hackbar_SUbR" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_SUbR" type="button" class="tabactcolorbox" id=""/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>		
+			<hbox>	
+				<grid>
+					<rows>
+						<row>	
+							<label value="Border-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_SUbS" type="number" min="0" max="10"/>
+							<label value="px (3px default)"/>
+						</row>
+						<row>	
+							<label value="Border-Radius" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_SUbRs" type="number" min="0" max="10"/>
+							<label value="px (10px default)"/>
+						</row>
+						<row>	
+							<label value="Font-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_SUfS" type="number" min="12" max="72"/>
+							<label value="px (15px default)"/>
+						</row>
+					</rows>
+				</grid>
+			</hbox>
+			<hbox>
+				<grid>
+					<rows>
+						<row>
+							<label value="Font-Family" style="margin-right:20px"/>
+							<textbox preference="hackbar_SUfF" class="tabactcolorbox" />
+						</row>
+						<row>
+							<checkbox id="bold" label="Bold" preference="hackbar_SUfW" style="font-weight:bold;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('SplitURL.font-weight','bold');}else{customize.hackbar.prefs.setCharPref('SplitURL.font-weight','none');}"/>
+							<checkbox id="italic" label="Italic" preference="hackbar_SUfSl" style="font-style:italic;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('SplitURL.font-style','italic');}else{customize.hackbar.prefs.setCharPref('SplitURL.font-style','none');}"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>	
+			</groupbox>
+			<groupbox>
+				<caption class="caption_topic" label="Split URL icon" />
+			<hbox>
+			<label value="Enter url or file path" id="ctraddon_ctabouthome_custbgl"/>
+			</hbox>
+			<hbox>
+			<textbox id="SplitIcon" preference="hackbar_SU_icon" size="auto" flex="1" placeholder="Enter image url|path"/>
+			<button class="custom_bg_browse" label="Browse" oncommand="customize.hackbar.selectImage('SplitIcon', 'SplitURL');"/>
+			</hbox>
+			</groupbox>
+		  	<groupbox>
+				 <hbox>
+					<image src="chrome://hackbar/content/img/mainBtn.png"/>
+					<label value=""/>
+				  </hbox>
+			</groupbox>
+		  </tabpanel>
+
+		  <tabpanel orient="vertical">
+			<groupbox>
+				<caption class="caption_topic" label="Execute URL" />
+					<hbox>
+			  	<grid>
+					<rows>
+						<row>
+							<label value="Text-Color"/>
+							<textbox preference="hackbar_EUcolor" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_EUcolor" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Background"/>
+							<textbox preference="hackbar_EUbg" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_EUbg" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Top"/>
+							<textbox preference="hackbar_EUbT" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_EUbT" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Left"/>
+							<textbox preference="hackbar_EUbL" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_EUbL" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Bottom"/>
+							<textbox preference="hackbar_EUbB" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_EUbB" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Right"/>
+							<textbox preference="hackbar_EUbR" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_EUbR" type="button" class="tabactcolorbox" id=""/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>		
+			<hbox>	
+				<grid>
+					<rows>
+						<row>	
+							<label value="Border-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_EUbS" type="number" min="0" max="10"/>
+							<label value="px (3px default)"/>
+						</row>
+						<row>	
+							<label value="Border-Radius" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_EUbRs" type="number" min="0" max="10"/>
+							<label value="px (10px default)"/>
+						</row>
+						<row>	
+							<label value="Font-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_EUfS" type="number" min="12" max="72"/>
+							<label value="px (15px default)"/>
+						</row>
+					</rows>
+				</grid>
+			</hbox>
+			<hbox>
+				<grid>
+					<rows>
+						<row>
+							<label value="Font-Family" style="margin-right:20px"/>
+							<textbox preference="hackbar_EUfF" class="tabactcolorbox" />
+						</row>
+						<row>
+							<checkbox id="bold" label="Bold" preference="hackbar_EUfW" style="font-weight:bold;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('ExcuteURL.font-weight','bold');}else{customize.hackbar.prefs.setCharPref('ExcuteURL.font-weight','none');}"/>
+							<checkbox id="italic" label="Italic" preference="hackbar_EUfSl" style="font-style:italic;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('ExcuteURL.font-style','italic');}else{customize.hackbar.prefs.setCharPref('ExcuteURL.font-style','none');}"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>
+			</groupbox>
+			<groupbox>
+					<caption class="caption_topic" label="Execute URL icon" />
+				<hbox>
+				<label value="Enter url or file path" id="ctraddon_ctabouthome_custbgl"/>
+				</hbox>
+				<hbox>
+					<textbox id="ExcuteIcon" preference="hackbar_EU_icon" size="auto" flex="1" placeholder="Enter image url|path"/>
+					<button class="custom_bg_browse" label="Browse" oncommand="customize.hackbar.selectImage('ExcuteIcon', 'ExcuteURL');"/>
+				</hbox>
+			</groupbox>
+		  	<groupbox>
+				 <hbox>
+					<image src="chrome://hackbar/content/img/mainBtn.png"/>
+					<label value=""/>
+				  </hbox>
+			</groupbox>
+		  </tabpanel>
+		  <tabpanel orient="vertical">
+			<groupbox>
+				<caption class="caption_topic" label="(- +) Selection" />
+					<hbox>
+			  	<grid>
+					<rows>
+						<row>
+							<label value="Text-Color"/>
+							<textbox preference="hackbar_Slncolor" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_Slncolor" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Background"/>
+							<textbox preference="hackbar_Slnbg" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_Slnbg" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Top"/>
+							<textbox preference="hackbar_SlnbT" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_SlnbT" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Left"/>
+							<textbox preference="hackbar_SlnbL" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_SlnbL" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Bottom"/>
+							<textbox preference="hackbar_SlnbB" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_SlnbB" type="button" class="tabactcolorbox" id=""/>
+						</row>
+						<row>
+							<label value="Border-Right"/>
+							<textbox preference="hackbar_SlnbR" class="tabactcolorbox" id=""/>
+							<colorpicker preference="hackbar_SlnbR" type="button" class="tabactcolorbox" id=""/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>		
+			<hbox>	
+				<grid>
+					<rows>
+						<row>	
+							<label value="Border-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_SlnbS" type="number" min="0" max="10"/>
+							<label value="px (3px default)"/>
+						</row>
+						<row>	
+							<label value="Border-Radius" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_SlnbRs" type="number" min="0" max="10"/>
+							<label value="px (10px default)"/>
+						</row>
+						<row>	
+							<label value="Font-Size" style="margin-right:10px"/>
+							<textbox size="2" maxlength="3" preference="hackbar_SlnfS" type="number" min="1" max="10"/>
+							<label value="px (15px default)"/>
+						</row>
+					</rows>
+				</grid>
+			</hbox>
+			<hbox>
+				<grid>
+					<rows>
+						<row>
+							<label value="Font-Family" style="margin-right:20px"/>
+							<textbox preference="hackbar_SlnfF" class="tabactcolorbox" />
+						</row>
+						<row>
+							<checkbox id="bold" label="Bold" preference="hackbar_SlnfW" style="font-weight:bold;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('Selection.font-weight','bold');}else{customize.hackbar.prefs.setCharPref('Selection.font-weight','none');}"/>
+							<checkbox id="italic" label="Italic" preference="hackbar_SlnfSl" style="font-style:italic;" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('Selection.font-style','italic');}else{customize.hackbar.prefs.setCharPref('Selection.font-style','none');}"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>	
+			</groupbox>
+		  	<groupbox>
+				 <hbox>
+					<image src="chrome://hackbar/content/img/selection.png"/>
+					<label value=""/>
+				  </hbox>
+			</groupbox>
+			<groupbox>
+					<caption class="caption_topic" label="Minus Icon" />
+				<hbox>
+				<label value="Enter url or file path" id="ctraddon_ctabouthome_custbgl"/>
+				</hbox>
+				<hbox>
+					<textbox id="MinusIcon" preference="hackbar_Sln_mIcon" size="auto" flex="1" placeholder="Enter image url|path"/>
+					<button class="custom_bg_browse" label="Browse" oncommand="customize.hackbar.selectImage('MinusIcon', 'Selection');"/>
+				</hbox>
+			</groupbox>
+			<groupbox>
+					<caption class="caption_topic" label="Plus Icon" />
+				<hbox>
+				<label value="Enter url or file path" id="ctraddon_ctabouthome_custbgl"/>
+				</hbox>
+				<hbox>
+					<textbox id="PlusIcon" preference="hackbar_Sln_pIcon" size="auto" flex="1" placeholder="Enter image url|path"/>
+					<button class="custom_bg_browse" label="Browse" oncommand="customize.hackbar.selectImage('PlusIcon', 'Selection');"/>
+				</hbox>
+			</groupbox>
+		  </tabpanel>
+		</tabpanels>
+	  </tabbox>
+	</box>
+
+	<box class="ctraddontabpanel" orient="vertical" id="Advanced-options">
+		<vbox class="vertical">
+		<groupbox>
+			<caption class="caption_topic" label="Hide Toolbar Buttons" />
+			<hbox>
+				<grid>
+					<rows>
+						<row>
+							<checkbox label="SQL BASIC" preference="SQL_BASIC" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('SQL BASIC','collapse');}else{customize.hackbar.prefs.setCharPref('SQL BASIC','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="UNION BASED" preference="UNION_BASED" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('UNION BASED','collapse');}else{customize.hackbar.prefs.setCharPref('UNION BASED','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="OUT FILE" preference="OUT_FILE" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('OUT FILE','collapse');}else{customize.hackbar.prefs.setCharPref('OUT FILE','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="WAF BASED" preference="WAF_BASED" oncommand="if(this.checked){customize.hackbar.prefs.setCharPref('WAF BASED','collapse');}else{customize.hackbar.prefs.setCharPref('WAF BASED','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="CUSTOM" preference="CUSTOM" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('CUSTOM','collapse');}else{customize.hackbar.prefs.setCharPref('CUSTOM','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="ERROR/DOUBLE QUERY" preference="ERROR_DOUBLE" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('ERROR/DOUBLE QUERY','collapse');}else{customize.hackbar.prefs.setCharPref('ERROR/DOUBLE QUERY','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="TOOLS" preference="TOOLS" oncommand="if(this.checked){customize.hackbar.prefs.setCharPref('TOOLS','collapse');}else{customize.hackbar.prefs.setCharPref('TOOLS','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="WAF BYPASS" preference="WAF_BYPASS" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('WAF BYPASS','collapse');}else{customize.hackbar.prefs.setCharPref('WAF BYPASS','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="LDAP FUZZ" preference="LDAP_FUZZ" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('LDAP FUZZ','collapse');}else{customize.hackbar.prefs.setCharPref('LDAP FUZZ','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="ENCODING" preference="ENCODING" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('ENCODING','collapse');}else{customize.hackbar.prefs.setCharPref('ENCODING','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="0xHTML" preference="0xHTML" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('0xHTML','collapse');}else{customize.hackbar.prefs.setCharPref('0xHTML','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="ENCRYPTION" preference="ENCRYPTION" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('ENCRYPTION','collapse');}else{customize.hackbar.prefs.setCharPref('ENCRYPTION','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="OTHERS" preference="OTHERS" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('OTHERS','collapse');}else{customize.hackbar.prefs.setCharPref('OTHERS','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="XSS" preference="XSS" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('XSS','collapse');}else{customize.hackbar.prefs.setCharPref('XSS','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="LFI" preference="LFI" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('LFI','collapse');}else{customize.hackbar.prefs.setCharPref('LFI','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="LINKS" preference="LINKS" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('LINKS','collapse');}else{customize.hackbar.prefs.setCharPref('LINKS','visible');}"/>
+						</row>
+						<row>
+							<checkbox label="ReplaceField" preference="ReplaceField" oncommand="if(this.checked) {customize.hackbar.prefs.setCharPref('ReplaceField','collapse');}else{customize.hackbar.prefs.setCharPref('ReplaceField','visible');}"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>
+		</groupbox>
+		<groupbox>
+			<caption class="caption_topic" label="Remove Style" />
+			<description></description>
+			  <description class="ctraddon_tabcolorlabel">
+			  		NOTE: this only remove style this is not back to previous style, don't forget the backup.
+			  </description>
+				<checkbox label="Disabled Style" id="NoStyle" preference="NoStyle" oncommand="if(this.checked){customize.hackbar.disabledStyle();}"/>
+		</groupbox>
+	</vbox>
+	</box>
+	<box class="ctraddontabpanel" orient="vertical" id="View-Update">
+		<vbox class="vertical">
+		<groupbox id="Check-Update-Status">
+			<caption class="caption_topic" label="Check Update Status" />
+			<hbox>
+				<grid >
+					<rows>
+						<row class="detail-row">
+							<label value="Update Status:" class="detail-name"/>
+							<label id="detail-Status" class="detail-content" />
+						</row>
+						<row class="detail-row" id="AvailableUpdated">
+							<label value="Available Update:" class="detail-name"/>
+							<label id="detail-AvailableUpdated" class="detail-content" />
+						</row>
+						<row class="detail-row" id="AvailableDownload">
+							<label value="Available Download:" class="detail-name"/>
+							<label id="detail-AvailableDownload" class="detail-content text-link"/>
+						</row>
+						<row class="detail-row">
+							<label value="Last Installed:" class="detail-name"/>
+							<label id="detail-dateUpdated" class="detail-content"/>
+						</row>
+					</rows>
+				</grid>
+	  		</hbox>	
+		</groupbox>
+		<groupbox>
+				<caption class="caption_topic" label="Update Settings" />
+			<hbox>
+				<grid>
+					<rows>
+						<row>
+							<checkbox label="Enable notifications only on first run" class="update-settings" preference="Enable-notifications" id="EnableNotifications" oncommand="customize.hackbar.firstrun();"/>
+						</row>
+						<row>
+							<checkbox label="Always Show notifications when have updates" class="update-settings" id="Always-notify" preference="Always-notify"  oncommand="customize.hackbar.alwaysnotify();"/>
+						</row>
+						<row>
+							<checkbox label="Enable Release notes" class="update-settings" preference="Release-notes"/>
+						</row>
+					</rows>
+				</grid>
+			</hbox>
+		</groupbox>
+	</vbox>
+	</box>
+  </deck>
+</hbox>
+<separator class="groove"/>
+  <vbox id="ctraddon_pw_themes_note" align="center">
+	<description ></description>
+  </vbox>
+  <popupset>
+	<menupopup id="ctr_pw_settingsPopup" position="before_start">
+		<menuitem label="Reset into default" oncommand="customize.hackbar.resetCTRpreferences();" class="menuitem-iconic"/>
+		<menuseparator/>
+		<menuitem label="Backup style (JSON)" oncommand="customize.hackbar.BackupStyle('json');" class="menuitem-iconic"/>
+		<menuseparator/>
+		<menuitem label="Export preferences (txt)" oncommand="customize.hackbar.ExportPreferences('txt');" class="menuitem-iconic"/>
+		<menuitem label="Import preferences (txt)" oncommand="customize.hackbar.ImportPreferences('txt');" class="menuitem-iconic"/>
+		<menuseparator/>
+		<menuitem label="Export preferences (JSON)" oncommand="customize.hackbar.ExportPreferences('json');" class="menuitem-iconic"/>
+		<menuitem label="Import preferences (JSON)" oncommand="customize.hackbar.ImportPreferences('json');" class="menuitem-iconic"/>
+	</menupopup>
+  </popupset>
+  
+  <hbox align="center" flex="1" style="padding-top:5px;">
+    <button image="chrome://hackbar/content/img/Setting.png" id="settings" popup="ctr_pw_settingsPopup"/>
+<spacer flex="1" />
+<label  value="Support forums" href="https://www.facebook.com/groups/534256510664225" class="text-link" onclick="window.close();"/>
+<button label="Features &amp; Information" onclick="customize.hackbar.showFeatures(); window.focus();"/>
+<button dlgtype="accept" id="ctraddon_pw_okbutton"/>
+  </hbox> 
+
+</prefpane>
+		
+</prefwindow>

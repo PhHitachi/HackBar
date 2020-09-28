@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://hackbar/skin/css/" type="text/css"?>
+<window id="tamper-options-window" 
+        title="Admin Finder v.1.0beta"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        width="750"
+        height="550"
+        persist="screenX screenY">
+
+<script type="application/x-javascript" src="js/ReverseIP.js" />
+   <vbox flex="1">
+      <image src="chrome://hackbar/content/img/online-security.png"/>
+      <description style="font-family:Tahoma;font-size:36px;font-style:bold;text-align:center;">Find DNS Host Records (Subdomains)</description>
+      <groupbox flex="1">
+         <hbox>
+            <textbox id="url" placeholder="Enter url here with http:// or htts://" size="120"/><button oncommand="HackBar.AdminFinder.Start();" id="Start" label="Start" class="btn"/>
+         </hbox>
+         <spacer/>
+         <hbox flex="1">
+           <textbox id="subdomain" readonly="true" multiline="true" rows="3" flex="1"/>
+          </hbox>
+      </groupbox>  
+      <hbox>
+         <spacer flex="1"/>
+         <button label="Exit" oncommand="window.close();"/>
+      </hbox>
+   </vbox>
+</window>

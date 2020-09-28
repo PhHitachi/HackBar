@@ -1,0 +1,168 @@
+/*-------------------------------------------------------*/
+
+/* This is to add a toolbar button */
+#livehttpheaders-toolbar-button
+{ 
+   list-style-image: url("chrome://livehttpheaders/skin/img/Logo_24.png");
+   -moz-image-region: rect(0px 24px 24px 0px); 
+} 
+#livehttpheaders-toolbar-button:hover 
+{ 
+} 
+[iconsize="small"] #livehttpheaders-toolbar-button 
+{ 
+  list-style-image: url("chrome://livehttpheaders/skin/img/Logo_16.png"); 
+  -moz-image-region: rect( 0px 16px 16px 0px); 
+} 
+[iconsize="small"] #livehttpheaders-toolbar-button:hover 
+{ 
+} 
+
+/*-------------------------------------------------------*/
+/* This is to add a pageInfo button */
+
+#headerInfoTab {
+   list-style-image: url("chrome://livehttpheaders/skin/img/Logo_32.png") !important;
+   -moz-image-region: rect(0px, 32px, 32px, 0px)
+}
+
+/*-------------------------------------------------------*/
+
+/* Set text color for the whole tree - just to be safe */
+.livehttpheaders treechildren {
+  color: #000000;
+}
+
+/* The URL line (first line of each block) */
+.livehttpheaders treechildren[flex="1"]:-moz-tree-cell(URL) {
+  background-image: url(img/URL.png); 
+  background-color: #DFE7EA;
+  padding-left: 14px;
+}
+
+/* The empty line between the URL and the request */
+.livehttpheaders treechildren:-moz-tree-cell(SpaceRequest) {
+  background-image: url(img/SpaceRequest.png);
+}
+
+/*
+  #bookmarks-view treechildren:-moz-tree-cell(URL) {
+  background-image: none !important;
+  background-color: #ffffff !important;
+}
+*/
+
+/*-------------------------------------------------------*/
+
+/* If the request is consist of only one line (very rare) */
+.livehttpheaders treechildren:-moz-tree-cell(SingleRequest) {
+  background-color: #DFE7EA;
+}
+
+/* The first line of a multi line request */
+.livehttpheaders treechildren:-moz-tree-cell(FirstRequest) {
+  background-color: #DFE7EA;
+}
+
+/* The middles lines of a multi line request */
+.livehttpheaders treechildren:-moz-tree-cell(MidRequest) {
+  background-color: #DFE7EA;
+  padding-left: 14px;
+}
+
+/* The last line of a multi line request */
+.livehttpheaders treechildren:-moz-tree-cell(LastRequest) {
+  background-color: #DFE7EA;
+  padding-left: 14px;
+}
+
+/* Arrow for request */
+.livehttpheaders treechildren:-moz-tree-image(FirstRequest) {
+  list-style-image: url("chrome://livehttpheaders/skin/img/ArrowRight.png") !important;
+}
+.livehttpheaders treechildren:-moz-tree-image(SingleRequest) {
+  list-style-image: url("chrome://livehttpheaders/skin/img/ArrowRight.png") !important;
+}
+
+/*-------------------------------------------------------*/
+
+/* If the post data consist of only one line (normal post data) */
+.livehttpheaders treechildren:-moz-tree-cell(SinglePostData) {
+  background-color: #CAD2D5;
+  background-image: url(img/SinglePostData.png);
+}
+
+/* The first line of a multi line post data (mostly file upload) */
+.livehttpheaders treechildren:-moz-tree-cell(FirstPostData) {
+  background-color: #CAD2D5;
+  background-image: url(img/FirstPostData.png);
+}
+
+/* The middle lines of a multi line post data (mostly file upload) */
+.livehttpheaders treechildren:-moz-tree-cell(MidPostData) {
+  background-color: #CAD2D5;
+}
+
+/* The last line of a multi line post data (mostly file upload) */
+.livehttpheaders treechildren:-moz-tree-cell(LastPostData) {
+  background-color: #CAD2D5;
+  background-image: url(img/LastPostData.png);
+}
+
+/*-------------------------------------------------------*/
+
+/* The empty line between the request and the response */
+.livehttpheaders treechildren:-moz-tree-cell(SpaceResponse) {
+  background-image: url(img/SpaceResponse.png);
+  background-color: #E6EDFA;
+}
+
+/* If the response is consist of only one line (impossible ?) */
+.livehttpheaders treechildren:-moz-tree-cell(SingleResponse) {
+  background-color: #E6EDFA;
+}
+
+/* The first line of a multi line response */
+.livehttpheaders treechildren:-moz-tree-cell(FirstResponse) {
+  background-color: #E6EDFA;
+}
+
+/* The middles lines of a multi line response */
+.livehttpheaders treechildren:-moz-tree-cell(MidResponse) {
+  background-color: #E6EDFA;
+  padding-left: 14px;
+}
+
+/* The last line of a multi line response */
+.livehttpheaders treechildren:-moz-tree-cell(LastResponse) {
+  background-color: #E6EDFA;
+  padding-left: 14px;
+}
+
+/* Arrow for response */
+.livehttpheaders treechildren:-moz-tree-image(FirstResponse) {
+  list-style-image: url("chrome://livehttpheaders/skin/img/ArrowLeft.png") !important;
+}
+.livehttpheaders treechildren:-moz-tree-image(SingleResponse) {
+  list-style-image: url("chrome://livehttpheaders/skin/img/ArrowLeft.png") !important;
+}
+/*-------------------------------------------------------*/
+
+/* The separator line */
+.livehttpheaders treechildren:-moz-tree-cell(Separator) {
+  background-image: url(img/Separator.png);
+}
+
+/*-------------------------------------------------------*/
+
+/* Logo */
+.livehttpheaders-logo {
+  background-image: url(img/Logo.png);
+  background-repeat: no-repeat;
+}
+
+/*-------------------------------------------------------*/
+
+/* This is to suppress the space between each row */
+.livehttpheaders treechildren:-moz-tree-row {border: 0px solid;}
+
