@@ -1,8 +1,5 @@
 # HackBar Updates New Features
-[[!Github Issues](https://img.shields.io/github/issues/PhHitachi/HackBar)]
-[[!Github Forks](https://img.shields.io/github/forks/PhHitachi/HackBar)]
-[[!Github Stars](https://img.shields.io/github/stars/PhHitachi/HackBar)]
-[[!Github License](https://img.shields.io/github/license/PhHitachi/HackBar)]
+[[!Github Issues](https://img.shields.io/github/issues/PhHitachi/HackBar)](https://github.com/PhHitachi/HackBar/issues)
 ### Description
 
 HackBar is a security audit tool that will enable you to pentest websites more easily. ... You can use it to check site security by performing SQL injections, XSS holes and more. It also has a user-friendly interface that makes it easy for you to do fuzz testing, hash generation, encoding and more.
