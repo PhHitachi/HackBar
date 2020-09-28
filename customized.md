@@ -49,7 +49,7 @@ if(mypref){
 
 in your file.xul files
 
-addd prece
+add preferences tags
 ```xml
 <!-- get preferences in about:config by name="[name of your precerences]" -->
 <prefpane id="ClassicTRoptionsPane" flex="1">
