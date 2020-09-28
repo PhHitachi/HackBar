@@ -1,5 +1,5 @@
 # HackBar Updates New Features
-[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/PhHitachi/HackBar/issues/)
+[![GitHub issues](https://img.shields.io/github/issues/PhHitachi/HackBar/StrapDown.js.svg)](https://GitHub.com/PhHitachi/HackBar/issues/)
 [![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://github.com/PhHitachi/HackBar/releases/)
 [![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/PhHitachi/HackBar/network/)
 [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/PhHitachi/HackBar/graphs/contributors/)
