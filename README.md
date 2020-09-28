@@ -6,7 +6,9 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/PhHitachi/HackBar/graphs/contributors/)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/PhHitachi/HackBar/tree/master/src)
 [![GitHub release](https://img.shields.io/github/release/PhHitachi/StrapDown.js.svg)](https://github.com/PhHitachi/HackBar/releases/)
-[![GitHub license](https://img.shields.io/github/license/PhHitachi/StrapDown.js.svg)](https://github.com/PhHitachi/HackBar/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/PhHitachi/HackBar?style=social)](https://github.com/PhHitachi/HackBar/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://github.com/PhHitachi/HackBar/stargazers/)
+
 
 # HackBar For firefox add-ons
 
