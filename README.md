@@ -31,11 +31,12 @@ HackBar is a security audit tool that will enable you to pentest websites more e
 - [7-zip](https://www.7-zip.org/)
 
 <b>Steps</b>:
-
+```php
  1. git clone https://github.com/PhHitachi/HackBar.git
  2. cd HackBar/test `this open source you are available to modify the code`
     `Compressing Hackbar as addons`
  3. `7z a hackbar.xpi *` 
+```
 
 ![](https://github.com/PhHitachi/Hackbar/blob/master/img/compress.png)
 
