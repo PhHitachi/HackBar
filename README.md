@@ -1,5 +1,6 @@
 
-# HackBar Updates New Features
+# HackBar For firefox add-ons
+
 [![GitHub issues](https://img.shields.io/github/issues/PhHitachi/HackBar)](https://GitHub.com/PhHitachi/HackBar/issues/)
 [![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://github.com/PhHitachi/HackBar/releases/)
 [![GitHub forks](https://img.shields.io/github/forks/PhHitachi/HackBar)](https://GitHub.com/PhHitachi/HackBar/network/)
@@ -8,9 +9,6 @@
 [![GitHub release](https://img.shields.io/github/release/PhHitachi/HackBar)](https://github.com/PhHitachi/HackBar/releases/)
 [![GitHub license](https://img.shields.io/github/license/PhHitachi/HackBar?style=flat-square)](https://github.com/PhHitachi/HackBar/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/PhHitachi/HackBar)](https://github.com/PhHitachi/HackBar/stargazers/)
-
-
-# HackBar For firefox add-ons
 
 
 ### Description
