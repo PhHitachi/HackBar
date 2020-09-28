@@ -25,8 +25,9 @@ HackBar is a security audit tool that will enable you to pentest websites more e
 <b>Steps</b>:
 
  1. git clone https://github.com/PhHitachi/HackBar.git
- 2. cd HackBar/test // this open source you are available to modify the code
- 3. 7z a hackbar.xpi * //compressing hackbar as add-ons
+ 2. cd HackBar/test `this open source you are available to modify the code`
+    `Compressing Hackbar as addons`
+ 3. `7z a hackbar.xpi *` 
 
 ![](https://github.com/PhHitachi/Hackbar/blob/master/img/compress.png)
 
@@ -35,17 +36,17 @@ HackBar is a security audit tool that will enable you to pentest websites more e
  `7z is not recognized as an internal or external command`
 
 run this command on your terminal `set PATH=%PATH%;C:\Program Files\7-Zip\`
-this command is adding `7-zip` in environment and 
+this command is adding `7-zip` in environment
 
 ### HOW TO INSTALL ON BROWSER?
 
 <b>Note</b>: If you are using Firefox this is working only on v52.* bellow and you need disable "xpinstall.signatures.required" in config but if you are using [CyberFox Browser](https://sourceforge.net/projects/cyberfox/) you don't need to disable the "xpinstall.signatures.required" because the cyberfox allowed all extention/add-ons.
  
 Steps: //this on firefox browser
-	1. goto about:config
-	2. search "xpinstall.signatures.required"
-	![](https://github.com/PhHitachi/Hackbar/blob/master/img/xpiinstall.png)
-	3. change into "false"
+1. goto about:config
+2. search "xpinstall.signatures.required"
+![](https://github.com/PhHitachi/Hackbar/blob/master/img/xpiinstall.png)
+3. change into "false"
 
 goto "about:addons" 
 Click settings and "install addons from file.." and goto hackbar file and install 
