@@ -1,0 +1,327 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* Fixed bug https://bugzilla.mozilla.org/show_bug.cgi?id=1037303 */
+#hackBarToolbar {
+ max-height: 100% !important;
+ border-radius: 0px;
+ border:1px solid green;
+ background-color:none; 
+ -moz-appearance:none;
+ }
+ #logo{
+ 	background-image: url(chrome://hackbar/skin/img/icon.png);
+ 	background-repeat: no-repeat;
+ }
+ /*
+ #logo image{
+    height: 200px !important;
+    width: 700px !important;
+ }*/
+ .httpheader{
+ 	background-image: url(chrome://hackbar/skin/img/Logo.png);
+ 	background-repeat: no-repeat;
+ }
+ #hackBarTargetUrl{
+  font-size: 15px;
+  background-color:white;
+  font-weight:none;
+  font-style:none;
+  font-family: Arial;
+  -moz-appearance:none;
+  color:#000;
+  border-radius:0px;
+  border:1px solid  #99b3ff; 
+ }
+ #hackBarTargetUrlReferrerField{
+  font-size: 15px;
+  background-color:white;
+  font-weight:none;
+  font-style:none;
+  font-family: Arial;
+  -moz-appearance:none;
+  color:#000;
+  border-radius:0px;
+  border:1px solid  #99b3ff;
+  margin: 10px 0px 10px 0px;
+ }
+ #hackBarTargetUrlPostField{
+  font-size: 15px;
+  background-color:white;
+  -moz-appearance:none;
+  font-weight:none;
+  font-style:none;
+  font-family: Arial;
+  color:#000;
+  border-radius:0px;
+  border:1px solid  #99b3ff; 
+ }
+#hackBarTargetUrlCookieField{
+  font-size: 15px;
+  background-color:white;
+  font-weight:none;
+  font-style:none;
+  font-family: Arial;
+  -moz-appearance:none;
+  color:#000;
+  border-radius:0px;
+  border:1px solid  #99b3ff;
+  margin: 10px 0px 10px 0px;
+ }
+ .hackbar-menupopup-iconic{
+  background-color:none;
+  -moz-appearance:none;
+  border-radius:;
+  border:0px solid  #99b3ff;
+  opacity: 1;
+ } 
+ .hackbar-menuitem-iconic{
+  color:#000;
+  font-weight:none;
+  font-style:none;
+  font-family: Arial;
+ }
+ .hackbar-menu-iconic{
+  color:#000;
+  font-weight:none;
+  font-style:none;
+  font-family: Arial;
+ }
+ #hackBarPlusMinusSelection {
+  background-color: #f2f2f2;
+  border:1px solid  #99b3ff;
+  font-weight:none;
+  font-style:none;
+  font-family: Arial;
+  -moz-appearance:none;
+  margin-top:3px; 
+  color:#000;
+ }
+ .hackbar-toolbarbutton-iconic{
+  -moz-appearance:none;
+  font-size: none;
+ }
+ .hackbar-minus-iconic{
+  list-style-image: url("chrome://hackbar/skin/minus.gif");
+ }
+ .hackbar-plus-iconic{
+  list-style-image: url("chrome://hackbar/skin/plus.gif");
+ }
+#livehttpheader { list-style-image: url("chrome://hackbar/skin/favicon.ico"); }
+#tamperdata { list-style-image: url("chrome://hackbar/skin/tamper.ico"); }
+#nored{ list-style-image: url("chrome://hackbar/skin/nored.png"); }
+.hackbar-minus-iconic image,
+.hackbar-plus-iconic image{
+    height: 11px !important;
+    width: 11px !important;
+    -moz-image-region: rect(0px, 11px, 11px, 0px) !important;
+}
+.toolbarbottom image{
+    height: 22px !important;
+    width: 22px !important;
+    -moz-image-region: rect(0px, 22px, 22px, 0px) !important;
+}
+ #HexArrowLeft image,
+ #HexArrowRight image,
+ #URLArrowLeft image,
+ #URLArrowRight image,
+ #BASE64ArrowLeft image,
+ #BASE64ArrowRight image,
+ #BINARYArrowLeft image,
+ #BINARYArrowRight image,
+ #replace image,
+ #Base64Spacer image{
+    height: 22px !important;
+    width: 24px !important;
+    -moz-image-region: rect(0px, 24px, 22px, 0px) !important;
+ }
+#HexArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#HexArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#URLArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#URLArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#BASE64ArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#BASE64ArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#BINARYArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#BINARYArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#HexArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#HexArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#UnicodeArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#UnicodeArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#HexEntArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#HexEntArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#xHexEntArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#xHexEntArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#replace { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#Base64Spacer { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+toolbarbutton.modefied{
+	background: #000;
+	border:1px solid green;
+      animation: textup 0.3s infinite;
+      color: red;
+      font-family: Agency FB;
+      }
+    @keyframes textup{ 
+      0%{ 
+        color:green; 
+        } 
+      25%{ 
+        color:yellow; 
+        } 
+      50%{ 
+        color:red; 
+        } 
+      75%{ 
+        color:pink; 
+        } 
+      100%{ 
+        color:grey; 
+        }
+    } 
+#hackBarWebButton image,
+#hackBarCopyButton image,
+#hackBarSplitButton image{
+  height: 16px !important;
+  width: 16px !important;
+  -moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#hackBarWebButton { 
+  list-style-image: url("chrome://hackbar/skin/web.png");
+  background-color:none;
+  -moz-appearance:none;
+  font-weight:none;
+  font-style:none;
+  font-family: Arial;
+  color:none;
+  border-radius:10px;
+  }
+#hackBarCopyButton {   
+  list-style-image: url("chrome://hackbar/skin/load.png");
+  background-color:;
+  -moz-appearance:none;
+  font-weight:none;
+  font-style:none;
+  font-family: Arial;
+  color:;
+  border-radius:10px; 
+  }
+#hackBarSplitButton { 
+  list-style-image: url("chrome://hackbar/skin/split.gif");
+  background-color:none;
+  -moz-appearance:none;
+  font-weight:none;
+  font-style:none;
+  font-family: Arial;
+  color:none;
+  border-radius:10px;
+  }
+#hackBarWebButton,
+#hackBarCopyButton,
+#hackBarSplitButton { 
+  margin: 2px 0px;
+  }
+/* Button */
+toolbarbutton#hackBarToolbarButton { list-style-image: url("chrome://hackbar/skin/icon.png");}
+toolbarbutton#hackBarToolbarButton image{
+  -moz-image-region: rect( 0px 16px 16px  0px) !important;
+   width: 16px !important;
+   height: 16px !important;
+ }
+toolbarbutton.custombutton {-moz-image-region: rect( 0px 24px 24px  0px);}
+toolbarbutton.custombutton:hover {-moz-image-region: rect(24px 24px 48px  0px);}
+[iconsize="small"] toolbarbutton.custombutton {-moz-image-region: rect( 0px 40px 16px 24px);}
+[iconsize="small"] toolbarbutton.custombutton:hover {-moz-image-region: rect(24px 40px 40px 24px);}
+
+/* t.PRO */
+#enc{padding-left:5px;}
+toolbarbutton.hackBarQuickEncodeButton { list-style-image: url("chrome://hackbar/skin/quick1.png"); }
+toolbarbutton.hackBarQuickEncodeButton2 { list-style-image: url("chrome://hackbar/skin/quick2.png"); }
+toolbarbutton.hackBarQuickEncodeButton3 { list-style-image: url("chrome://hackbar/skin/quick3.png"); }
+toolbarbutton.facebook { list-style-image: url("chrome://hackbar/skin/facebook.png"); }
+toolbarbutton.github { list-style-image: url("chrome://hackbar/skin/github.png"); }
+toolbarbutton.youtube { list-style-image: url("chrome://hackbar/skin/youtube.png"); }
+toolbarbutton.about { list-style-image: url("chrome://hackbar/skin/about.png"); }
+toolbarbutton.livehttpheader { list-style-image: url("chrome://hackbar/skin/favicon.ico"); }
+toolbarbutton.tamperdata { list-style-image: url("chrome://hackbar/skin/tamper.ico"); }
+.quick{
+    margin:10px 5px 10px 5px;
+  }
+.adjust{font-size:12px;}
+.replace{font-size:10px;margin-left:4px;}
+#separator{
+  height:3px;
+  border-top:1px solid grey;
+  margin-top:5px;
+  margin-bottom:9px;
+  margin-left:3px;
+}
+#separator2{
+  height:3px;
+  border-left:1px solid grey;
+  margin-bottom:2px;
+  margin-left:3px;
+  margin-right:3px;
+}
+#separator3{
+  height:3px;
+  border-left:1px solid grey;
+  margin-bottom:2px;
+  margin-left:3px;
+}
+.replace2{
+    margin:5px 5px 5px 5px;
+    padding:5px 5px 5px 5px;
+    height:25px;
+    font-size:12px;
+    background-color:white;
+    -moz-appearance:none;
+    font-weight:none;
+    font-style:none;
+    font-family: Arial;
+    color:#000;
+    border-radius:0px;
+    border:1px solid  #99b3ff; 
+  }
+#replace_holder{
+  margin-left:3px;
+}
+#rlabel{
+  margin-top:7px;
+}
+#adjustpanel{
+  margin-right:3px;
+  margin-top:2px;
+}

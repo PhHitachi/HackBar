@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://hackbar/skin/css/hackbar.css" type="text/css"?>
+<dialog title="About HackBar Pro"
+  windowtype="global:About HackBar Pro"
+  buttons="cancel"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  width="700"
+  height="500">
+  <keyset id="mainKeyset">
+  <key id="key_closeWindow" key="w" oncommand="window.close();" modifiers="accel"/>
+  </keyset>
+  <script type="application/x-javascript" src="js/Main.js"/>
+<hbox>
+ <vbox id="logo" width="700" height="220" />
+</hbox>
+  <vbox flex="1">
+    <hbox>
+    <vbox flex="1">
+    <groupbox orient="vertical" style="overflow:auto;height:100px" flex="1">
+      <caption label="Thanks to all people that made some suggestion and reporting bugs"/>
+        <label value="Taki Tachibana" href="https://www.facebook.com/harhar.shtmal" class="text-link"/>
+    </groupbox>
+    <groupbox orient="vertical" style="overflow:auto;height:100px" flex="1">
+      <caption label="Tools"/>
+        <label value="LiveHTTPHeader"/>
+        <label value="Tamper Data"/>
+        <label value="View Source"/>
+        <label value="JS on/off"/>
+        <label value="NoRedirect"/>
+        <label value="Customize Hackbar"/>
+        <label value="HTTP Proxy"/>
+        <label value="Admin Finder"/>
+    </groupbox>
+    </vbox>
+    </hbox>
+    <spacer flex="1"/>
+    <hbox>
+      <button icon="close" label="Advance" oncommand="openDialog('chrome://hackbar/content/Customize.xul','','chrome,titlebar,toolbar,centerscreen');window.close();"/>
+      <separator class="thin" flex="1" />
+      <button dlgtype="cancel" icon="close" label="OK"/>
+    </hbox>
+  </vbox>
+</dialog>

@@ -1,0 +1,11 @@
+prefwindow {
+  -moz-appearance: window;
+  background-color: -moz-Dialog;
+  color: -moz-DialogText;
+  font: message-box;
+}
+groupbox {
+  -moz-appearance: none;
+  border:1px solid green;
+  margin: 15px 0 0;
+}

@@ -1,0 +1,108 @@
+window{
+	background: #000;
+	color:#999;
+}
+button{
+	-moz-appearance: none;
+	color:#999;
+	border-radius: 5px;
+	border: 1px solid #666;
+	cursor: pointer;
+	background: #0d0d0d;
+}
+splitter{
+	visibility:;
+	position: fixed;
+	margin:0;
+	background-color: #1a1a1a;
+	border: none;
+}
+listbox{
+	-moz-appearance: none;
+	color:#999;
+	border: 1px solid #666;
+	background-color: #1a1a1a;
+}
+listheader{
+	-moz-appearance: none;
+	color:#999;
+	border:none;
+	border-right: 1px solid #666;
+	background-color: #1a1a1a;
+}
+listhead{
+	border: 1px solid #666;
+}
+#url{
+	-moz-appearance: none;
+	color:#999;
+	border: 1px solid #666;
+	background-color: #1a1a1a;
+}
+.btn[disabled="true"]{
+	cursor: not-allowed;
+}
+#wordlist{
+	-moz-appearance: none;
+	color:#999;
+	max-width: 165px;
+	border: 1px solid #666;
+	background-color: #1a1a1a;
+}
+#admins{
+	overflow: auto;
+	height: 300px;
+	min-width: 200px;
+	max-width: 200px;
+	-moz-appearance: none;
+	border:1px solid green;
+	margin-left: 7px;
+	color:#999;
+	border: 1px solid #666;
+	background-color: #1a1a1a;
+}
+#admins caption{
+	-moz-appearance: none;
+	position:fixed;
+	margin-bottom: ;
+	background: #fff;
+	margin-left:55px;
+	padding-top: 0;
+	font-family: bold;
+	color:#999;
+	border-bottom: 1px solid #666;
+	background-color: #1a1a1a;
+}
+#admins > #label{
+	margin-top: 15px
+}
+#Status{
+	height: 300px;
+	min-width: 450px;
+	max-width: 450px;
+}
+groupbox{
+	-moz-appearance: none;
+	border: 1px solid #999;
+}
+._200{
+	color: lime;
+}
+._304{
+	color:yellow;
+}
+._201{
+	color:orange;
+}
+._403{
+	color:violet;
+}
+._404{
+	color:red;
+}
+._500{
+	color:red;
+}
+._0{
+	color:red;
+}

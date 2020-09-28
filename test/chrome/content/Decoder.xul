@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window id="tamper-options-window" 
+        title="Decoder"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        width="750"
+        height="550" 
+        persist="screenX screenY">
+   <vbox flex="1">
+   <script type="application/x-javascript" src="js/Main.js" />
+   <script type="application/x-javascript" src="js/Encrypt.js" />
+      <hbox style="margin:10px 5px">
+         <textbox id="hackBarTargetUrl" multiline="true" rows="5" flex="1"/>
+         <vbox>
+            <menulist preference="ctraddon_ctabouthome" id="ctraddon_ctabouthome_list">
+               <menupopup>
+                   <menuitem value="default" label="Encode as ..."/>
+                   <menuitem value="HTML" label="HTML"/>
+                   <menuitem value="URL"  label="URL"/>
+                   <menuitem value="BASE64"  label="BASE64"/>
+                   <menuitem value="BINARY"   label="BINARY"/>              
+                   <menuitem value="HEX"   label="HEX"/>                 
+                   <menuitem value="Octal"   label="Octal"/>               
+                   <menuitem value="ASCII"   label="ASCII Hex"/>           
+                   <menuitem value="Unicode"   label="Unicode"/>              
+               </menupopup>
+            </menulist>
+            <menulist preference="ctraddon_ctabouthome" id="ctraddon_ctabouthome_list">
+               <menupopup>
+                   <menuitem value="default" label="Decode as ..."/>
+                   <menuitem value="HTML" label="HTML"/>
+                   <menuitem value="URL"  label="URL"/>
+                   <menuitem value="BASE64"  label="BASE64"/>
+                   <menuitem value="BINARY"   label="BINARY"/>              
+                   <menuitem value="HEX"   label="HEX"/>                 
+                   <menuitem value="Octal"   label="Octal"/>               
+                   <menuitem value="ASCII"   label="ASCII Hex"/>           
+                   <menuitem value="Unicode"   label="Unicode"/>               
+               </menupopup>
+            </menulist>
+            <menulist preference="ctraddon_ctabouthome" id="ctraddon_ctabouthome_list">
+               <menupopup>
+                   <menuitem value="default" label="Hash ..."/>
+                   <menuitem value="SHA-384" label="SHA-384"/>
+                   <menuitem value="SHA-224"  label="SHA-224"/>
+                   <menuitem value="SHA-256"  label="SHA-256"/>
+                   <menuitem value="MD2"   label="MD2"/>              
+                   <menuitem value="SHA"   label="SHA"/>                 
+                   <menuitem value="SHA-512"   label="SHA-512"/>               
+                   <menuitem value="MD5"   label="MD5"/>               
+               </menupopup>
+            </menulist>
+            <menulist preference="ctraddon_ctabouthome" id="ctraddon_ctabouthome_list">
+               <menupopup>
+                   <menuitem value="default" label="SQL ..."/>
+                   <menuitem value="light"  label="URL"/>
+                   <menuitem value="lightalt"  label="BASE64"/>
+                   <menuitem value="dark"   label="BINARY"/>              
+                   <menuitem value="dark"   label="HEX"/>                 
+                   <menuitem value="dark"   label="Octal"/>               
+                   <menuitem value="dark"   label="ASCII Hex"/>           
+                   <menuitem value="dark"   label="Unicode"/>              
+               </menupopup>
+            </menulist>
+         </vbox>
+      </hbox>
+      <hbox style="margin:10px 5px">
+         <textbox id="Domain" readonly="true" value="0   61 73 64 61 64 73 61 -- -- -- -- -- -- -- -- -- asdadsa" multiline="true" rows="5" flex="1"/> 
+         <vbox>
+            <hbox flex="1">
+               <radiogroup id="CtrRadioGroup" class="ctraddontabs" orient="horizontal" flex="1">
+                  <radio value="ctraddon_tabsbox"     label="Text"         class="ctraddontab"/>
+                  <radio value="ctraddon_tabsbox"     label="Hex"          class="ctraddontab"/>
+               </radiogroup>
+            </hbox>
+            <button label="Copy" />
+            <button label="Clear" />
+         </vbox>
+      </hbox>
+   </vbox>
+</window>

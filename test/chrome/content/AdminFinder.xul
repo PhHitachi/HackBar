@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://hackbar/skin/css/AdminFinder.css" type="text/css"?>
+<window id="tamper-options-window" 
+        title="Admin Finder v.1.0beta"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        width="750"
+        height="550" 
+        persist="screenX screenY">
+
+<script type="application/x-javascript" src="js/AdminFinder.js" />
+   <!--commandset>
+      <command id="response.copy.selection" oncommand="HackBar.AdminFinder.getItemStringValue();"/>
+      <command id="response.copy.all"       oncommand="HackBar.AdminFinder.responseCopyAll();"       />
+      <command id="response.details"        oncommand="HackBar.AdminFinder.responseDoubleClick();"/>
+   </commandset>
+   <popupset id="popupset">
+      <popup id="Status.context">
+         <menuitem label="Details"  command="response.details" />
+         <menuseparator/>
+         <menuitem label="Copy"     command="response.copy.selection" />
+         <menuitem label="Copy All" command="response.copy.all" />
+      </popup>
+
+   </popupset-->
+   <vbox flex="1">
+      <description style="font-family:Tahoma;font-size:36px;font-style:bold;text-align:center;">ADMIN FINDER</description>
+      <groupbox flex="1">
+         <hbox>
+            <textbox id="url" placeholder="Enter url here with http:// or htts://" size="120"/><button oncommand="HackBar.AdminFinder.Start();" id="Start" label="Start" class="btn"/>
+         </hbox>
+         <spacer/>
+         <hbox flex="1">
+            <vbox>
+               <label id="Total" value="Wordlist"/>
+               <textbox id="wordlist" multiline="true" rows="10" wrap="off" flex="1" height="300" placeholder="wordlist..." class="btn"/>
+               <spacer flex="1" style="min-height:2em" />
+               <hbox>
+                  <spacer flex="1"/>
+                  <button label="Load" tooltiptext="Load Wordlist from file" class="btn" id="load" oncommand="HackBar.AdminFinder.loadFromFile()"/>
+                  <button label="Clear" tooltiptext="Clear Wordlist" class="btn" id="clear" oncommand="HackBar.AdminFinder.Clear()"/>
+               </hbox>
+            </vbox>
+            <splitter state="open" resizeafter="nearest"/>
+            <vbox flex="1" id="Status">
+               <label value="Status"/>
+               <listbox id="StatusField" flex="1" height="300">
+               <listcols>
+                  <listcol maxwidth="300" mminwidth="300" flex="3"/>
+                  <listcol flex="1"/>
+               </listcols>
+         
+               <listhead>
+                  <listheader label="Url"/>
+                  <listheader label="Status"/>
+               </listhead>
+               </listbox>
+               <spacer flex="1"/>
+               <spacer flex="1" style="min-height:2em" />
+               <hbox>
+                  <spacer flex="1"/>
+                  <button label="Save" tooltiptext="Save all admin found" id="save" oncommand=""/>
+               </hbox>
+            </vbox>
+            <splitter state="open" resizeafter="nearest"/>
+            <vbox flex="1">
+               <groupbox id="admins" flex="1">
+                  <caption label="Admin Panel(s)"/>
+                  <label id="label"/>
+               </groupbox>
+            </vbox>
+         </hbox>
+      </groupbox>
+      <progressmeter id="ProgressmeterID"  mode="determined" value="0" style="height:20px;"/>
+      <separator class="groove"/>
+      <hbox>
+         <spacer flex="1"/>
+         <button label="Exit" oncommand="window.close();"/>
+      </hbox>
+   </vbox>
+</window>

@@ -1,0 +1,312 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* Fixed bug https://bugzilla.mozilla.org/show_bug.cgi?id=1037303 */
+#hackBarToolbar {
+ -moz-appearance:none;
+ max-height: 100% !important;
+ border-radius: 0px;
+ border:1px solid #666;
+ background-color:#1a1a1a;
+ color: -moz-DialogText;
+ font: message-box;
+ }
+ toolbarbutton.hackbar-toolbarbutton-iconic{
+  -moz-appearance:none;
+  font-size: 11.5px;
+ }
+ #logo{
+ 	background-image: url(chrome://hackbar/skin/img/icon.png);
+ 	background-repeat: no-repeat;
+ }
+ .httpheader{
+ 	background-image: url(chrome://hackbar/skin/img/Logo.png);
+ 	background-repeat: no-repeat;
+ }
+ #hackBarTargetUrl{
+ -moz-appearance:none;
+  font-size: 15px;
+  background-color:-moz-Dialog;
+  font-weight:none;
+  font-style:none;
+  font-family: Arial;
+  color: -moz-DialogText;
+  border-radius:0px;
+  border:1px solid  #999; 
+ }
+ #hackBarTargetUrlReferrerField{
+  -moz-appearance:none;
+  font-size: 15px;
+  background-color:-moz-Dialog;
+  font-weight:default;
+  font-style:default;
+  font-family: Arial;
+  color: -moz-DialogText;
+  border-radius:0px;
+  border:1px solid  #999;
+  margin: 10px 0px 10px 0px;
+ font: message-box;
+ }
+ #hackBarTargetUrlPostField{
+  -moz-appearance:none;
+  font-size: 15px;
+  background-color:-moz-Dialog;
+  font-weight:default;
+  font-style:default;
+  font-family: Arial;
+  color: -moz-DialogText;
+  border-radius:0px;
+  border:1px solid  #999; 
+ font: message-box;
+ }
+#hackBarTargetUrlCookieField{
+  -moz-appearance:none;
+  font-size: 15px;
+  background-color:-moz-Dialog;
+  font-weight:default;
+  font-style:default;
+  font-family: Arial;
+  color: -moz-DialogText;
+  border-radius:0px;
+  border:1px solid  #999;
+  margin: 10px 0px 10px 0px;
+ font: message-box;
+ }
+ .hackbar-menupopup-iconic{
+  -moz-appearance:none;
+ background-color:-moz-Dialog;;
+  border-radius:;
+  border:0px solid  #999;
+  opacity: 1;
+ } 
+ .hackbar-menuitem-iconic{
+  -moz-appearance:none;
+  color: -moz-DialogText;
+  font-weight:default;
+  font-style:default;
+  font-family: Arial;
+ }
+ .hackbar-menu-iconic{
+  -moz-appearance:none;
+  color: -moz-DialogText;
+  font-weight:default;
+  font-style:default;
+  font-family: Arial;
+ }
+ #hackBarPlusMinusSelection {
+  -moz-appearance:none;
+  background-color:-moz-Dialog;
+  border:1px solid  #666;
+  font-weight:default;
+  font-style:default;
+  font-family: Arial;
+  margin-top:3px; 
+  background-color:-moz-Dialog;
+  color: -moz-DialogText;
+ }
+ .hackbar-minus-iconic{
+  list-style-image: url("chrome://hackbar/skin/minus.gif");
+ }
+ .hackbar-plus-iconic{
+  list-style-image: url("chrome://hackbar/skin/plus.gif");
+ }
+#livehttpheader { list-style-image: url("chrome://hackbar/skin/favicon.ico"); }
+#tamperdata { list-style-image: url("chrome://hackbar/skin/tamper.ico"); }
+#nored{ list-style-image: url("chrome://hackbar/skin/nored.png"); }
+.hackbar-minus-iconic image,
+.hackbar-plus-iconic image{
+    height: 11px !important;
+    width: 11px !important;
+    -moz-image-region: rect(0px, 11px, 11px, 0px) !important;
+}
+.toolbarbottom image{
+    height: 22px !important;
+    width: 22px !important;
+    -moz-image-region: rect(0px, 22px, 22px, 0px) !important;
+}
+ #HexArrowLeft image,
+ #HexArrowRight image,
+ #URLArrowLeft image,
+ #URLArrowRight image,
+ #BASE64ArrowLeft image,
+ #BASE64ArrowRight image,
+ #BINARYArrowLeft image,
+ #BINARYArrowRight image,
+ #replace image,
+ #Base64Spacer image{
+    height: 22px !important;
+    width: 24px !important;
+    -moz-image-region: rect(0px, 24px, 22px, 0px) !important;
+ }
+#HexArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#HexArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#URLArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#URLArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#BASE64ArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#BASE64ArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#BINARYArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#BINARYArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#HexArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#HexArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#UnicodeArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#UnicodeArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#HexEntArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#HexEntArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#xHexEntArrowLeft { 
+  list-style-image: url("chrome://hackbar/skin/ArrowLeft.png"); 
+}
+#xHexEntArrowRight { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#replace { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#Base64Spacer { 
+  list-style-image: url("chrome://hackbar/skin/ArrowRight.png"); 
+}
+#hackBarWebButton image,
+#hackBarCopyButton image,
+#hackBarSplitButton image{
+  height: 16px !important;
+  width: 16px !important;
+  -moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+}
+#hackBarWebButton { 
+  -moz-appearance:none;
+  list-style-image: url("chrome://hackbar/skin/web.png");
+  background-color:-moz-Dialog;
+  font-weight:default;
+  font-style:default;
+  font-family: Arial;
+  color:default;
+  border-radius:10px;
+  border:1px solid #666;
+  font-size: 10px;
+  }
+#hackBarCopyButton {   
+  -moz-appearance:none;
+  list-style-image: url("chrome://hackbar/skin/load.png");
+  background-color:-moz-dialog;
+  font-weight:default;
+  font-style:default;
+  font-family: Arial;
+  color:;
+  border-radius:10px; 
+  border:1px solid #666;
+  font-size: 10px;
+  }
+#hackBarSplitButton { 
+  -moz-appearance:none;
+  list-style-image: url("chrome://hackbar/skin/split.gif");
+  background-color:-moz-Dialog;
+  font-weight:default;
+  font-style:default;
+  font-family: Arial;
+  color:default;
+  border-radius:10px;
+  border:1px solid #666;
+  font-size: 10px;
+  }
+#hackBarWebButton,
+#hackBarCopyButton,
+#hackBarSplitButton { 
+  margin: 2px 0px;
+  }
+/* Button */
+toolbarbutton#hackBarToolbarButton { list-style-image: url("chrome://hackbar/skin/icon.png");}
+toolbarbutton#hackBarToolbarButton image{
+  -moz-image-region: rect( 0px 16px 16px  0px) !important;
+   width: 16px !important;
+   height: 16px !important;
+ }
+toolbarbutton.custombutton {-moz-image-region: rect( 0px 24px 24px  0px);}
+toolbarbutton.custombutton:hover {-moz-image-region: rect(24px 24px 48px  0px);}
+[iconsize="small"] toolbarbutton.custombutton {-moz-image-region: rect( 0px 40px 16px 24px);}
+[iconsize="small"] toolbarbutton.custombutton:hover {-moz-image-region: rect(24px 40px 40px 24px);}
+
+/* t.PRO */
+#enc{padding-left:5px;}
+toolbarbutton.hackBarQuickEncodeButton { list-style-image: url("chrome://hackbar/skin/quick1.png"); }
+toolbarbutton.hackBarQuickEncodeButton2 { list-style-image: url("chrome://hackbar/skin/quick2.png"); }
+toolbarbutton.hackBarQuickEncodeButton3 { list-style-image: url("chrome://hackbar/skin/quick3.png"); }
+toolbarbutton.facebook { list-style-image: url("chrome://hackbar/skin/facebook.png"); }
+toolbarbutton.github { list-style-image: url("chrome://hackbar/skin/github.png"); }
+toolbarbutton.youtube { list-style-image: url("chrome://hackbar/skin/youtube.png"); }
+toolbarbutton.about { list-style-image: url("chrome://hackbar/skin/about.png"); }
+toolbarbutton.livehttpheader { list-style-image: url("chrome://hackbar/skin/favicon.ico"); }
+toolbarbutton.tamperdata { list-style-image: url("chrome://hackbar/skin/tamper.ico"); }
+.quick{
+    margin:10px 5px 10px 5px;
+  }
+.adjust{font-size:12px;}
+.replace{font-size:10px;margin-left:4px;}
+#separator{
+  height:3px;
+  border-top:1px solid grey;
+  margin-top:5px;
+  margin-bottom:9px;
+  margin-left:3px;
+}
+#separator2{
+  height:3px;
+  border-left:1px solid grey;
+  margin-bottom:2px;
+  margin-left:3px;
+  margin-right:3px;
+}
+#separator3{
+  height:3px;
+  border-left:1px solid grey;
+  margin-bottom:2px;
+  margin-left:3px;
+}
+.replace2{
+    -moz-appearance:none;
+    margin:5px 5px 5px 5px;
+    padding:5px 5px 5px 5px;
+    height:25px;
+    font-size:12px;
+    background-color:-moz-Dialog;
+    font-weight:default;
+    font-style:default;
+    font-family: Arial;
+    color: -moz-DialogText;
+    border-radius:0px;
+    border:1px solid  #999; 
+  }
+#replace_holder{
+  margin-left:3px;
+}
+#rlabel{
+  margin-top:7px;
+}
+#adjustpanel{
+  margin-right:3px;
+  margin-top:2px;
+}
