@@ -7,7 +7,7 @@ im using "about:config" config as `database` of browser for changing theme of ha
 ### Article 
 - [How to read profile preferences from Firefox add-on?](https://stackoverflow.com/questions/57202669/how-to-read-profile-preferences-from-firefox-add-on)
 - [Automatic Update Preference - about:config](https://forum.imacros.net/viewtopic.php?t=28930)
--[Preferences - Archive of obsolete content](https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Code_snippets/Preferences)
+- [Preferences - Archive of obsolete content](https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Code_snippets/Preferences)
 
 
 # Example of CRUD 
@@ -49,7 +49,7 @@ if(mypref){
 
 in your file.xul files
 
-addd prece
+add preferences tags
 ```xml
 <!-- get preferences in about:config by name="[name of your precerences]" -->
 <prefpane id="ClassicTRoptionsPane" flex="1">
@@ -142,12 +142,12 @@ function Update(){
 }
 
 function Reset(){
-	var preferences = document.getElementsByTagName("preference");
+    var preferences = document.getElementsByTagName("preference");
     for (var preference of preferences) {
     	if(preference.name.indexOf("extensions.myextension.")!=-1){ //get all extensions.myextension.* preference
     		//reset to default value
-			preference.value = preference.defaultValue == null ? undefined : preference.defaultValue;
-		}
+		preference.value = preference.defaultValue == null ? undefined : preference.defaultValue;
+	}
     }
 }
 
