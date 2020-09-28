@@ -5,6 +5,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/PhHitachi/HackBar/network/)
 [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/PhHitachi/HackBar/graphs/contributors/)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/PhHitachi/open-source-badges/)
+[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/PhHitachi/HackBar/releases/)
 
 # HackBar For firefox add-ons
 
@@ -65,10 +66,4 @@ Click settings and "install addons from file.." and goto hackbar file and instal
 - [HackBar v2.7](https://github.com/PhHitachi/Hackbar/blob/master/HackBar%20v2.7.md)
 - [HackBar v2.8](https://github.com/PhHitachi/Hackbar/blob/master/HackBar%20v2.8.md)
 - [HackBar v2.9](https://github.com/PhHitachi/Hackbar/blob/master/HackBar%20v2.9.md)
-
-Open source:
-[Source](https://github.com/PhHitachi/HackBar/tree/master/src)
-
-Realases:
-https://github.com/PhHitachi/HackBar/releases/
 
