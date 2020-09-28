@@ -1,4 +1,4 @@
-# HackBar Updates New Features
+# HackBar For firefox add-ons
 
 ### Description
 
@@ -48,10 +48,8 @@ Steps: //this on firefox browser
 	3. change into "false"
 
 goto "about:addons" 
-Click settings and install addons from file..
+Click settings and "install addons from file.." and goto hackbar file and install 
 ![](https://github.com/PhHitachi/Hackbar/blob/master/img/install-from-files.png)
-
-and find the hackbar file
 
 - [HackBar v2.6](https://github.com/PhHitachi/Hackbar/blob/master/HackBar%20v2.6.md)
 - [HackBar v2.7](https://github.com/PhHitachi/Hackbar/blob/master/HackBar%20v2.7.md)
