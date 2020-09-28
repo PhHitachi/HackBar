@@ -2,12 +2,12 @@
 # HackBar Updates New Features
 [![GitHub issues](https://img.shields.io/github/issues/PhHitachi/HackBar)](https://GitHub.com/PhHitachi/HackBar/issues/)
 [![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://github.com/PhHitachi/HackBar/releases/)
-[![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/PhHitachi/HackBar/network/)
+[![GitHub forks](https://img.shields.io/github/forks/PhHitachi/HackBar)](https://GitHub.com/PhHitachi/HackBar/network/)
 [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/PhHitachi/HackBar/graphs/contributors/)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/PhHitachi/HackBar/tree/master/src)
 [![GitHub release](https://img.shields.io/github/release/PhHitachi/HackBar)](https://github.com/PhHitachi/HackBar/releases/)
 [![GitHub license](https://img.shields.io/github/license/PhHitachi/HackBar?style=flat-square)](https://github.com/PhHitachi/HackBar/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://github.com/PhHitachi/HackBar/stargazers/)
+[![GitHub stars](https://img.shields.io/github/stars/PhHitachi/HackBar)](https://github.com/PhHitachi/HackBar/stargazers/)
 
 
 # HackBar For firefox add-ons
